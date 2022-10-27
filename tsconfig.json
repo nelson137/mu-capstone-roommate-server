@@ -1,0 +1,10 @@
+{
+    "extends": "@tsconfig/node18/tsconfig.json",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "outDir": "./dist",
+        "module": "es2020"
+    },
+    "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.js"],
+    "exclude": ["node_modules"]
+}
