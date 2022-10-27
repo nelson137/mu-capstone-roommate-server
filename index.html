@@ -1,8 +1,110 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>mu-capstone-roommate</title>
+    <style>
+      :root {
+        --color-alt: #00000010;
+      }
+
+      input {
+        width: 300px;
+      }
+
+      .row {
+        display: block;
+        height: 1.5em;
+      }
+
+      .active-toggle-hidden {
+        display: none;
+      }
+      #activateStatus {
+        color: limegreen;
+      }
+
+      #sendArea {
+        background-color: var(--color-alt);
+        margin-top: 16px;
+        padding: 4px 0;
+        display: flex;
+        flex-direction: column;
+        --space: 16px;
+        gap: var(--space);
+        padding: var(--space) 8px;
+      }
+
+      #recvArea {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      #recvArea > span {
+        padding: 4px 2px;
+      }
+      #recvArea > span:nth-child(2n + 2) {
+        background-color: var(--color-alt);
+      }
+    </style>
   </head>
+
   <body>
-    <h1>Hello, world!</h1>
+    <h1>User</h1>
+    <div class="row">
+      <span>My User (id): </span>
+      <span id="myUserId"></span>
+      <button id="activateButton">Activate</button>
+      <span id="activateStatus" class="active-toggle-hidden">[active]</span>
+    </div>
+
+    <h1>Send</h1>
+    <form id="sendArea">
+      <div>
+        <span>To User (id): </span>
+        <input id="toUserId" />
+      </div>
+      <div>
+        <span>Send message: </span>
+        <input id="msg" />
+      </div>
+      <input id="sendButton" type="submit" />
+    </form>
+
+    <h1>Recv</h1>
+    <div id="recvArea"></div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      const uuid = () => {
+        const url = URL.createObjectURL(new Blob());
+        return url.substring(url.lastIndexOf('/') + 1);
+      };
+
+      const userId = uuid();
+      document.getElementById('myUserId').innerText = userId;
+
+      const socket = io();
+
+      const activateButton = document.getElementById('activateButton');
+      const activateStatus = document.getElementById('activateStatus');
+      activateButton.addEventListener('click', () => {
+        socket.emit('activate', userId);
+        activateButton.classList.toggle('active-toggle-hidden');
+        activateStatus.classList.toggle('active-toggle-hidden');
+      });
+
+      const msg = document.getElementById('msg');
+      const toUserId = document.getElementById('toUserId');
+      document.getElementById('sendArea').addEventListener('submit', event => {
+        event.preventDefault();
+        socket.emit('send', userId, toUserId.value, msg.value, Date.now());
+      });
+
+      const recvArea = document.getElementById('recvArea');
+      socket.on('recv', (fromUserId, msg, datetime) => {
+        const span = document.createElement('span');
+        span.innerText = msg;
+        recvArea.appendChild(span);
+      });
+    </script>
   </body>
 </html>
