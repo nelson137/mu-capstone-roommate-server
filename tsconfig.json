@@ -3,7 +3,8 @@
     "compilerOptions": {
         "baseUrl": ".",
         "outDir": "./dist",
-        "module": "es2020"
+        "module": "es2022",
+        "target": "es2022"
     },
     "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.js"],
     "exclude": ["node_modules"]

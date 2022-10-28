@@ -1,0 +1,828 @@
+[
+    {
+        "_id": {
+            "$oid": "632dd93508fdd4a48cc94d04"
+        },
+        "name": "Nathan Toepke",
+        "gender": "Male",
+        "loc": {
+            "city": "Columbia",
+            "state": "Missouri"
+        },
+        "status": "no",
+        "smoking": true,
+        "pets": true,
+        "sameSex": false,
+        "age": {
+            "min": 18,
+            "max": 22
+        },
+        "rent": {
+            "min": 180,
+            "max": 9999
+        },
+        "noise": "rarely",
+        "guests": "often",
+        "sleep": "sometimes",
+        "commonSpaces": "often",
+        "clean": "rarely",
+        "tags": {
+            "videoGames": true,
+            "writing": true,
+            "photography": true,
+            "plants": true
+        },
+        "extraBoxes": {
+            "religion": "Atheist",
+            "transportation": "Car"
+        },
+        "bio": "Oh my gosh I just love doing X and Y and am a huge fan of Z so we have to go to W to see Z when he performs in CoMo! I'll buy popcorn if you drive!",
+        "DoB": "2000-09-12",
+        "contactEmail": "dummyafakeGmail,com"
+    },
+    {
+        "_id": {
+            "$oid": "632dd93508fdd4a48cc94d05"
+        },
+        "name": "Ryan Orf",
+        "gender": "Male",
+        "loc": {
+            "city": "Columbia",
+            "state": "Missouri"
+        },
+        "status": "yes",
+        "smoking": true,
+        "pets": false,
+        "sameSex": true,
+        "age": {
+            "min": 18,
+            "max": 77
+        },
+        "rent": {
+            "min": 10,
+            "max": 555
+        },
+        "noise": "often",
+        "guests": "often",
+        "sleep": "often",
+        "commonSpaces": "often",
+        "clean": "often",
+        "tags": {
+            "greekLife": true,
+            "indoors": true,
+            "fashion": true,
+            "sports": true
+        },
+        "extraBoxes": {
+            "religion": "Probably",
+            "transportation": "Rollerblades"
+        },
+        "bio": "Biggest Cheesehead you have ever met.",
+        "DoB": "2004-09-29",
+        "contactEmail": "dummyafakeGmail,com"
+    },
+    {
+        "_id": {
+            "$oid": "632dd93508fdd4a48cc94d06"
+        },
+        "name": "Jane Doe",
+        "gender": "Female",
+        "loc": {
+            "city": "Columbia",
+            "state": "Missouri"
+        },
+        "status": "yes",
+        "smoking": false,
+        "pets": false,
+        "sameSex": false,
+        "age": {
+            "min": 18,
+            "max": 30
+        },
+        "rent": {
+            "min": 10,
+            "max": 9999
+        },
+        "noise": "rarely",
+        "guests": "often",
+        "sleep": "sometimes",
+        "commonSpaces": "often",
+        "clean": "rarely",
+        "tags": {
+            "videoGames": true,
+            "writing": true,
+            "photography": true,
+            "plants": true
+        },
+        "extraBoxes": {
+            "religion": "Atheist",
+            "transportation": "Car"
+        },
+        "bio": "Insert generic bio here",
+        "DoB": "2000-01-01",
+        "contactEmail": "dummyafakeGmail,com"
+    },
+    {
+        "_id": {
+            "$oid": "632dd93508fdd4a48cc94d07"
+        },
+        "name": "Jane Doe-Two",
+        "gender": "Female",
+        "loc": {
+            "city": "Columbia",
+            "state": "Missouri"
+        },
+        "status": "yes",
+        "smoking": true,
+        "pets": false,
+        "sameSex": true,
+        "age": {
+            "min": 18,
+            "max": 77
+        },
+        "rent": {
+            "min": 10,
+            "max": 555
+        },
+        "noise": "often",
+        "guests": "often",
+        "sleep": "often",
+        "commonSpaces": "often",
+        "clean": "often",
+        "tags": {
+            "greekLife": true,
+            "indoors": true,
+            "fashion": true,
+            "sports": true
+        },
+        "extraBoxes": {
+            "religion": "Probably",
+            "transportation": "Rollerblades"
+        },
+        "bio": "Super cool greek lifer! Shout out to Alpha Beta Gamma, and all my sisters!",
+        "DoB": "2002-09-18",
+        "contactEmail": "dummyafakeGmail,com"
+    },
+    {
+        "_id": {
+            "$oid": "632dd93508fdd4a48cc94d08"
+        },
+        "name": "Jane Doe-Three",
+        "gender": "Female",
+        "loc": {
+            "city": "Columbia",
+            "state": "Missouri"
+        },
+        "status": "no",
+        "smoking": true,
+        "pets": true,
+        "sameSex": true,
+        "age": {
+            "min": 18,
+            "max": 21
+        },
+        "rent": {
+            "min": 1000,
+            "max": 9999
+        },
+        "noise": "rarely",
+        "guests": "rarely",
+        "sleep": "rarely",
+        "commonSpaces": "rarely",
+        "clean": "rarely",
+        "tags": {
+            "videoGames": true,
+            "writing": true,
+            "photography": true,
+            "plants": true
+        },
+        "extraBoxes": {
+            "religion": "One of them",
+            "transportation": "Car"
+        },
+        "bio": "I rickroll my dad daily",
+        "DoB": "1999-01-01",
+        "contactEmail": "dummyafakeGmail,com"
+    },
+    {
+        "_id": {
+            "$oid": "632dd93508fdd4a48cc94d09"
+        },
+        "name": "Jane Doe-Four",
+        "gender": "Female",
+        "loc": {
+            "city": "Columbia",
+            "state": "Missouri"
+        },
+        "status": "no",
+        "smoking": true,
+        "pets": true,
+        "sameSex": true,
+        "age": {
+            "min": 18,
+            "max": 40
+        },
+        "rent": {
+            "min": 10,
+            "max": 9999
+        },
+        "noise": "often",
+        "guests": "often",
+        "sleep": "often",
+        "commonSpaces": "often",
+        "clean": "often",
+        "tags": {
+            "greekLife": true,
+            "indoors": true,
+            "fashion": true,
+            "sports": true
+        },
+        "extraBoxes": {
+            "religion": "Probably",
+            "transportation": "Rollerblades"
+        },
+        "bio": "Shrek is my favorite movie ever.",
+        "DoB": "1998-03-13",
+        "contactEmail": "dummyafakeGmail,com"
+    },
+    {
+        "_id": {
+            "$oid": "632dd93508fdd4a48cc94d10"
+        },
+        "name": "John Doe",
+        "gender": "Male",
+        "loc": {
+            "city": "Columbia",
+            "state": "Missouri"
+        },
+        "status": "yes",
+        "smoking": false,
+        "pets": false,
+        "sameSex": false,
+        "age": {
+            "min": 18,
+            "max": 30
+        },
+        "rent": {
+            "min": 10,
+            "max": 9999
+        },
+        "noise": "rarely",
+        "guests": "often",
+        "sleep": "sometimes",
+        "commonSpaces": "often",
+        "clean": "rarely",
+        "tags": {
+            "videoGames": true,
+            "writing": true,
+            "photography": true,
+            "plants": true
+        },
+        "extraBoxes": {
+            "religion": "Atheist",
+            "transportation": "Car"
+        },
+        "bio": "Insert generic bio here",
+        "DoB": "2000-01-01",
+        "contactEmail": "dummyafakeGmail,com"
+    },
+    {
+        "_id": {
+            "$oid": "632dd93508fdd4a48cc94d11"
+        },
+        "name": "John Doe-Two",
+        "gender": "Male",
+        "loc": {
+            "city": "Columbia",
+            "state": "Missouri"
+        },
+        "status": "yes",
+        "smoking": true,
+        "pets": false,
+        "sameSex": true,
+        "age": {
+            "min": 18,
+            "max": 77
+        },
+        "rent": {
+            "min": 10,
+            "max": 555
+        },
+        "noise": "often",
+        "guests": "often",
+        "sleep": "often",
+        "commonSpaces": "often",
+        "clean": "often",
+        "tags": {
+            "greekLife": true,
+            "indoors": true,
+            "fashion": true,
+            "sports": true
+        },
+        "extraBoxes": {
+            "religion": "Probably",
+            "transportation": "Rollerblades"
+        },
+        "bio": "Super cool greek lifer! Shout out to Alpha Beta Gamma, and all my sisters!",
+        "DoB": "2002-09-18",
+        "contactEmail": "dummyafakeGmail,com"
+    },
+    {
+        "_id": {
+            "$oid": "632dd93508fdd4a48cc94d12"
+        },
+        "name": "John Doe-Three",
+        "gender": "Male",
+        "loc": {
+            "city": "Columbia",
+            "state": "Missouri"
+        },
+        "status": "no",
+        "smoking": true,
+        "pets": true,
+        "sameSex": true,
+        "age": {
+            "min": 18,
+            "max": 21
+        },
+        "rent": {
+            "min": 1000,
+            "max": 9999
+        },
+        "noise": "rarely",
+        "guests": "rarely",
+        "sleep": "rarely",
+        "commonSpaces": "rarely",
+        "clean": "rarely",
+        "tags": {
+            "videoGames": true,
+            "writing": true,
+            "photography": true,
+            "plants": true
+        },
+        "extraBoxes": {
+            "religion": "One of them",
+            "transportation": "Car"
+        },
+        "bio": "I rickroll my dad daily",
+        "DoB": "1999-01-01",
+        "contactEmail": "dummyafakeGmail,com"
+    },
+    {
+        "_id": {
+            "$oid": "632dd93508fdd4a48cc94d13"
+        },
+        "name": "John Doe-Four",
+        "gender": "Male",
+        "loc": {
+            "city": "Columbia",
+            "state": "Missouri"
+        },
+        "status": "no",
+        "smoking": true,
+        "pets": true,
+        "sameSex": true,
+        "age": {
+            "min": 18,
+            "max": 40
+        },
+        "rent": {
+            "min": 10,
+            "max": 9999
+        },
+        "noise": "often",
+        "guests": "often",
+        "sleep": "often",
+        "commonSpaces": "often",
+        "clean": "often",
+        "tags": {
+            "greekLife": true,
+            "indoors": true,
+            "fashion": true,
+            "sports": true
+        },
+        "extraBoxes": {
+            "religion": "Probably",
+            "transportation": "Rollerblades"
+        },
+        "bio": "Shrek is my favorite movie ever.",
+        "DoB": "1998-03-13",
+        "contactEmail": "dummyafakeGmail,com"
+    },
+    {
+        "_id": {
+            "$oid": "632dd93508fdd4a48cc94d14"
+        },
+        "name": "Other Doe",
+        "gender": "Other",
+        "loc": {
+            "city": "Columbia",
+            "state": "Missouri"
+        },
+        "status": "yes",
+        "smoking": false,
+        "pets": false,
+        "sameSex": false,
+        "age": {
+            "min": 18,
+            "max": 30
+        },
+        "rent": {
+            "min": 10,
+            "max": 9999
+        },
+        "noise": "rarely",
+        "guests": "often",
+        "sleep": "sometimes",
+        "commonSpaces": "often",
+        "clean": "rarely",
+        "tags": {
+            "videoGames": true,
+            "writing": true,
+            "photography": true,
+            "plants": true
+        },
+        "extraBoxes": {
+            "religion": "Atheist",
+            "transportation": "Car"
+        },
+        "bio": "Insert generic bio here",
+        "DoB": "2000-01-01",
+        "contactEmail": "dummyafakeGmail,com"
+    },
+    {
+        "_id": {
+            "$oid": "632dd93508fdd4a48cc94d15"
+        },
+        "name": "Other Doe-Two",
+        "gender": "Other",
+        "loc": {
+            "city": "Columbia",
+            "state": "Missouri"
+        },
+        "status": "yes",
+        "smoking": true,
+        "pets": false,
+        "sameSex": true,
+        "age": {
+            "min": 18,
+            "max": 77
+        },
+        "rent": {
+            "min": 10,
+            "max": 555
+        },
+        "noise": "often",
+        "guests": "often",
+        "sleep": "often",
+        "commonSpaces": "often",
+        "clean": "often",
+        "tags": {
+            "greekLife": true,
+            "indoors": true,
+            "fashion": true,
+            "sports": true
+        },
+        "extraBoxes": {
+            "religion": "Probably",
+            "transportation": "Rollerblades"
+        },
+        "bio": "Super cool greek lifer! Shout out to Alpha Beta Gamma, and all my sisters!",
+        "DoB": "2002-09-18",
+        "contactEmail": "dummyafakeGmail,com"
+    },
+    {
+        "_id": {
+            "$oid": "632dd93508fdd4a48cc94d16"
+        },
+        "name": "Other Doe-Three",
+        "gender": "Other",
+        "loc": {
+            "city": "Columbia",
+            "state": "Missouri"
+        },
+        "status": "no",
+        "smoking": true,
+        "pets": true,
+        "sameSex": true,
+        "age": {
+            "min": 18,
+            "max": 21
+        },
+        "rent": {
+            "min": 1000,
+            "max": 9999
+        },
+        "noise": "rarely",
+        "guests": "rarely",
+        "sleep": "rarely",
+        "commonSpaces": "rarely",
+        "clean": "rarely",
+        "tags": {
+            "videoGames": true,
+            "writing": true,
+            "photography": true,
+            "plants": true
+        },
+        "extraBoxes": {
+            "religion": "One of them",
+            "transportation": "Car"
+        },
+        "bio": "I rickroll my dad daily",
+        "DoB": "1999-01-01",
+        "contactEmail": "dummyafakeGmail,com"
+    },
+    {
+        "_id": {
+            "$oid": "632dd93508fdd4a48cc94d17"
+        },
+        "name": "Other Doe-Four",
+        "gender": "Other",
+        "loc": {
+            "city": "Columbia",
+            "state": "Missouri"
+        },
+        "status": "no",
+        "smoking": true,
+        "pets": true,
+        "sameSex": true,
+        "age": {
+            "min": 18,
+            "max": 40
+        },
+        "rent": {
+            "min": 10,
+            "max": 9999
+        },
+        "noise": "often",
+        "guests": "often",
+        "sleep": "often",
+        "commonSpaces": "often",
+        "clean": "often",
+        "tags": {
+            "greekLife": true,
+            "indoors": true,
+            "fashion": true,
+            "sports": true
+        },
+        "extraBoxes": {
+            "religion": "Probably",
+            "transportation": "Rollerblades"
+        },
+        "bio": "Shrek is my favorite movie ever.",
+        "DoB": "1998-03-13",
+        "contactEmail": "dummyafakeGmail,com"
+    },
+    {
+        "_id": {
+            "$oid": "632dd93508fdd4a48cc94d18"
+        },
+        "name": "John Doe-Five",
+        "gender": "Male",
+        "loc": {
+            "city": "Columbia",
+            "state": "Missouri"
+        },
+        "status": "yes",
+        "smoking": true,
+        "pets": true,
+        "sameSex": false,
+        "age": {
+            "min": 18,
+            "max": 99
+        },
+        "rent": {
+            "min": 10,
+            "max": 9999
+        },
+        "noise": "rarely",
+        "guests": "often",
+        "sleep": "sometimes",
+        "commonSpaces": "often",
+        "clean": "rarely",
+        "tags": {
+            "outdoors": true,
+            "coldHouse": true,
+            "roadTrips": true,
+            "kids": true
+        },
+        "extraBoxes": {
+            "religion": "Atheist",
+            "sexualOrientation": "Straight",
+            "politics": "Green Party",
+            "transportation": "Uber"
+        },
+        "bio": "Insert generic bio here",
+        "DoB": "2000-01-01",
+        "contactEmail": "dummyafakeGmail,com"
+    },
+    {
+        "_id": {
+            "$oid": "632dd93508fdd4a48cc94d19"
+        },
+        "name": "John Doe-Six",
+        "gender": "Male",
+        "loc": {
+            "city": "Columbia",
+            "state": "Missouri"
+        },
+        "status": "yes",
+        "smoking": true,
+        "pets": false,
+        "sameSex": true,
+        "age": {
+            "min": 45,
+            "max": 77
+        },
+        "rent": {
+            "min": 10,
+            "max": 9999
+        },
+        "noise": "often",
+        "guests": "often",
+        "sleep": "often",
+        "commonSpaces": "often",
+        "clean": "often",
+        "tags": {
+            "watchSports": true,
+            "playSports": true,
+            "shopping": true,
+            "warmHouse": true
+        },
+        "extraBoxes": {
+            "religion": "Probably",
+            "politics": "Democrat",
+            "transportation": "Rollerblades"
+        },
+        "bio": "Super cool greek lifer! Shout out to Alpha Beta Gamma, and all my brothers!",
+        "DoB": "2002-09-18",
+        "contactEmail": "dummyafakeGmail,com"
+    },
+    {
+        "_id": {
+            "$oid": "632dd93508fdd4a48cc94d0a"
+        },
+        "name": "John Doe-Seven",
+        "gender": "Male",
+        "loc": {
+            "city": "Columbia",
+            "state": "Missouri"
+        },
+        "status": "no",
+        "smoking": true,
+        "pets": true,
+        "sameSex": true,
+        "age": {
+            "min": 18,
+            "max": 88
+        },
+        "rent": {
+            "min": 1000,
+            "max": 9999
+        },
+        "noise": "rarely",
+        "guests": "rarely",
+        "sleep": "rarely",
+        "commonSpaces": "rarely",
+        "clean": "rarely",
+        "tags": {
+            "gym": true,
+            "partying": true,
+            "studying": true,
+            "fullTime": true
+        },
+        "extraBoxes": {
+            "religion": "One of them",
+            "transportation": "Car"
+        },
+        "bio": "I rickroll my dad daily",
+        "DoB": "1999-01-01",
+        "contactEmail": "dummyafakeGmail,com"
+    },
+    {
+        "_id": {
+            "$oid": "632dd93508fdd4a48cc94d0b"
+        },
+        "name": "John Doe-Eight",
+        "gender": "Male",
+        "loc": {
+            "city": "Columbia",
+            "state": "Missouri"
+        },
+        "status": "no",
+        "smoking": true,
+        "pets": true,
+        "sameSex": true,
+        "age": {
+            "min": 18,
+            "max": 40
+        },
+        "rent": {
+            "min": 10,
+            "max": 9999
+        },
+        "noise": "often",
+        "guests": "often",
+        "sleep": "often",
+        "commonSpaces": "often",
+        "clean": "often",
+        "tags": {
+            "performMusic": true,
+            "listenMusic": true,
+            "college": true,
+            "partTime": true,
+            "theater": true
+        },
+        "extraBoxes": {
+            "religion": "Probably",
+            "transportation": "Rollerblades"
+        },
+        "bio": "Shrek is my favorite movie ever.",
+        "DoB": "1998-03-13",
+        "contactEmail": "dummyafakeGmail,com"
+    },
+    {
+        "_id": {
+            "$oid": "632dd93508fdd4a48cc94d0c"
+        },
+        "name": "John Doe-Nine",
+        "gender": "Male",
+        "loc": {
+            "city": "Columbia",
+            "state": "Missouri"
+        },
+        "status": "no",
+        "smoking": true,
+        "pets": true,
+        "sameSex": true,
+        "age": {
+            "min": 18,
+            "max": 47
+        },
+        "rent": {
+            "min": 10,
+            "max": 900
+        },
+        "noise": "often",
+        "guests": "often",
+        "sleep": "often",
+        "commonSpaces": "often",
+        "clean": "often",
+        "tags": {
+            "tv": true,
+            "cooking": true,
+            "drinking": true,
+            "reading": true,
+            "art": true
+        },
+        "extraBoxes": {
+            "religion": "Probably",
+            "transportation": "Rollerblades"
+        },
+        "bio": "Shrek is my favorite movie ever.",
+        "DoB": "1998-03-13",
+        "contactEmail": "dummyafakeGmail,com"
+    },
+    {
+        "_id": {
+            "$oid": "632dd93508fdd4a48cc94d0d"
+        },
+        "name": "John Doe-Ten",
+        "gender": "Male",
+        "loc": {
+            "city": "Columbia",
+            "state": "Missouri"
+        },
+        "status": "no",
+        "smoking": true,
+        "pets": true,
+        "sameSex": true,
+        "age": {
+            "min": 18,
+            "max": 25
+        },
+        "rent": {
+            "min": 10,
+            "max": 9999
+        },
+        "noise": "often",
+        "guests": "often",
+        "sleep": "often",
+        "commonSpaces": "often",
+        "clean": "often",
+        "tags": {
+            "movies": true,
+            "listenMusic": true,
+            "college": true,
+            "partTime": true,
+            "writing": true
+        },
+        "extraBoxes": {
+            "religion": "Probably",
+            "transportation": "Rollerblades"
+        },
+        "bio": "Shrek is my favorite movie ever.",
+        "DoB": "1998-03-13",
+        "contactEmail": "dummyafakeGmail,com"
+    }
+]
