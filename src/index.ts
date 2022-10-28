@@ -3,7 +3,6 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 // Get path of current file, directory, and the parent directory
-// const __filename = url.fileURLToPath(import.meta.url);
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const __parent = path.dirname(__dirname);
