@@ -1,24 +1,19 @@
-import express, { Request, Response } from 'express';
+import express from 'express';
 import http from 'http';
-import path from 'path';
-import { fileURLToPath } from 'url';
 import { setupChat } from './chat';
-import { getUsers, setupDatabase } from './db';
+import { setupDatabase } from './db';
+import { appRouter } from './routes';
 
 // Get path of current file, directory, and the parent directory
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const __parent = path.dirname(__dirname);
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = path.dirname(__filename);
+// const __parent = path.dirname(__dirname);
 
 await setupDatabase();
 
 const app = express();
 
-app.get('/', express.static(`${__parent}/public`));
-
-app.get('/users', async (_req: Request, res: Response) => {
-    res.send(await getUsers());
-});
+app.use('/', appRouter);
 
 const server = http.createServer(app);
 
