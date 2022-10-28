@@ -14,9 +14,7 @@ await setupDatabase();
 
 const app = express();
 
-app.get('/', (_req: Request, res: Response) => {
-    res.sendFile(`${__parent}/index.html`);
-});
+app.get('/', express.static(`${__parent}/public`));
 
 app.get('/users', async (_req: Request, res: Response) => {
     res.send(await getUsers());
