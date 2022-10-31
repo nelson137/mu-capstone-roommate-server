@@ -4,6 +4,9 @@ import { connect, model, Schema } from 'mongoose';
 
 // Full schema for model definition
 const userSchema = new Schema({
+    contactEmail: String,
+    passwordHash: String,
+
     name: String,
     gender: String,
     loc: {
@@ -39,9 +42,8 @@ const userSchema = new Schema({
     },
     bio: String,
     DoB: Date,
-    contactEmail: String,
 });
-const User = model('user', userSchema);
+export const User = model('user', userSchema);
 
 export const setupDatabase = () => connect('mongodb://localhost/bunkiez');
 

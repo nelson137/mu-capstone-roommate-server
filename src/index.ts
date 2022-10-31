@@ -13,6 +13,8 @@ await setupDatabase();
 
 const app = express();
 
+app.use(express.json());
+
 app.use('/', appRouter);
 
 const server = http.createServer(app);

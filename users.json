@@ -3,7 +3,9 @@
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d04"
         },
+        "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Nathan Toepke",
+        "contactEmail": "ntoepke44@gmail.com",
         "gender": "Male",
         "loc": {
             "city": "Columbia",
@@ -37,14 +39,15 @@
             "transportation": "Car"
         },
         "bio": "Oh my gosh I just love doing X and Y and am a huge fan of Z so we have to go to W to see Z when he performs in CoMo! I'll buy popcorn if you drive!",
-        "DoB": "2000-09-12",
-        "contactEmail": "dummyafakeGmail,com"
+        "DoB": "2000-09-12"
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d05"
         },
+        "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Ryan Orf",
+        "contactEmail": "rorf@gmail.com",
         "gender": "Male",
         "loc": {
             "city": "Columbia",
@@ -78,14 +81,15 @@
             "transportation": "Rollerblades"
         },
         "bio": "Biggest Cheesehead you have ever met.",
-        "DoB": "2004-09-29",
-        "contactEmail": "dummyafakeGmail,com"
+        "DoB": "2004-09-29"
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d06"
         },
+        "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Jane Doe",
+        "contactEmail": "jane@gmail.com",
         "gender": "Female",
         "loc": {
             "city": "Columbia",
@@ -119,14 +123,15 @@
             "transportation": "Car"
         },
         "bio": "Insert generic bio here",
-        "DoB": "2000-01-01",
-        "contactEmail": "dummyafakeGmail,com"
+        "DoB": "2000-01-01"
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d07"
         },
+        "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Jane Doe-Two",
+        "contactEmail": "janejane@gmail.com",
         "gender": "Female",
         "loc": {
             "city": "Columbia",
@@ -160,14 +165,15 @@
             "transportation": "Rollerblades"
         },
         "bio": "Super cool greek lifer! Shout out to Alpha Beta Gamma, and all my sisters!",
-        "DoB": "2002-09-18",
-        "contactEmail": "dummyafakeGmail,com"
+        "DoB": "2002-09-18"
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d08"
         },
+        "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Jane Doe-Three",
+        "contactEmail": "janejanejane@gmail.com",
         "gender": "Female",
         "loc": {
             "city": "Columbia",
@@ -201,14 +207,15 @@
             "transportation": "Car"
         },
         "bio": "I rickroll my dad daily",
-        "DoB": "1999-01-01",
-        "contactEmail": "dummyafakeGmail,com"
+        "DoB": "1999-01-01"
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d09"
         },
+        "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Jane Doe-Four",
+        "contactEmail": "janejanejanejane@gmail.com",
         "gender": "Female",
         "loc": {
             "city": "Columbia",
@@ -242,14 +249,15 @@
             "transportation": "Rollerblades"
         },
         "bio": "Shrek is my favorite movie ever.",
-        "DoB": "1998-03-13",
-        "contactEmail": "dummyafakeGmail,com"
+        "DoB": "1998-03-13"
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d10"
         },
+        "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe",
+        "contactEmail": "John@gmail.com",
         "gender": "Male",
         "loc": {
             "city": "Columbia",
@@ -283,14 +291,15 @@
             "transportation": "Car"
         },
         "bio": "Insert generic bio here",
-        "DoB": "2000-01-01",
-        "contactEmail": "dummyafakeGmail,com"
+        "DoB": "2000-01-01"
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d11"
         },
+        "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe-Two",
+        "contactEmail": "JohnII@gmail.com",
         "gender": "Male",
         "loc": {
             "city": "Columbia",
@@ -324,14 +333,15 @@
             "transportation": "Rollerblades"
         },
         "bio": "Super cool greek lifer! Shout out to Alpha Beta Gamma, and all my sisters!",
-        "DoB": "2002-09-18",
-        "contactEmail": "dummyafakeGmail,com"
+        "DoB": "2002-09-18"
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d12"
         },
+        "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe-Three",
+        "contactEmail": "JohnIII@gmail.com",
         "gender": "Male",
         "loc": {
             "city": "Columbia",
@@ -365,14 +375,15 @@
             "transportation": "Car"
         },
         "bio": "I rickroll my dad daily",
-        "DoB": "1999-01-01",
-        "contactEmail": "dummyafakeGmail,com"
+        "DoB": "1999-01-01"
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d13"
         },
+        "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe-Four",
+        "contactEmail": "JohnIV@gmail.com",
         "gender": "Male",
         "loc": {
             "city": "Columbia",
@@ -406,14 +417,15 @@
             "transportation": "Rollerblades"
         },
         "bio": "Shrek is my favorite movie ever.",
-        "DoB": "1998-03-13",
-        "contactEmail": "dummyafakeGmail,com"
+        "DoB": "1998-03-13"
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d14"
         },
+        "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Other Doe",
+        "contactEmail": "DOE_2@gmail.com",
         "gender": "Other",
         "loc": {
             "city": "Columbia",
@@ -447,14 +459,15 @@
             "transportation": "Car"
         },
         "bio": "Insert generic bio here",
-        "DoB": "2000-01-01",
-        "contactEmail": "dummyafakeGmail,com"
+        "DoB": "2000-01-01"
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d15"
         },
+        "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Other Doe-Two",
+        "contactEmail": "DOE_2_FINAL@gmail.com",
         "gender": "Other",
         "loc": {
             "city": "Columbia",
@@ -488,14 +501,15 @@
             "transportation": "Rollerblades"
         },
         "bio": "Super cool greek lifer! Shout out to Alpha Beta Gamma, and all my sisters!",
-        "DoB": "2002-09-18",
-        "contactEmail": "dummyafakeGmail,com"
+        "DoB": "2002-09-18"
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d16"
         },
+        "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Other Doe-Three",
+        "contactEmail": "DOE_2_FINAL_FINAL@gmail.com",
         "gender": "Other",
         "loc": {
             "city": "Columbia",
@@ -529,14 +543,15 @@
             "transportation": "Car"
         },
         "bio": "I rickroll my dad daily",
-        "DoB": "1999-01-01",
-        "contactEmail": "dummyafakeGmail,com"
+        "DoB": "1999-01-01"
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d17"
         },
+        "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Other Doe-Four",
+        "contactEmail": "TheLastDoe@gmail.com",
         "gender": "Other",
         "loc": {
             "city": "Columbia",
@@ -570,14 +585,15 @@
             "transportation": "Rollerblades"
         },
         "bio": "Shrek is my favorite movie ever.",
-        "DoB": "1998-03-13",
-        "contactEmail": "dummyafakeGmail,com"
+        "DoB": "1998-03-13"
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d18"
         },
+        "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe-Five",
+        "contactEmail": "v@gmail.com",
         "gender": "Male",
         "loc": {
             "city": "Columbia",
@@ -613,14 +629,15 @@
             "transportation": "Uber"
         },
         "bio": "Insert generic bio here",
-        "DoB": "2000-01-01",
-        "contactEmail": "dummyafakeGmail,com"
+        "DoB": "2000-01-01"
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d19"
         },
+        "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe-Six",
+        "contactEmail": "vi@gmail.com",
         "gender": "Male",
         "loc": {
             "city": "Columbia",
@@ -655,14 +672,15 @@
             "transportation": "Rollerblades"
         },
         "bio": "Super cool greek lifer! Shout out to Alpha Beta Gamma, and all my brothers!",
-        "DoB": "2002-09-18",
-        "contactEmail": "dummyafakeGmail,com"
+        "DoB": "2002-09-18"
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d0a"
         },
+        "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe-Seven",
+        "contactEmail": "vii@gmail.com",
         "gender": "Male",
         "loc": {
             "city": "Columbia",
@@ -696,14 +714,15 @@
             "transportation": "Car"
         },
         "bio": "I rickroll my dad daily",
-        "DoB": "1999-01-01",
-        "contactEmail": "dummyafakeGmail,com"
+        "DoB": "1999-01-01"
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d0b"
         },
+        "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe-Eight",
+        "contactEmail": "viii@gmail.com",
         "gender": "Male",
         "loc": {
             "city": "Columbia",
@@ -738,14 +757,15 @@
             "transportation": "Rollerblades"
         },
         "bio": "Shrek is my favorite movie ever.",
-        "DoB": "1998-03-13",
-        "contactEmail": "dummyafakeGmail,com"
+        "DoB": "1998-03-13"
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d0c"
         },
+        "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe-Nine",
+        "contactEmail": "ix@gmail.com",
         "gender": "Male",
         "loc": {
             "city": "Columbia",
@@ -780,14 +800,15 @@
             "transportation": "Rollerblades"
         },
         "bio": "Shrek is my favorite movie ever.",
-        "DoB": "1998-03-13",
-        "contactEmail": "dummyafakeGmail,com"
+        "DoB": "1998-03-13"
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d0d"
         },
+        "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe-Ten",
+        "contactEmail": "x@gmail.com",
         "gender": "Male",
         "loc": {
             "city": "Columbia",
@@ -822,7 +843,6 @@
             "transportation": "Rollerblades"
         },
         "bio": "Shrek is my favorite movie ever.",
-        "DoB": "1998-03-13",
-        "contactEmail": "dummyafakeGmail,com"
+        "DoB": "1998-03-13"
     }
 ]
