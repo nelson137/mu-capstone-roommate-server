@@ -14,6 +14,11 @@ const __parent = path.dirname(__dirname);
 
 const SALT_ROUNDS = 10;
 
+const ERR_LOGIN_INCORRECT = 'Username or password incorrect';
+
+const passwordValidator = (value: any) =>
+    typeof value === 'string' && Buffer.byteLength(value) <= 72;
+
 export const appRouter = Router();
 
 appRouter.get('/', express.static(`${__parent}/public`));
@@ -22,9 +27,7 @@ appRouter.post(
     '/register',
     body('name').notEmpty(),
     body('contactEmail').isEmail().normalizeEmail(),
-    body('passwordPlaintext').custom(
-        value => typeof value === 'string' && Buffer.byteLength(value) <= 72,
-    ),
+    body('passwordPlaintext').custom(passwordValidator),
     guardValidation,
     async (req: Request, res: Response) => {
         const newUserDoc = new User({
@@ -38,13 +41,30 @@ appRouter.post(
     },
 );
 
-appRouter.get('/auth', (_req: Request, res: Response) => {
-    let token = jwt.sign({ data: 'demo-payload' }, 'demo-secret', { expiresIn: 20 });
-    res.status(200).json({
-        token,
-        expiresIn: 20,
-    });
-});
+appRouter.get(
+    '/auth',
+    body('contactEmail').isEmail().normalizeEmail(),
+    body('passwordPlaintext').custom(passwordValidator),
+    guardValidation,
+    async (req: Request, res: Response) => {
+        const errLogin = () => res.status(401).json({ errors: [{ msg: ERR_LOGIN_INCORRECT }] });
+
+        const user = await User.findOne({ contactEmail: req.body.contactEmail })
+            .select('passwordHash')
+            .exec();
+        if (!user) return errLogin();
+
+        const passwordMatches = await bcrypt.compare(
+            req.body.passwordPlaintext,
+            user.passwordHash!,
+        );
+        if (!passwordMatches) return errLogin();
+
+        const token = jwt.sign({ userId: user.id as string }, 'demo-secret', { expiresIn: 20 });
+        console.log('[/auth] authorize user', user.id);
+        return res.status(200).json({ token, expiresIn: 20 });
+    },
+);
 
 appRouter.get('/users', authorize, async (_req: Request, res: Response) => {
     res.send(await getUsers());

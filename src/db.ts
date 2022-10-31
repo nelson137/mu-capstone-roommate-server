@@ -4,8 +4,8 @@ import { connect, model, Schema } from 'mongoose';
 
 // Full schema for model definition
 const userSchema = new Schema({
-    contactEmail: String,
-    passwordHash: String,
+    contactEmail: { type: String, required: true },
+    passwordHash: { type: String, required: true },
 
     name: String,
     gender: String,
