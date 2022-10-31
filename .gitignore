@@ -1,4 +1,6 @@
 node_modules
+environment/.env*
+!environment/.env.example
 dist
 dist-ssr
 *.local

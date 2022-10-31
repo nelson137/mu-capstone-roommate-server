@@ -1,3 +1,4 @@
+import dotenv from 'dotenv';
 import express from 'express';
 import http from 'http';
 import { setupChat } from './chat';
@@ -8,6 +9,8 @@ import { appRouter } from './routes';
 // const __filename = fileURLToPath(import.meta.url);
 // const __dirname = path.dirname(__filename);
 // const __parent = path.dirname(__dirname);
+
+dotenv.config({ path: path.resolve(__parent, 'environment/.env') });
 
 await setupDatabase();
 
@@ -21,7 +24,7 @@ const server = http.createServer(app);
 
 setupChat(server);
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 server.listen(port, () => {
     console.log(`Listening on http://localhost:${port}`);
 });
