@@ -21,7 +21,7 @@ export const authorize = (req: Request, res: Response, next: NextFunction) => {
         const token = authPieces[1].trim();
         // console.log(`[authorize] token:${token}`);
 
-        const payload = jwt.verify(token, 'demo-secret');
+        const payload = jwt.verify(token, process.env.JWT_SECRET!);
         // console.log(`[authorize] payload:${JSON.stringify(payload)}`);
 
         next();

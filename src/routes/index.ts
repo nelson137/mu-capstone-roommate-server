@@ -60,7 +60,8 @@ appRouter.get(
         );
         if (!passwordMatches) return errLogin();
 
-        const token = jwt.sign({ userId: user.id as string }, 'demo-secret', { expiresIn: 20 });
+        const payload = { userId: user.id as string };
+        const token = jwt.sign(payload, process.env.JWT_SECRET!, { expiresIn: 20 });
         console.log('[/auth] authorize user', user.id);
         return res.status(200).json({ token, expiresIn: 20 });
     },
