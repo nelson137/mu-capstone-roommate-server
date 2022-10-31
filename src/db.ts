@@ -5,7 +5,7 @@ import { connect, model, Schema } from 'mongoose';
 // Full schema for model definition
 const userSchema = new Schema({
     // adjust with all json fields
-    contactEmail: { type: String, required: true },
+    email: { type: String, required: true },
     passwordHash: { type: String, required: true },
 
     _id: {

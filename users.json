@@ -5,7 +5,7 @@
         },
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Nathan Toepke",
-        "contactEmail": "ntoepke44@gmail.com",
+        "email": "ntoepke44@gmail.com",
         "gender": "Male",
         "loc": {
             "city": "Columbia",
@@ -75,7 +75,7 @@
         },
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Ryan Orf",
-        "contactEmail": "rorf@gmail.com",
+        "email": "rorf@gmail.com",
         "gender": "Male",
         "loc": {
             "city": "Columbia",
@@ -145,7 +145,7 @@
         },
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Jane Doe",
-        "contactEmail": "jane@gmail.com",
+        "email": "jane@gmail.com",
         "gender": "Female",
         "loc": {
             "city": "Columbia",
@@ -215,7 +215,7 @@
         },
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Jane Doe-Two",
-        "contactEmail": "janejane@gmail.com",
+        "email": "janejane@gmail.com",
         "gender": "Female",
         "loc": {
             "city": "Columbia",
@@ -285,7 +285,7 @@
         },
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Jane Doe-Three",
-        "contactEmail": "janejanejane@gmail.com",
+        "email": "janejanejane@gmail.com",
         "gender": "Female",
         "loc": {
             "city": "Columbia",
@@ -355,7 +355,7 @@
         },
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Jane Doe-Four",
-        "contactEmail": "janejanejanejane@gmail.com",
+        "email": "janejanejanejane@gmail.com",
         "gender": "Female",
         "loc": {
             "city": "Columbia",
@@ -425,7 +425,7 @@
         },
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe",
-        "contactEmail": "John@gmail.com",
+        "email": "John@gmail.com",
         "gender": "Male",
         "loc": {
             "city": "Columbia",
@@ -495,7 +495,7 @@
         },
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe-Two",
-        "contactEmail": "JohnII@gmail.com",
+        "email": "JohnII@gmail.com",
         "gender": "Male",
         "loc": {
             "city": "Columbia",
@@ -565,7 +565,7 @@
         },
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe-Three",
-        "contactEmail": "JohnIII@gmail.com",
+        "email": "JohnIII@gmail.com",
         "gender": "Male",
         "loc": {
             "city": "Columbia",
@@ -635,7 +635,7 @@
         },
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe-Four",
-        "contactEmail": "JohnIV@gmail.com",
+        "email": "JohnIV@gmail.com",
         "gender": "Male",
         "loc": {
             "city": "Columbia",
@@ -705,7 +705,7 @@
         },
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Other Doe",
-        "contactEmail": "DOE_2@gmail.com",
+        "email": "DOE_2@gmail.com",
         "gender": "Other",
         "loc": {
             "city": "Columbia",
@@ -775,7 +775,7 @@
         },
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Other Doe-Two",
-        "contactEmail": "DOE_2_FINAL@gmail.com",
+        "email": "DOE_2_FINAL@gmail.com",
         "gender": "Other",
         "loc": {
             "city": "Columbia",
@@ -845,7 +845,7 @@
         },
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Other Doe-Three",
-        "contactEmail": "DOE_2_FINAL_FINAL@gmail.com",
+        "email": "DOE_2_FINAL_FINAL@gmail.com",
         "gender": "Other",
         "loc": {
             "city": "Columbia",
@@ -915,7 +915,7 @@
         },
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Other Doe-Four",
-        "contactEmail": "TheLastDoe@gmail.com",
+        "email": "TheLastDoe@gmail.com",
         "gender": "Other",
         "loc": {
             "city": "Columbia",
@@ -985,7 +985,7 @@
         },
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe-Five",
-        "contactEmail": "v@gmail.com",
+        "email": "v@gmail.com",
         "gender": "Male",
         "loc": {
             "city": "Columbia",
@@ -1055,7 +1055,7 @@
         },
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe-Six",
-        "contactEmail": "vi@gmail.com",
+        "email": "vi@gmail.com",
         "gender": "Male",
         "loc": {
             "city": "Columbia",
@@ -1125,7 +1125,7 @@
         },
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe-Seven",
-        "contactEmail": "vii@gmail.com",
+        "email": "vii@gmail.com",
         "gender": "Male",
         "loc": {
             "city": "Columbia",
@@ -1195,7 +1195,7 @@
         },
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe-Eight",
-        "contactEmail": "viii@gmail.com",
+        "email": "viii@gmail.com",
         "gender": "Male",
         "loc": {
             "city": "Columbia",
@@ -1265,7 +1265,7 @@
         },
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe-Nine",
-        "contactEmail": "ix@gmail.com",
+        "email": "ix@gmail.com",
         "gender": "Male",
         "loc": {
             "city": "Columbia",
@@ -1335,7 +1335,7 @@
         },
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe-Ten",
-        "contactEmail": "x@gmail.com",
+        "email": "x@gmail.com",
         "gender": "Male",
         "loc": {
             "city": "Columbia",

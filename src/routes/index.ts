@@ -28,14 +28,15 @@ appRouter.get('/', express.static(`${root}/public`));
 appRouter.post(
     '/register',
     body('name').notEmpty(),
-    body('contactEmail').isEmail().normalizeEmail(),
+    body('email').isEmail().normalizeEmail(),
     body('passwordPlaintext').custom(passwordValidator),
     guardValidation,
     async (req: Request, res: Response) => {
+        const { name, email, passwordPlaintext } = req.body;
         const newUserDoc = new User({
-            name: req.body.name,
-            contactEmail: req.body.contactEmail,
-            passwordHash: await bcrypt.hash(req.body.passwordPlaintext, SALT_ROUNDS),
+            name,
+            email,
+            passwordHash: await bcrypt.hash(passwordPlaintext, SALT_ROUNDS),
         });
         const newUser = await newUserDoc.save();
         console.log('[/register] created user', newUser.id);
@@ -45,21 +46,18 @@ appRouter.post(
 
 appRouter.get(
     '/auth',
-    body('contactEmail').isEmail().normalizeEmail(),
+    body('email').isEmail().normalizeEmail(),
     body('passwordPlaintext').custom(passwordValidator),
     guardValidation,
     async (req: Request, res: Response) => {
         const errLogin = () => res.status(401).json({ errors: [{ msg: ERR_LOGIN_INCORRECT }] });
 
-        const user = await User.findOne({ contactEmail: req.body.contactEmail })
-            .select('passwordHash')
-            .exec();
+        const { email, passwordPlaintext } = req.body;
+
+        const user = await User.findOne({ email }).select('passwordHash').exec();
         if (!user) return errLogin();
 
-        const passwordMatches = await bcrypt.compare(
-            req.body.passwordPlaintext,
-            user.passwordHash!,
-        );
+        const passwordMatches = await bcrypt.compare(passwordPlaintext, user.passwordHash!);
         if (!passwordMatches) return errLogin();
 
         const payload = { userId: user.id as string };
