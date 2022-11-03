@@ -21,7 +21,9 @@ const passwordValidator = (value: any) =>
 
 export const appRouter = Router();
 
-appRouter.get('/', express.static(`${__parent}/public`));
+//appRouter.get('/', express.static(`${__parent}/public`));
+const root = path.resolve(__parent, '..');
+appRouter.get('/', express.static(`${root}/public`));
 
 appRouter.post(
     '/register',
@@ -69,4 +71,8 @@ appRouter.get(
 
 appRouter.get('/users', authorize, async (_req: Request, res: Response) => {
     res.send(await getUsers());
+});
+
+appRouter.get('/matches', async (_req: Request, res: Response) => {
+    res.send(await getUsers()); // continue here with matching algorithm
 });
