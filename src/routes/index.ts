@@ -7,6 +7,13 @@ import { fileURLToPath } from 'url';
 import { getUsers, User } from '../db';
 import { authorize, guardValidation } from '../middlewares';
 
+type BasicUser = {
+    id: string;
+    name: string;
+    age: number;
+    percentage: number;
+};
+
 // Get path of current file, directory, and the parent directory
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -72,6 +79,161 @@ appRouter.get('/users', authorize, async (_req: Request, res: Response) => {
     res.send(await getUsers());
 });
 
+// add "authorize" as an argument before "async" in the future
 appRouter.get('/matches', async (_req: Request, res: Response) => {
-    res.send(await getUsers()); // continue here with matching algorithm
+    var user = await User.findById('632dd93508fdd4a48cc94d18'); // replace with current user's ID, just a placeholder
+    var allUsers = await getUsers();
+    var potentialMatches: BasicUser[] = [];
+    allUsers.forEach(getPercentage);
+    function getPercentage(person: any, index: number) {
+        var matchPercentage = 0;
+        if (user && user.loc && user.rent && user.age && user.tags && user.DoB) {
+            var userID = user._id.toString();
+            var personID = person._id.toString();
+            const todaysDate = new Date();
+            var userAge = todaysDate.getFullYear() - user.DoB.getFullYear();
+            var personAge = todaysDate.getFullYear() - person.DoB.getFullYear();
+            if (
+                todaysDate.getMonth() - user.DoB.getMonth() < 0 ||
+                (todaysDate.getMonth() - user.DoB.getMonth() == 0 &&
+                    todaysDate.getDate() - user.DoB.getDate() < 0)
+            ) {
+                userAge--;
+            }
+            if (
+                todaysDate.getMonth() - person.DoB.getMonth() < 0 ||
+                (todaysDate.getMonth() - person.DoB.getMonth() == 0 &&
+                    todaysDate.getDate() - person.DoB.getDate() < 0)
+            ) {
+                personAge--;
+            }
+            if (
+                userID != personID &&
+                user.status != person.status &&
+                user.loc.city == person.loc.city &&
+                user.loc.state == person.loc.state &&
+                user.smoking == person.smoking &&
+                user.pets == person.pets &&
+                (user.sameSex == false || user.gender == person.gender) &&
+                user.rent.min <= person.rent.max &&
+                user.rent.max >= person.rent.min &&
+                userAge >= person.age.min &&
+                userAge <= person.age.max &&
+                user.age.min <= personAge &&
+                user.age.max >= personAge
+            ) {
+                matchPercentage += 50;
+                const userMajorInfluences = [
+                    user.noise,
+                    user.guests,
+                    user.sleep,
+                    user.commonSpaces,
+                    user.clean,
+                ];
+                const personMajorInfluences = [
+                    person.noise,
+                    person.guests,
+                    person.sleep,
+                    person.commonSpaces,
+                    person.clean,
+                ];
+                const userMinorInfluences = [
+                    user.tags.videoGames,
+                    user.tags.movies,
+                    user.tags.tvShows,
+                    user.tags.cooking,
+                    user.tags.drinking,
+                    user.tags.reading,
+                    user.tags.writing,
+                    user.tags.photography,
+                    user.tags.art,
+                    user.tags.theatre,
+                    user.tags.performingMusic,
+                    user.tags.listeningToMusic,
+                    user.tags.college,
+                    user.tags.fullTimeJob,
+                    user.tags.partTimeJob,
+                    user.tags.studying,
+                    user.tags.greekLife,
+                    user.tags.partying,
+                    user.tags.gym,
+                    user.tags.watchingSports,
+                    user.tags.playingSports,
+                    user.tags.shopping,
+                    user.tags.fashion,
+                    user.tags.indoors,
+                    user.tags.outdoors,
+                    user.tags.plants,
+                    user.tags.warmHouse,
+                    user.tags.coolHouse,
+                    user.tags.roadTrips,
+                    user.tags.children,
+                ];
+                const personMinorInfluences = [
+                    person.tags.videoGames,
+                    person.tags.movies,
+                    person.tags.tvShows,
+                    person.tags.cooking,
+                    person.tags.drinking,
+                    person.tags.reading,
+                    person.tags.writing,
+                    person.tags.photography,
+                    person.tags.art,
+                    person.tags.theatre,
+                    person.tags.performingMusic,
+                    person.tags.listeningToMusic,
+                    person.tags.college,
+                    person.tags.fullTimeJob,
+                    person.tags.partTimeJob,
+                    person.tags.studying,
+                    person.tags.greekLife,
+                    person.tags.partying,
+                    person.tags.gym,
+                    person.tags.watchingSports,
+                    person.tags.playingSports,
+                    person.tags.shopping,
+                    person.tags.fashion,
+                    person.tags.indoors,
+                    person.tags.outdoors,
+                    person.tags.plants,
+                    person.tags.warmHouse,
+                    person.tags.coolHouse,
+                    person.tags.roadTrips,
+                    person.tags.children,
+                ];
+                for (let i = 0; i < userMajorInfluences.length; i++) {
+                    if (userMajorInfluences[i] == personMajorInfluences[i]) {
+                        matchPercentage += 8;
+                    } else if (
+                        userMajorInfluences[i] == 'sometimes' ||
+                        personMajorInfluences[i] == 'sometimes'
+                    ) {
+                        matchPercentage += 4;
+                    }
+                }
+                for (let j = 0; j < userMinorInfluences.length; j++) {
+                    if (userMinorInfluences[j] && personMinorInfluences[j]) {
+                        matchPercentage += 2;
+                    }
+                }
+                const matchToAdd: BasicUser = {
+                    id: personID,
+                    name: person.name,
+                    age: personAge,
+                    percentage: matchPercentage,
+                };
+                potentialMatches.push(matchToAdd);
+            }
+        }
+    }
+    for (let a = 0; a < potentialMatches.length; a++) {
+        for (let b = a + 1; b < potentialMatches.length; b++) {
+            if (potentialMatches[b].percentage > potentialMatches[a].percentage) {
+                let tempUser = potentialMatches[a];
+                potentialMatches[a] = potentialMatches[b];
+                potentialMatches[b] = tempUser;
+            }
+        }
+    }
+    res.send(potentialMatches);
 });
