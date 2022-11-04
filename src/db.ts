@@ -1,4 +1,4 @@
-import mongoose, { connect, model, ObjectId, Schema } from 'mongoose';
+import { connect, model, Schema } from 'mongoose';
 
 // TODO: Would the [connect-mongo package](https://www.npmjs.com/package/connect-mongo) be useful?
 
@@ -10,7 +10,6 @@ const userSchema = new Schema(
 
         /* unsure if we need all of these to be required, or if that will cause an issue. i changed them in the hopes
     that it would solve an issue on index.ts, but alas it did not. sorry again, hopefully this is fine - Ryan*/
-        _id: { type: mongoose.Types.ObjectId, required: true },
         name: { type: String, required: true },
         gender: { type: String, required: true },
         loc: {
@@ -87,7 +86,6 @@ export const setupDatabase = () =>
 
 // Projection defines which fields from the doc the query will return
 const userProjection = {
-    _id: 1,
     name: 1,
     gender: 1,
     loc: 1,
