@@ -45,7 +45,7 @@ appRouter.post(
     },
 );
 
-appRouter.get(
+appRouter.post(
     '/auth',
     body('email').isEmail().normalizeEmail(),
     body('passwordPlaintext').custom(passwordValidator),
