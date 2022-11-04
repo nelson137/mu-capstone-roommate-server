@@ -1,4 +1,13 @@
 {
+    "[markdown]": {
+        "editor.defaultFormatter": null,
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        }
+    },
     "typescript.tsdk": "./node_modules/typescript/lib",
     "editor.rulers": [100],
     "editor.defaultFormatter": "esbenp.prettier-vscode",
