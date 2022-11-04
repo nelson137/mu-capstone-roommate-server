@@ -40,7 +40,8 @@ appRouter.post(
         });
         const newUser = await newUserDoc.save();
         console.log('[/register] created user', newUser.id);
-        res.status(201).end();
+
+        res.status(201).json({ userId: newUser.id });
     },
 );
 
