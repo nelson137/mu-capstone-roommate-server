@@ -1,6 +1,7 @@
 node_modules
 environment/.env*
 !environment/.env.example
+coverage
 dist
 dist-ssr
 *.local
