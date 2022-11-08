@@ -26,6 +26,9 @@ const ERR_LOGIN_INCORRECT = 'Username or password incorrect';
 const passwordValidator = (value: any) =>
     typeof value === 'string' && Buffer.byteLength(value) <= 72;
 
+const generateToken = (userId: string) =>
+    jwt.sign({ userId }, process.env.JWT_SECRET!, { expiresIn: 20 });
+
 export const appRouter = Router();
 
 //appRouter.get('/', express.static(`${__parent}/public`));
@@ -46,9 +49,11 @@ appRouter.post(
             passwordHash: await bcrypt.hash(passwordPlaintext, SALT_ROUNDS),
         });
         const newUser = await newUserDoc.save();
-        console.log('[/register] created user', newUser.id);
 
-        res.status(201).json({ userId: newUser.id });
+        const token = generateToken(newUser.id);
+
+        console.log('[/register] created user', newUser.id);
+        res.status(201).json({ token });
     },
 );
 
@@ -68,10 +73,10 @@ appRouter.post(
         const passwordMatches = await bcrypt.compare(passwordPlaintext, user.passwordHash!);
         if (!passwordMatches) return errLogin();
 
-        const payload = { userId: user.id as string };
-        const token = jwt.sign(payload, process.env.JWT_SECRET!, { expiresIn: 20 });
+        const token = generateToken(user.id as string);
+
         console.log('[/auth] authorize user', user.id);
-        return res.status(200).json({ token, expiresIn: 20 });
+        return res.status(200).json({ token });
     },
 );
 
