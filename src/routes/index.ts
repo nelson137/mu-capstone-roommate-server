@@ -94,18 +94,31 @@ appRouter.get('/matches', async (_req: Request, res: Response) => {
         var matchPercentage = 0;
         if (
             user &&
+            person &&
             user.loc &&
+            person.loc &&
             user.loc.city &&
+            person.loc.city &&
             user.loc.state &&
+            person.loc.state &&
             user.sameSex != null &&
+            person.sameSex != null &&
             user.rent &&
+            person.rent &&
             user.rent.min != null &&
+            person.rent.min != null &&
             user.rent.max &&
+            person.rent.max &&
             user.age &&
+            person.age &&
             user.age.min &&
+            person.age.min &&
             user.age.max &&
+            person.age.max &&
             user.tags &&
-            user.DoB
+            person.tags &&
+            user.DoB &&
+            person.DoB
         ) {
             var userID = user._id.toString();
             var personID = person._id.toString();
