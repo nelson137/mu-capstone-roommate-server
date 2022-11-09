@@ -92,7 +92,21 @@ appRouter.get('/matches', async (_req: Request, res: Response) => {
     allUsers.forEach(getPercentage);
     function getPercentage(person: any, index: number) {
         var matchPercentage = 0;
-        if (user && user.loc && user.rent && user.age && user.tags && user.DoB) {
+        if (
+            user &&
+            user.loc &&
+            user.loc.city &&
+            user.loc.state &&
+            user.sameSex != null &&
+            user.rent &&
+            user.rent.min != null &&
+            user.rent.max &&
+            user.age &&
+            user.age.min &&
+            user.age.max &&
+            user.tags &&
+            user.DoB
+        ) {
             var userID = user._id.toString();
             var personID = person._id.toString();
             const todaysDate = new Date();
