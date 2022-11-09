@@ -101,6 +101,10 @@ appRouter.get('/matches', async (_req: Request, res: Response) => {
             person.loc.city &&
             user.loc.state &&
             person.loc.state &&
+            user.smoking != null &&
+            person.smoking != null &&
+            user.pets != null &&
+            person.pets != null &&
             user.sameSex != null &&
             person.sameSex != null &&
             user.rent &&
@@ -115,6 +119,16 @@ appRouter.get('/matches', async (_req: Request, res: Response) => {
             person.age.min &&
             user.age.max &&
             person.age.max &&
+            user.noise &&
+            person.noise &&
+            user.guests &&
+            person.guests &&
+            user.sleep &&
+            person.sleep &&
+            user.commonSpaces &&
+            person.commonSpaces &&
+            user.clean &&
+            person.clean &&
             user.tags &&
             person.tags &&
             user.DoB &&

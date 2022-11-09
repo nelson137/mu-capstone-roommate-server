@@ -15,8 +15,8 @@ const userSchema = new Schema(
             state: String,
         },
         status: String,
-        smoking: String,
-        pets: String,
+        smoking: Boolean,
+        pets: Boolean,
         sameSex: Boolean,
         age: {
             min: Number,
