@@ -37,16 +37,18 @@ appRouter.get('/', express.static(`${root}/public`));
 
 appRouter.post(
     '/register',
-    body('name').notEmpty(),
     body('email').isEmail().normalizeEmail(),
     body('passwordPlaintext').custom(passwordValidator),
+    body('name').notEmpty(),
+    body('dateOfBirth').isDate(),
     guardValidation,
     async (req: Request, res: Response) => {
-        const { name, email, passwordPlaintext } = req.body;
+        const { email, passwordPlaintext, name, dateOfBirth } = req.body;
         const newUserDoc = new User({
-            name,
             email,
             passwordHash: await bcrypt.hash(passwordPlaintext, SALT_ROUNDS),
+            name,
+            dateOfBirth,
         });
         const newUser = await newUserDoc.save();
 
