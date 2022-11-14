@@ -76,11 +76,7 @@ const userSchema = new Schema(
 );
 export const User = model('user', userSchema);
 
-// export const setupDatabase = () => connect('mongodb://localhost/bunkiez');
-export const setupDatabase = () =>
-    connect('mongodb+srv://GenericUser:Bunkiez@bunkiesv1.jzrjtev.mongodb.net/BunkiesV1', {
-        dbName: 'Generic_Bunkies',
-    });
+export const setupDatabase = () => connect(process.env.DATABASE_URL!);
 
 // Projection defines which fields from the doc the query will return
 const userProjection = {
