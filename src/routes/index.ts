@@ -92,162 +92,121 @@ appRouter.get('/matches', async (_req: Request, res: Response) => {
     var allUsers = await getUsers();
     var potentialMatches: BasicUser[] = [];
     allUsers.forEach(getPercentage);
-    function getPercentage(person: any, index: number) {
+    function getPercentage(person: typeof user, index: number) {
         var matchPercentage = 0;
-        if (
-            user &&
-            person &&
-            user.loc &&
-            person.loc &&
-            user.loc.city &&
-            person.loc.city &&
-            user.loc.state &&
-            person.loc.state &&
-            user.smoking != null &&
-            person.smoking != null &&
-            user.pets != null &&
-            person.pets != null &&
-            user.sameSex != null &&
-            person.sameSex != null &&
-            user.rent &&
-            person.rent &&
-            user.rent.min != null &&
-            person.rent.min != null &&
-            user.rent.max &&
-            person.rent.max &&
-            user.age &&
-            person.age &&
-            user.age.min &&
-            person.age.min &&
-            user.age.max &&
-            person.age.max &&
-            user.noise &&
-            person.noise &&
-            user.guests &&
-            person.guests &&
-            user.sleep &&
-            person.sleep &&
-            user.commonSpaces &&
-            person.commonSpaces &&
-            user.clean &&
-            person.clean &&
-            user.tags &&
-            person.tags &&
-            user.DoB &&
-            person.DoB
-        ) {
+        if (user && person && user.profile && person.profile) {
             var userID = user._id.toString();
             var personID = person._id.toString();
             const todaysDate = new Date();
-            var userAge = todaysDate.getFullYear() - user.DoB.getFullYear();
-            var personAge = todaysDate.getFullYear() - person.DoB.getFullYear();
+            var userAge = todaysDate.getFullYear() - user.dateOfBirth.getFullYear();
+            var personAge = todaysDate.getFullYear() - person.dateOfBirth.getFullYear();
             if (
-                todaysDate.getMonth() - user.DoB.getMonth() < 0 ||
-                (todaysDate.getMonth() - user.DoB.getMonth() == 0 &&
-                    todaysDate.getDate() - user.DoB.getDate() < 0)
+                todaysDate.getMonth() - user.dateOfBirth.getMonth() < 0 ||
+                (todaysDate.getMonth() - user.dateOfBirth.getMonth() == 0 &&
+                    todaysDate.getDate() - user.dateOfBirth.getDate() < 0)
             ) {
                 userAge--;
             }
             if (
-                todaysDate.getMonth() - person.DoB.getMonth() < 0 ||
-                (todaysDate.getMonth() - person.DoB.getMonth() == 0 &&
-                    todaysDate.getDate() - person.DoB.getDate() < 0)
+                todaysDate.getMonth() - person.dateOfBirth.getMonth() < 0 ||
+                (todaysDate.getMonth() - person.dateOfBirth.getMonth() == 0 &&
+                    todaysDate.getDate() - person.dateOfBirth.getDate() < 0)
             ) {
                 personAge--;
             }
             if (
                 userID != personID &&
-                user.status != person.status &&
-                user.loc.city == person.loc.city &&
-                user.loc.state == person.loc.state &&
-                user.smoking == person.smoking &&
-                user.pets == person.pets &&
-                (user.sameSex == false || user.gender == person.gender) &&
-                user.rent.min <= person.rent.max &&
-                user.rent.max >= person.rent.min &&
-                userAge >= person.age.min &&
-                userAge <= person.age.max &&
-                user.age.min <= personAge &&
-                user.age.max >= personAge
+                user.profile.status != person.profile.status &&
+                user.profile.loc.city == person.profile.loc.city &&
+                user.profile.loc.state == person.profile.loc.state &&
+                user.profile.smoking == person.profile.smoking &&
+                user.profile.pets == person.profile.pets &&
+                (user.profile.sameSex == false || user.profile.gender == person.profile.gender) &&
+                (user.profile.rent.min ?? 0) <= person.profile.rent.max &&
+                (user.profile.rent.max ?? 0) >= person.profile.rent.min &&
+                userAge >= person.profile.age.min &&
+                userAge <= person.profile.age.max &&
+                (user.profile.age.min ?? 0) <= personAge &&
+                (user.profile.age.max ?? 0) >= personAge
             ) {
                 matchPercentage += 50;
                 const userMajorInfluences = [
-                    user.noise,
-                    user.guests,
-                    user.sleep,
-                    user.commonSpaces,
-                    user.clean,
+                    user.profile.noise,
+                    user.profile.guests,
+                    user.profile.sleep,
+                    user.profile.commonSpaces,
+                    user.profile.clean,
                 ];
                 const personMajorInfluences = [
-                    person.noise,
-                    person.guests,
-                    person.sleep,
-                    person.commonSpaces,
-                    person.clean,
+                    person.profile.noise,
+                    person.profile.guests,
+                    person.profile.sleep,
+                    person.profile.commonSpaces,
+                    person.profile.clean,
                 ];
                 const userMinorInfluences = [
-                    user.tags.videoGames,
-                    user.tags.movies,
-                    user.tags.tvShows,
-                    user.tags.cooking,
-                    user.tags.drinking,
-                    user.tags.reading,
-                    user.tags.writing,
-                    user.tags.photography,
-                    user.tags.art,
-                    user.tags.theatre,
-                    user.tags.performingMusic,
-                    user.tags.listeningToMusic,
-                    user.tags.college,
-                    user.tags.fullTimeJob,
-                    user.tags.partTimeJob,
-                    user.tags.studying,
-                    user.tags.greekLife,
-                    user.tags.partying,
-                    user.tags.gym,
-                    user.tags.watchingSports,
-                    user.tags.playingSports,
-                    user.tags.shopping,
-                    user.tags.fashion,
-                    user.tags.indoors,
-                    user.tags.outdoors,
-                    user.tags.plants,
-                    user.tags.warmHouse,
-                    user.tags.coolHouse,
-                    user.tags.roadTrips,
-                    user.tags.children,
+                    user.profile.tags.videoGames,
+                    user.profile.tags.movies,
+                    user.profile.tags.tvShows,
+                    user.profile.tags.cooking,
+                    user.profile.tags.drinking,
+                    user.profile.tags.reading,
+                    user.profile.tags.writing,
+                    user.profile.tags.photography,
+                    user.profile.tags.art,
+                    user.profile.tags.theatre,
+                    user.profile.tags.performingMusic,
+                    user.profile.tags.listeningToMusic,
+                    user.profile.tags.college,
+                    user.profile.tags.fullTimeJob,
+                    user.profile.tags.partTimeJob,
+                    user.profile.tags.studying,
+                    user.profile.tags.greekLife,
+                    user.profile.tags.partying,
+                    user.profile.tags.gym,
+                    user.profile.tags.watchingSports,
+                    user.profile.tags.playingSports,
+                    user.profile.tags.shopping,
+                    user.profile.tags.fashion,
+                    user.profile.tags.indoors,
+                    user.profile.tags.outdoors,
+                    user.profile.tags.plants,
+                    user.profile.tags.warmHouse,
+                    user.profile.tags.coolHouse,
+                    user.profile.tags.roadTrips,
+                    user.profile.tags.children,
                 ];
                 const personMinorInfluences = [
-                    person.tags.videoGames,
-                    person.tags.movies,
-                    person.tags.tvShows,
-                    person.tags.cooking,
-                    person.tags.drinking,
-                    person.tags.reading,
-                    person.tags.writing,
-                    person.tags.photography,
-                    person.tags.art,
-                    person.tags.theatre,
-                    person.tags.performingMusic,
-                    person.tags.listeningToMusic,
-                    person.tags.college,
-                    person.tags.fullTimeJob,
-                    person.tags.partTimeJob,
-                    person.tags.studying,
-                    person.tags.greekLife,
-                    person.tags.partying,
-                    person.tags.gym,
-                    person.tags.watchingSports,
-                    person.tags.playingSports,
-                    person.tags.shopping,
-                    person.tags.fashion,
-                    person.tags.indoors,
-                    person.tags.outdoors,
-                    person.tags.plants,
-                    person.tags.warmHouse,
-                    person.tags.coolHouse,
-                    person.tags.roadTrips,
-                    person.tags.children,
+                    person.profile.tags.videoGames,
+                    person.profile.tags.movies,
+                    person.profile.tags.tvShows,
+                    person.profile.tags.cooking,
+                    person.profile.tags.drinking,
+                    person.profile.tags.reading,
+                    person.profile.tags.writing,
+                    person.profile.tags.photography,
+                    person.profile.tags.art,
+                    person.profile.tags.theatre,
+                    person.profile.tags.performingMusic,
+                    person.profile.tags.listeningToMusic,
+                    person.profile.tags.college,
+                    person.profile.tags.fullTimeJob,
+                    person.profile.tags.partTimeJob,
+                    person.profile.tags.studying,
+                    person.profile.tags.greekLife,
+                    person.profile.tags.partying,
+                    person.profile.tags.gym,
+                    person.profile.tags.watchingSports,
+                    person.profile.tags.playingSports,
+                    person.profile.tags.shopping,
+                    person.profile.tags.fashion,
+                    person.profile.tags.indoors,
+                    person.profile.tags.outdoors,
+                    person.profile.tags.plants,
+                    person.profile.tags.warmHouse,
+                    person.profile.tags.coolHouse,
+                    person.profile.tags.roadTrips,
+                    person.profile.tags.children,
                 ];
                 for (let i = 0; i < userMajorInfluences.length; i++) {
                     if (userMajorInfluences[i] == personMajorInfluences[i]) {
@@ -266,7 +225,7 @@ appRouter.get('/matches', async (_req: Request, res: Response) => {
                 }
                 const matchToAdd: BasicUser = {
                     id: personID,
-                    name: person.name,
+                    name: person.name!,
                     age: personAge,
                     percentage: matchPercentage,
                 };

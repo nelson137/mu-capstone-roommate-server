@@ -3,1400 +3,1440 @@
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d04"
         },
+        "email": "ntoepke44@gmail.com",
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Nathan Toepke",
-        "email": "ntoepke44@gmail.com",
-        "gender": "Male",
-        "loc": {
-            "city": "Columbia",
-            "state": "Missouri"
-        },
-        "status": "no",
-        "smoking": true,
-        "pets": true,
-        "sameSex": false,
-        "age": {
-            "min": 18,
-            "max": 22
-        },
-        "rent": {
-            "min": 200,
-            "max": 10000
-        },
-        "noise": "rarely",
-        "guests": "often",
-        "sleep": "sometimes",
-        "commonSpaces": "often",
-        "clean": "rarely",
-        "tags": {
-            "videoGames": true,
-            "movies": false,
-            "tvShows": false,
-            "cooking": false,
-            "drinking": false,
-            "reading": false,
-            "writing": true,
-            "photography": true,
-            "art": false,
-            "theatre": false,
-            "performingMusic": false,
-            "listeningToMusic": false,
-            "college": false,
-            "fullTimeJob": false,
-            "partTimeJob": false,
-            "studying": false,
-            "greekLife": false,
-            "partying": false,
-            "gym": false,
-            "watchingSports": false,
-            "playingSports": false,
-            "shopping": false,
-            "fashion": false,
-            "indoors": false,
-            "outdoors": false,
-            "plants": true,
-            "warmHouse": false,
-            "coolHouse": false,
-            "roadTrips": false,
-            "children": false
-        },
-        "extraBoxes": {
-            "religion": "Atheist",
-            "sexualOrientation": "Straight",
-            "politicalAlignment": "",
-            "transportation": "Car"
-        },
-        "bio": "Oh my gosh I just love doing X and Y and am a huge fan of Z so we have to go to W to see Z when he performs in CoMo! I'll buy popcorn if you drive!",
-        "DoB": "2000-09-12"
+        "dateOfBirth": "2000-09-12",
+        "profile": {
+            "gender": "Male",
+            "loc": {
+                "city": "Columbia",
+                "state": "Missouri"
+            },
+            "status": "no",
+            "smoking": true,
+            "pets": true,
+            "sameSex": false,
+            "age": {
+                "min": 18,
+                "max": 22
+            },
+            "rent": {
+                "min": 200,
+                "max": 10000
+            },
+            "noise": "rarely",
+            "guests": "often",
+            "sleep": "sometimes",
+            "commonSpaces": "often",
+            "clean": "rarely",
+            "tags": {
+                "videoGames": true,
+                "movies": false,
+                "tvShows": false,
+                "cooking": false,
+                "drinking": false,
+                "reading": false,
+                "writing": true,
+                "photography": true,
+                "art": false,
+                "theatre": false,
+                "performingMusic": false,
+                "listeningToMusic": false,
+                "college": false,
+                "fullTimeJob": false,
+                "partTimeJob": false,
+                "studying": false,
+                "greekLife": false,
+                "partying": false,
+                "gym": false,
+                "watchingSports": false,
+                "playingSports": false,
+                "shopping": false,
+                "fashion": false,
+                "indoors": false,
+                "outdoors": false,
+                "plants": true,
+                "warmHouse": false,
+                "coolHouse": false,
+                "roadTrips": false,
+                "children": false
+            },
+            "extraBoxes": {
+                "religion": "Atheist",
+                "sexualOrientation": "Straight",
+                "politicalAlignment": "",
+                "transportation": "Car"
+            },
+            "bio": "Oh my gosh I just love doing X and Y and am a huge fan of Z so we have to go to W to see Z when he performs in CoMo! I'll buy popcorn if you drive!"
+        }
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d05"
         },
+        "email": "rorf@gmail.com",
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Ryan Orf",
-        "email": "rorf@gmail.com",
-        "gender": "Male",
-        "loc": {
-            "city": "Columbia",
-            "state": "Missouri"
-        },
-        "status": "yes",
-        "smoking": true,
-        "pets": false,
-        "sameSex": true,
-        "age": {
-            "min": 18,
-            "max": 77
-        },
-        "rent": {
-            "min": 0,
-            "max": 550
-        },
-        "noise": "often",
-        "guests": "often",
-        "sleep": "often",
-        "commonSpaces": "often",
-        "clean": "often",
-        "tags": {
-            "videoGames": false,
-            "movies": false,
-            "tvShows": false,
-            "cooking": false,
-            "drinking": false,
-            "reading": false,
-            "writing": false,
-            "photography": false,
-            "art": false,
-            "theatre": false,
-            "performingMusic": false,
-            "listeningToMusic": false,
-            "college": false,
-            "fullTimeJob": false,
-            "partTimeJob": false,
-            "studying": false,
-            "greekLife": true,
-            "partying": false,
-            "gym": false,
-            "watchingSports": true,
-            "playingSports": true,
-            "shopping": false,
-            "fashion": true,
-            "indoors": true,
-            "outdoors": false,
-            "plants": false,
-            "warmHouse": false,
-            "coolHouse": false,
-            "roadTrips": false,
-            "children": false
-        },
-        "extraBoxes": {
-            "religion": "Probably",
-            "sexualOrientation": "Straight",
-            "politicalAlignment": "",
-            "transportation": "Rollerblades"
-        },
-        "bio": "Biggest Cheesehead you have ever met.",
-        "DoB": "2004-09-29"
+        "dateOfBirth": "2004-09-29",
+        "profile": {
+            "gender": "Male",
+            "loc": {
+                "city": "Columbia",
+                "state": "Missouri"
+            },
+            "status": "yes",
+            "smoking": true,
+            "pets": false,
+            "sameSex": true,
+            "age": {
+                "min": 18,
+                "max": 77
+            },
+            "rent": {
+                "min": 0,
+                "max": 550
+            },
+            "noise": "often",
+            "guests": "often",
+            "sleep": "often",
+            "commonSpaces": "often",
+            "clean": "often",
+            "tags": {
+                "videoGames": false,
+                "movies": false,
+                "tvShows": false,
+                "cooking": false,
+                "drinking": false,
+                "reading": false,
+                "writing": false,
+                "photography": false,
+                "art": false,
+                "theatre": false,
+                "performingMusic": false,
+                "listeningToMusic": false,
+                "college": false,
+                "fullTimeJob": false,
+                "partTimeJob": false,
+                "studying": false,
+                "greekLife": true,
+                "partying": false,
+                "gym": false,
+                "watchingSports": true,
+                "playingSports": true,
+                "shopping": false,
+                "fashion": true,
+                "indoors": true,
+                "outdoors": false,
+                "plants": false,
+                "warmHouse": false,
+                "coolHouse": false,
+                "roadTrips": false,
+                "children": false
+            },
+            "extraBoxes": {
+                "religion": "Probably",
+                "sexualOrientation": "Straight",
+                "politicalAlignment": "",
+                "transportation": "Rollerblades"
+            },
+            "bio": "Biggest Cheesehead you have ever met."
+        }
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d06"
         },
+        "email": "jane@gmail.com",
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Jane Doe",
-        "email": "jane@gmail.com",
-        "gender": "Female",
-        "loc": {
-            "city": "Columbia",
-            "state": "Missouri"
-        },
-        "status": "yes",
-        "smoking": false,
-        "pets": false,
-        "sameSex": false,
-        "age": {
-            "min": 18,
-            "max": 30
-        },
-        "rent": {
-            "min": 0,
-            "max": 10000
-        },
-        "noise": "rarely",
-        "guests": "often",
-        "sleep": "sometimes",
-        "commonSpaces": "often",
-        "clean": "rarely",
-        "tags": {
-            "videoGames": true,
-            "movies": false,
-            "tvShows": false,
-            "cooking": false,
-            "drinking": false,
-            "reading": false,
-            "writing": true,
-            "photography": true,
-            "art": false,
-            "theatre": false,
-            "performingMusic": false,
-            "listeningToMusic": false,
-            "college": false,
-            "fullTimeJob": false,
-            "partTimeJob": false,
-            "studying": false,
-            "greekLife": false,
-            "partying": false,
-            "gym": false,
-            "watchingSports": false,
-            "playingSports": false,
-            "shopping": false,
-            "fashion": false,
-            "indoors": false,
-            "outdoors": false,
-            "plants": true,
-            "warmHouse": false,
-            "coolHouse": false,
-            "roadTrips": false,
-            "children": false
-        },
-        "extraBoxes": {
-            "religion": "Atheist",
-            "sexualOrientation": "Gay",
-            "politicalAlignment": "Democrat",
-            "transportation": "Car"
-        },
-        "bio": "Insert generic bio here",
-        "DoB": "2000-01-01"
+        "dateOfBirth": "2000-01-01",
+        "profile": {
+            "gender": "Female",
+            "loc": {
+                "city": "Columbia",
+                "state": "Missouri"
+            },
+            "status": "yes",
+            "smoking": false,
+            "pets": false,
+            "sameSex": false,
+            "age": {
+                "min": 18,
+                "max": 30
+            },
+            "rent": {
+                "min": 0,
+                "max": 10000
+            },
+            "noise": "rarely",
+            "guests": "often",
+            "sleep": "sometimes",
+            "commonSpaces": "often",
+            "clean": "rarely",
+            "tags": {
+                "videoGames": true,
+                "movies": false,
+                "tvShows": false,
+                "cooking": false,
+                "drinking": false,
+                "reading": false,
+                "writing": true,
+                "photography": true,
+                "art": false,
+                "theatre": false,
+                "performingMusic": false,
+                "listeningToMusic": false,
+                "college": false,
+                "fullTimeJob": false,
+                "partTimeJob": false,
+                "studying": false,
+                "greekLife": false,
+                "partying": false,
+                "gym": false,
+                "watchingSports": false,
+                "playingSports": false,
+                "shopping": false,
+                "fashion": false,
+                "indoors": false,
+                "outdoors": false,
+                "plants": true,
+                "warmHouse": false,
+                "coolHouse": false,
+                "roadTrips": false,
+                "children": false
+            },
+            "extraBoxes": {
+                "religion": "Atheist",
+                "sexualOrientation": "Gay",
+                "politicalAlignment": "Democrat",
+                "transportation": "Car"
+            },
+            "bio": "Insert generic bio here"
+        }
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d07"
         },
+        "email": "janejane@gmail.com",
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Jane Doe-Two",
-        "email": "janejane@gmail.com",
-        "gender": "Female",
-        "loc": {
-            "city": "Columbia",
-            "state": "Missouri"
-        },
-        "status": "yes",
-        "smoking": true,
-        "pets": false,
-        "sameSex": true,
-        "age": {
-            "min": 18,
-            "max": 77
-        },
-        "rent": {
-            "min": 0,
-            "max": 550
-        },
-        "noise": "often",
-        "guests": "often",
-        "sleep": "often",
-        "commonSpaces": "often",
-        "clean": "often",
-        "tags": {
-            "videoGames": false,
-            "movies": false,
-            "tvShows": false,
-            "cooking": false,
-            "drinking": false,
-            "reading": false,
-            "writing": false,
-            "photography": false,
-            "art": false,
-            "theatre": false,
-            "performingMusic": false,
-            "listeningToMusic": false,
-            "college": false,
-            "fullTimeJob": false,
-            "partTimeJob": false,
-            "studying": false,
-            "greekLife": true,
-            "partying": false,
-            "gym": false,
-            "watchingSports": true,
-            "playingSports": true,
-            "shopping": false,
-            "fashion": true,
-            "indoors": true,
-            "outdoors": false,
-            "plants": false,
-            "warmHouse": false,
-            "coolHouse": false,
-            "roadTrips": false,
-            "children": false
-        },
-        "extraBoxes": {
-            "religion": "Probably",
-            "sexualOrientation": "Bisexual",
-            "politicalAlignment": "Moderate",
-            "transportation": "Rollerblades"
-        },
-        "bio": "Super cool greek lifer! Shout out to Alpha Beta Gamma, and all my sisters!",
-        "DoB": "2002-09-18"
+        "dateOfBirth": "2002-09-18",
+        "profile": {
+            "gender": "Female",
+            "loc": {
+                "city": "Columbia",
+                "state": "Missouri"
+            },
+            "status": "yes",
+            "smoking": true,
+            "pets": false,
+            "sameSex": true,
+            "age": {
+                "min": 18,
+                "max": 77
+            },
+            "rent": {
+                "min": 0,
+                "max": 550
+            },
+            "noise": "often",
+            "guests": "often",
+            "sleep": "often",
+            "commonSpaces": "often",
+            "clean": "often",
+            "tags": {
+                "videoGames": false,
+                "movies": false,
+                "tvShows": false,
+                "cooking": false,
+                "drinking": false,
+                "reading": false,
+                "writing": false,
+                "photography": false,
+                "art": false,
+                "theatre": false,
+                "performingMusic": false,
+                "listeningToMusic": false,
+                "college": false,
+                "fullTimeJob": false,
+                "partTimeJob": false,
+                "studying": false,
+                "greekLife": true,
+                "partying": false,
+                "gym": false,
+                "watchingSports": true,
+                "playingSports": true,
+                "shopping": false,
+                "fashion": true,
+                "indoors": true,
+                "outdoors": false,
+                "plants": false,
+                "warmHouse": false,
+                "coolHouse": false,
+                "roadTrips": false,
+                "children": false
+            },
+            "extraBoxes": {
+                "religion": "Probably",
+                "sexualOrientation": "Bisexual",
+                "politicalAlignment": "Moderate",
+                "transportation": "Rollerblades"
+            },
+            "bio": "Super cool greek lifer! Shout out to Alpha Beta Gamma, and all my sisters!"
+        }
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d08"
         },
+        "email": "janejanejane@gmail.com",
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Jane Doe-Three",
-        "email": "janejanejane@gmail.com",
-        "gender": "Female",
-        "loc": {
-            "city": "Columbia",
-            "state": "Missouri"
-        },
-        "status": "no",
-        "smoking": true,
-        "pets": true,
-        "sameSex": true,
-        "age": {
-            "min": 18,
-            "max": 21
-        },
-        "rent": {
-            "min": 1000,
-            "max": 10000
-        },
-        "noise": "rarely",
-        "guests": "rarely",
-        "sleep": "rarely",
-        "commonSpaces": "rarely",
-        "clean": "rarely",
-        "tags": {
-            "videoGames": true,
-            "movies": false,
-            "tvShows": false,
-            "cooking": false,
-            "drinking": false,
-            "reading": false,
-            "writing": true,
-            "photography": true,
-            "art": false,
-            "theatre": false,
-            "performingMusic": false,
-            "listeningToMusic": false,
-            "college": false,
-            "fullTimeJob": false,
-            "partTimeJob": false,
-            "studying": false,
-            "greekLife": false,
-            "partying": false,
-            "gym": false,
-            "watchingSports": false,
-            "playingSports": false,
-            "shopping": false,
-            "fashion": false,
-            "indoors": false,
-            "outdoors": false,
-            "plants": true,
-            "warmHouse": false,
-            "coolHouse": false,
-            "roadTrips": false,
-            "children": false
-        },
-        "extraBoxes": {
-            "religion": "One of them",
-            "sexualOrientation": "Biromantic Asexual",
-            "politicalAlignment": "Communist",
-            "transportation": "Car"
-        },
-        "bio": "I rickroll my dad daily",
-        "DoB": "1999-01-01"
+        "dateOfBirth": "1999-01-01",
+        "profile": {
+            "gender": "Female",
+            "loc": {
+                "city": "Columbia",
+                "state": "Missouri"
+            },
+            "status": "no",
+            "smoking": true,
+            "pets": true,
+            "sameSex": true,
+            "age": {
+                "min": 18,
+                "max": 21
+            },
+            "rent": {
+                "min": 1000,
+                "max": 10000
+            },
+            "noise": "rarely",
+            "guests": "rarely",
+            "sleep": "rarely",
+            "commonSpaces": "rarely",
+            "clean": "rarely",
+            "tags": {
+                "videoGames": true,
+                "movies": false,
+                "tvShows": false,
+                "cooking": false,
+                "drinking": false,
+                "reading": false,
+                "writing": true,
+                "photography": true,
+                "art": false,
+                "theatre": false,
+                "performingMusic": false,
+                "listeningToMusic": false,
+                "college": false,
+                "fullTimeJob": false,
+                "partTimeJob": false,
+                "studying": false,
+                "greekLife": false,
+                "partying": false,
+                "gym": false,
+                "watchingSports": false,
+                "playingSports": false,
+                "shopping": false,
+                "fashion": false,
+                "indoors": false,
+                "outdoors": false,
+                "plants": true,
+                "warmHouse": false,
+                "coolHouse": false,
+                "roadTrips": false,
+                "children": false
+            },
+            "extraBoxes": {
+                "religion": "One of them",
+                "sexualOrientation": "Biromantic Asexual",
+                "politicalAlignment": "Communist",
+                "transportation": "Car"
+            },
+            "bio": "I rickroll my dad daily"
+        }
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d09"
         },
+        "email": "janejanejanejane@gmail.com",
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Jane Doe-Four",
-        "email": "janejanejanejane@gmail.com",
-        "gender": "Female",
-        "loc": {
-            "city": "Columbia",
-            "state": "Missouri"
-        },
-        "status": "no",
-        "smoking": true,
-        "pets": true,
-        "sameSex": true,
-        "age": {
-            "min": 18,
-            "max": 40
-        },
-        "rent": {
-            "min": 0,
-            "max": 10000
-        },
-        "noise": "often",
-        "guests": "often",
-        "sleep": "often",
-        "commonSpaces": "often",
-        "clean": "often",
-        "tags": {
-            "videoGames": false,
-            "movies": false,
-            "tvShows": false,
-            "cooking": false,
-            "drinking": false,
-            "reading": false,
-            "writing": false,
-            "photography": false,
-            "art": false,
-            "theatre": false,
-            "performingMusic": false,
-            "listeningToMusic": false,
-            "college": false,
-            "fullTimeJob": false,
-            "partTimeJob": false,
-            "studying": false,
-            "greekLife": true,
-            "partying": false,
-            "gym": false,
-            "watchingSports": true,
-            "playingSports": true,
-            "shopping": false,
-            "fashion": true,
-            "indoors": true,
-            "outdoors": false,
-            "plants": false,
-            "warmHouse": false,
-            "coolHouse": false,
-            "roadTrips": false,
-            "children": false
-        },
-        "extraBoxes": {
-            "religion": "Probably",
-            "sexualOrientation": "Straight",
-            "politicalAlignment": "Republican",
-            "transportation": "Rollerblades"
-        },
-        "bio": "Shrek is my favorite movie ever.",
-        "DoB": "1998-03-13"
+        "dateOfBirth": "1998-03-13",
+        "profile": {
+            "gender": "Female",
+            "loc": {
+                "city": "Columbia",
+                "state": "Missouri"
+            },
+            "status": "no",
+            "smoking": true,
+            "pets": true,
+            "sameSex": true,
+            "age": {
+                "min": 18,
+                "max": 40
+            },
+            "rent": {
+                "min": 0,
+                "max": 10000
+            },
+            "noise": "often",
+            "guests": "often",
+            "sleep": "often",
+            "commonSpaces": "often",
+            "clean": "often",
+            "tags": {
+                "videoGames": false,
+                "movies": false,
+                "tvShows": false,
+                "cooking": false,
+                "drinking": false,
+                "reading": false,
+                "writing": false,
+                "photography": false,
+                "art": false,
+                "theatre": false,
+                "performingMusic": false,
+                "listeningToMusic": false,
+                "college": false,
+                "fullTimeJob": false,
+                "partTimeJob": false,
+                "studying": false,
+                "greekLife": true,
+                "partying": false,
+                "gym": false,
+                "watchingSports": true,
+                "playingSports": true,
+                "shopping": false,
+                "fashion": true,
+                "indoors": true,
+                "outdoors": false,
+                "plants": false,
+                "warmHouse": false,
+                "coolHouse": false,
+                "roadTrips": false,
+                "children": false
+            },
+            "extraBoxes": {
+                "religion": "Probably",
+                "sexualOrientation": "Straight",
+                "politicalAlignment": "Republican",
+                "transportation": "Rollerblades"
+            },
+            "bio": "Shrek is my favorite movie ever."
+        }
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d10"
         },
+        "email": "John@gmail.com",
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe",
-        "email": "John@gmail.com",
-        "gender": "Male",
-        "loc": {
-            "city": "Columbia",
-            "state": "Missouri"
-        },
-        "status": "yes",
-        "smoking": false,
-        "pets": false,
-        "sameSex": false,
-        "age": {
-            "min": 18,
-            "max": 30
-        },
-        "rent": {
-            "min": 0,
-            "max": 10000
-        },
-        "noise": "rarely",
-        "guests": "often",
-        "sleep": "sometimes",
-        "commonSpaces": "often",
-        "clean": "rarely",
-        "tags": {
-            "videoGames": true,
-            "movies": false,
-            "tvShows": false,
-            "cooking": false,
-            "drinking": false,
-            "reading": false,
-            "writing": true,
-            "photography": true,
-            "art": false,
-            "theatre": false,
-            "performingMusic": false,
-            "listeningToMusic": false,
-            "college": false,
-            "fullTimeJob": false,
-            "partTimeJob": false,
-            "studying": false,
-            "greekLife": false,
-            "partying": false,
-            "gym": false,
-            "watchingSports": false,
-            "playingSports": false,
-            "shopping": false,
-            "fashion": false,
-            "indoors": false,
-            "outdoors": false,
-            "plants": true,
-            "warmHouse": false,
-            "coolHouse": false,
-            "roadTrips": false,
-            "children": false
-        },
-        "extraBoxes": {
-            "religion": "Atheist",
-            "sexualOrientation": "Pansexual",
-            "politicalAlignment": "Libertarian",
-            "transportation": "Car"
-        },
-        "bio": "Insert generic bio here",
-        "DoB": "2000-01-01"
+        "dateOfBirth": "2000-01-01",
+        "profile": {
+            "gender": "Male",
+            "loc": {
+                "city": "Columbia",
+                "state": "Missouri"
+            },
+            "status": "yes",
+            "smoking": false,
+            "pets": false,
+            "sameSex": false,
+            "age": {
+                "min": 18,
+                "max": 30
+            },
+            "rent": {
+                "min": 0,
+                "max": 10000
+            },
+            "noise": "rarely",
+            "guests": "often",
+            "sleep": "sometimes",
+            "commonSpaces": "often",
+            "clean": "rarely",
+            "tags": {
+                "videoGames": true,
+                "movies": false,
+                "tvShows": false,
+                "cooking": false,
+                "drinking": false,
+                "reading": false,
+                "writing": true,
+                "photography": true,
+                "art": false,
+                "theatre": false,
+                "performingMusic": false,
+                "listeningToMusic": false,
+                "college": false,
+                "fullTimeJob": false,
+                "partTimeJob": false,
+                "studying": false,
+                "greekLife": false,
+                "partying": false,
+                "gym": false,
+                "watchingSports": false,
+                "playingSports": false,
+                "shopping": false,
+                "fashion": false,
+                "indoors": false,
+                "outdoors": false,
+                "plants": true,
+                "warmHouse": false,
+                "coolHouse": false,
+                "roadTrips": false,
+                "children": false
+            },
+            "extraBoxes": {
+                "religion": "Atheist",
+                "sexualOrientation": "Pansexual",
+                "politicalAlignment": "Libertarian",
+                "transportation": "Car"
+            },
+            "bio": "Insert generic bio here"
+        }
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d11"
         },
+        "email": "JohnII@gmail.com",
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe-Two",
-        "email": "JohnII@gmail.com",
-        "gender": "Male",
-        "loc": {
-            "city": "Columbia",
-            "state": "Missouri"
-        },
-        "status": "yes",
-        "smoking": true,
-        "pets": false,
-        "sameSex": true,
-        "age": {
-            "min": 18,
-            "max": 77
-        },
-        "rent": {
-            "min": 0,
-            "max": 550
-        },
-        "noise": "often",
-        "guests": "often",
-        "sleep": "often",
-        "commonSpaces": "often",
-        "clean": "often",
-        "tags": {
-            "videoGames": false,
-            "movies": false,
-            "tvShows": false,
-            "cooking": false,
-            "drinking": false,
-            "reading": false,
-            "writing": false,
-            "photography": false,
-            "art": false,
-            "theatre": false,
-            "performingMusic": false,
-            "listeningToMusic": false,
-            "college": false,
-            "fullTimeJob": false,
-            "partTimeJob": false,
-            "studying": false,
-            "greekLife": true,
-            "partying": false,
-            "gym": false,
-            "watchingSports": true,
-            "playingSports": true,
-            "shopping": false,
-            "fashion": true,
-            "indoors": true,
-            "outdoors": false,
-            "plants": false,
-            "warmHouse": false,
-            "coolHouse": false,
-            "roadTrips": false,
-            "children": false
-        },
-        "extraBoxes": {
-            "religion": "Probably",
-            "sexualOrientation": "Bisexual",
-            "politicalAlignment": "Anarchist",
-            "transportation": "Rollerblades"
-        },
-        "bio": "Super cool greek lifer! Shout out to Alpha Beta Gamma, and all my sisters!",
-        "DoB": "2002-09-18"
+        "dateOfBirth": "2002-09-18",
+        "profile": {
+            "gender": "Male",
+            "loc": {
+                "city": "Columbia",
+                "state": "Missouri"
+            },
+            "status": "yes",
+            "smoking": true,
+            "pets": false,
+            "sameSex": true,
+            "age": {
+                "min": 18,
+                "max": 77
+            },
+            "rent": {
+                "min": 0,
+                "max": 550
+            },
+            "noise": "often",
+            "guests": "often",
+            "sleep": "often",
+            "commonSpaces": "often",
+            "clean": "often",
+            "tags": {
+                "videoGames": false,
+                "movies": false,
+                "tvShows": false,
+                "cooking": false,
+                "drinking": false,
+                "reading": false,
+                "writing": false,
+                "photography": false,
+                "art": false,
+                "theatre": false,
+                "performingMusic": false,
+                "listeningToMusic": false,
+                "college": false,
+                "fullTimeJob": false,
+                "partTimeJob": false,
+                "studying": false,
+                "greekLife": true,
+                "partying": false,
+                "gym": false,
+                "watchingSports": true,
+                "playingSports": true,
+                "shopping": false,
+                "fashion": true,
+                "indoors": true,
+                "outdoors": false,
+                "plants": false,
+                "warmHouse": false,
+                "coolHouse": false,
+                "roadTrips": false,
+                "children": false
+            },
+            "extraBoxes": {
+                "religion": "Probably",
+                "sexualOrientation": "Bisexual",
+                "politicalAlignment": "Anarchist",
+                "transportation": "Rollerblades"
+            },
+            "bio": "Super cool greek lifer! Shout out to Alpha Beta Gamma, and all my sisters!"
+        }
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d12"
         },
+        "email": "JohnIII@gmail.com",
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe-Three",
-        "email": "JohnIII@gmail.com",
-        "gender": "Male",
-        "loc": {
-            "city": "Columbia",
-            "state": "Missouri"
-        },
-        "status": "no",
-        "smoking": true,
-        "pets": true,
-        "sameSex": true,
-        "age": {
-            "min": 18,
-            "max": 21
-        },
-        "rent": {
-            "min": 1000,
-            "max": 10000
-        },
-        "noise": "rarely",
-        "guests": "rarely",
-        "sleep": "rarely",
-        "commonSpaces": "rarely",
-        "clean": "rarely",
-        "tags": {
-            "videoGames": true,
-            "movies": false,
-            "tvShows": false,
-            "cooking": false,
-            "drinking": false,
-            "reading": false,
-            "writing": true,
-            "photography": true,
-            "art": false,
-            "theatre": false,
-            "performingMusic": false,
-            "listeningToMusic": false,
-            "college": false,
-            "fullTimeJob": false,
-            "partTimeJob": false,
-            "studying": false,
-            "greekLife": false,
-            "partying": false,
-            "gym": false,
-            "watchingSports": false,
-            "playingSports": false,
-            "shopping": false,
-            "fashion": false,
-            "indoors": false,
-            "outdoors": false,
-            "plants": true,
-            "warmHouse": false,
-            "coolHouse": false,
-            "roadTrips": false,
-            "children": false
-        },
-        "extraBoxes": {
-            "religion": "One of them",
-            "sexualOrientation": "Straight",
-            "politicalAlignment": "Fascist",
-            "transportation": "Car"
-        },
-        "bio": "I rickroll my dad daily",
-        "DoB": "1999-01-01"
+        "dateOfBirth": "1999-01-01",
+        "profile": {
+            "gender": "Male",
+            "loc": {
+                "city": "Columbia",
+                "state": "Missouri"
+            },
+            "status": "no",
+            "smoking": true,
+            "pets": true,
+            "sameSex": true,
+            "age": {
+                "min": 18,
+                "max": 21
+            },
+            "rent": {
+                "min": 1000,
+                "max": 10000
+            },
+            "noise": "rarely",
+            "guests": "rarely",
+            "sleep": "rarely",
+            "commonSpaces": "rarely",
+            "clean": "rarely",
+            "tags": {
+                "videoGames": true,
+                "movies": false,
+                "tvShows": false,
+                "cooking": false,
+                "drinking": false,
+                "reading": false,
+                "writing": true,
+                "photography": true,
+                "art": false,
+                "theatre": false,
+                "performingMusic": false,
+                "listeningToMusic": false,
+                "college": false,
+                "fullTimeJob": false,
+                "partTimeJob": false,
+                "studying": false,
+                "greekLife": false,
+                "partying": false,
+                "gym": false,
+                "watchingSports": false,
+                "playingSports": false,
+                "shopping": false,
+                "fashion": false,
+                "indoors": false,
+                "outdoors": false,
+                "plants": true,
+                "warmHouse": false,
+                "coolHouse": false,
+                "roadTrips": false,
+                "children": false
+            },
+            "extraBoxes": {
+                "religion": "One of them",
+                "sexualOrientation": "Straight",
+                "politicalAlignment": "Fascist",
+                "transportation": "Car"
+            },
+            "bio": "I rickroll my dad daily"
+        }
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d13"
         },
+        "email": "JohnIV@gmail.com",
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe-Four",
-        "email": "JohnIV@gmail.com",
-        "gender": "Male",
-        "loc": {
-            "city": "Columbia",
-            "state": "Missouri"
-        },
-        "status": "no",
-        "smoking": true,
-        "pets": true,
-        "sameSex": true,
-        "age": {
-            "min": 18,
-            "max": 40
-        },
-        "rent": {
-            "min": 0,
-            "max": 10000
-        },
-        "noise": "often",
-        "guests": "often",
-        "sleep": "often",
-        "commonSpaces": "often",
-        "clean": "often",
-        "tags": {
-            "videoGames": false,
-            "movies": false,
-            "tvShows": false,
-            "cooking": false,
-            "drinking": false,
-            "reading": false,
-            "writing": false,
-            "photography": false,
-            "art": false,
-            "theatre": false,
-            "performingMusic": false,
-            "listeningToMusic": false,
-            "college": false,
-            "fullTimeJob": false,
-            "partTimeJob": false,
-            "studying": false,
-            "greekLife": true,
-            "partying": false,
-            "gym": false,
-            "watchingSports": true,
-            "playingSports": true,
-            "shopping": false,
-            "fashion": true,
-            "indoors": true,
-            "outdoors": false,
-            "plants": false,
-            "warmHouse": false,
-            "coolHouse": false,
-            "roadTrips": false,
-            "children": false
-        },
-        "extraBoxes": {
-            "religion": "Probably",
-            "sexualOrientation": "",
-            "politicalAlignment": "",
-            "transportation": "Rollerblades"
-        },
-        "bio": "Shrek is my favorite movie ever.",
-        "DoB": "1998-03-13"
+        "dateOfBirth": "1998-03-13",
+        "profile": {
+            "gender": "Male",
+            "loc": {
+                "city": "Columbia",
+                "state": "Missouri"
+            },
+            "status": "no",
+            "smoking": true,
+            "pets": true,
+            "sameSex": true,
+            "age": {
+                "min": 18,
+                "max": 40
+            },
+            "rent": {
+                "min": 0,
+                "max": 10000
+            },
+            "noise": "often",
+            "guests": "often",
+            "sleep": "often",
+            "commonSpaces": "often",
+            "clean": "often",
+            "tags": {
+                "videoGames": false,
+                "movies": false,
+                "tvShows": false,
+                "cooking": false,
+                "drinking": false,
+                "reading": false,
+                "writing": false,
+                "photography": false,
+                "art": false,
+                "theatre": false,
+                "performingMusic": false,
+                "listeningToMusic": false,
+                "college": false,
+                "fullTimeJob": false,
+                "partTimeJob": false,
+                "studying": false,
+                "greekLife": true,
+                "partying": false,
+                "gym": false,
+                "watchingSports": true,
+                "playingSports": true,
+                "shopping": false,
+                "fashion": true,
+                "indoors": true,
+                "outdoors": false,
+                "plants": false,
+                "warmHouse": false,
+                "coolHouse": false,
+                "roadTrips": false,
+                "children": false
+            },
+            "extraBoxes": {
+                "religion": "Probably",
+                "sexualOrientation": "",
+                "politicalAlignment": "",
+                "transportation": "Rollerblades"
+            },
+            "bio": "Shrek is my favorite movie ever."
+        }
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d14"
         },
+        "email": "DOE_2@gmail.com",
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Other Doe",
-        "email": "DOE_2@gmail.com",
-        "gender": "Other",
-        "loc": {
-            "city": "Columbia",
-            "state": "Missouri"
-        },
-        "status": "yes",
-        "smoking": false,
-        "pets": false,
-        "sameSex": false,
-        "age": {
-            "min": 18,
-            "max": 30
-        },
-        "rent": {
-            "min": 10,
-            "max": 10000
-        },
-        "noise": "rarely",
-        "guests": "often",
-        "sleep": "sometimes",
-        "commonSpaces": "often",
-        "clean": "rarely",
-        "tags": {
-            "videoGames": true,
-            "movies": false,
-            "tvShows": false,
-            "cooking": false,
-            "drinking": false,
-            "reading": false,
-            "writing": true,
-            "photography": true,
-            "art": false,
-            "theatre": false,
-            "performingMusic": false,
-            "listeningToMusic": false,
-            "college": false,
-            "fullTimeJob": false,
-            "partTimeJob": false,
-            "studying": false,
-            "greekLife": false,
-            "partying": false,
-            "gym": false,
-            "watchingSports": false,
-            "playingSports": false,
-            "shopping": false,
-            "fashion": false,
-            "indoors": false,
-            "outdoors": false,
-            "plants": true,
-            "warmHouse": false,
-            "coolHouse": false,
-            "roadTrips": false,
-            "children": false
-        },
-        "extraBoxes": {
-            "religion": "Atheist",
-            "sexualOrientation": "",
-            "politicalAlignment": "",
-            "transportation": "Car"
-        },
-        "bio": "Insert generic bio here",
-        "DoB": "2000-01-01"
+        "dateOfBirth": "2000-01-01",
+        "profile": {
+            "gender": "Other",
+            "loc": {
+                "city": "Columbia",
+                "state": "Missouri"
+            },
+            "status": "yes",
+            "smoking": false,
+            "pets": false,
+            "sameSex": false,
+            "age": {
+                "min": 18,
+                "max": 30
+            },
+            "rent": {
+                "min": 10,
+                "max": 10000
+            },
+            "noise": "rarely",
+            "guests": "often",
+            "sleep": "sometimes",
+            "commonSpaces": "often",
+            "clean": "rarely",
+            "tags": {
+                "videoGames": true,
+                "movies": false,
+                "tvShows": false,
+                "cooking": false,
+                "drinking": false,
+                "reading": false,
+                "writing": true,
+                "photography": true,
+                "art": false,
+                "theatre": false,
+                "performingMusic": false,
+                "listeningToMusic": false,
+                "college": false,
+                "fullTimeJob": false,
+                "partTimeJob": false,
+                "studying": false,
+                "greekLife": false,
+                "partying": false,
+                "gym": false,
+                "watchingSports": false,
+                "playingSports": false,
+                "shopping": false,
+                "fashion": false,
+                "indoors": false,
+                "outdoors": false,
+                "plants": true,
+                "warmHouse": false,
+                "coolHouse": false,
+                "roadTrips": false,
+                "children": false
+            },
+            "extraBoxes": {
+                "religion": "Atheist",
+                "sexualOrientation": "",
+                "politicalAlignment": "",
+                "transportation": "Car"
+            },
+            "bio": "Insert generic bio here"
+        }
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d15"
         },
+        "email": "DOE_2_FINAL@gmail.com",
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Other Doe-Two",
-        "email": "DOE_2_FINAL@gmail.com",
-        "gender": "Other",
-        "loc": {
-            "city": "Columbia",
-            "state": "Missouri"
-        },
-        "status": "yes",
-        "smoking": true,
-        "pets": false,
-        "sameSex": true,
-        "age": {
-            "min": 18,
-            "max": 77
-        },
-        "rent": {
-            "min": 0,
-            "max": 550
-        },
-        "noise": "often",
-        "guests": "often",
-        "sleep": "often",
-        "commonSpaces": "often",
-        "clean": "often",
-        "tags": {
-            "videoGames": false,
-            "movies": false,
-            "tvShows": false,
-            "cooking": false,
-            "drinking": false,
-            "reading": false,
-            "writing": false,
-            "photography": false,
-            "art": false,
-            "theatre": false,
-            "performingMusic": false,
-            "listeningToMusic": false,
-            "college": false,
-            "fullTimeJob": false,
-            "partTimeJob": false,
-            "studying": false,
-            "greekLife": true,
-            "partying": false,
-            "gym": false,
-            "watchingSports": true,
-            "playingSports": true,
-            "shopping": false,
-            "fashion": true,
-            "indoors": true,
-            "outdoors": false,
-            "plants": false,
-            "warmHouse": false,
-            "coolHouse": false,
-            "roadTrips": false,
-            "children": false
-        },
-        "extraBoxes": {
-            "religion": "Probably",
-            "sexualOrientation": "",
-            "politicalAlignment": "Democrat",
-            "transportation": "Rollerblades"
-        },
-        "bio": "Super cool greek lifer! Shout out to Alpha Beta Gamma, and all my sisters!",
-        "DoB": "2002-09-18"
+        "dateOfBirth": "2002-09-18",
+        "profile": {
+            "gender": "Other",
+            "loc": {
+                "city": "Columbia",
+                "state": "Missouri"
+            },
+            "status": "yes",
+            "smoking": true,
+            "pets": false,
+            "sameSex": true,
+            "age": {
+                "min": 18,
+                "max": 77
+            },
+            "rent": {
+                "min": 0,
+                "max": 550
+            },
+            "noise": "often",
+            "guests": "often",
+            "sleep": "often",
+            "commonSpaces": "often",
+            "clean": "often",
+            "tags": {
+                "videoGames": false,
+                "movies": false,
+                "tvShows": false,
+                "cooking": false,
+                "drinking": false,
+                "reading": false,
+                "writing": false,
+                "photography": false,
+                "art": false,
+                "theatre": false,
+                "performingMusic": false,
+                "listeningToMusic": false,
+                "college": false,
+                "fullTimeJob": false,
+                "partTimeJob": false,
+                "studying": false,
+                "greekLife": true,
+                "partying": false,
+                "gym": false,
+                "watchingSports": true,
+                "playingSports": true,
+                "shopping": false,
+                "fashion": true,
+                "indoors": true,
+                "outdoors": false,
+                "plants": false,
+                "warmHouse": false,
+                "coolHouse": false,
+                "roadTrips": false,
+                "children": false
+            },
+            "extraBoxes": {
+                "religion": "Probably",
+                "sexualOrientation": "",
+                "politicalAlignment": "Democrat",
+                "transportation": "Rollerblades"
+            },
+            "bio": "Super cool greek lifer! Shout out to Alpha Beta Gamma, and all my sisters!"
+        }
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d16"
         },
+        "email": "DOE_2_FINAL_FINAL@gmail.com",
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Other Doe-Three",
-        "email": "DOE_2_FINAL_FINAL@gmail.com",
-        "gender": "Other",
-        "loc": {
-            "city": "Columbia",
-            "state": "Missouri"
-        },
-        "status": "no",
-        "smoking": true,
-        "pets": true,
-        "sameSex": true,
-        "age": {
-            "min": 18,
-            "max": 21
-        },
-        "rent": {
-            "min": 1000,
-            "max": 10000
-        },
-        "noise": "rarely",
-        "guests": "rarely",
-        "sleep": "rarely",
-        "commonSpaces": "rarely",
-        "clean": "rarely",
-        "tags": {
-            "videoGames": true,
-            "movies": false,
-            "tvShows": false,
-            "cooking": false,
-            "drinking": false,
-            "reading": false,
-            "writing": true,
-            "photography": true,
-            "art": false,
-            "theatre": false,
-            "performingMusic": false,
-            "listeningToMusic": false,
-            "college": false,
-            "fullTimeJob": false,
-            "partTimeJob": false,
-            "studying": false,
-            "greekLife": false,
-            "partying": false,
-            "gym": false,
-            "watchingSports": false,
-            "playingSports": false,
-            "shopping": false,
-            "fashion": false,
-            "indoors": false,
-            "outdoors": false,
-            "plants": true,
-            "warmHouse": false,
-            "coolHouse": false,
-            "roadTrips": false,
-            "children": false
-        },
-        "extraBoxes": {
-            "religion": "One of them",
-            "sexualOrientation": "",
-            "politicalAlignment": "Green Party",
-            "transportation": "Car"
-        },
-        "bio": "I rickroll my dad daily",
-        "DoB": "1999-01-01"
+        "dateOfBirth": "1999-01-01",
+        "profile": {
+            "gender": "Other",
+            "loc": {
+                "city": "Columbia",
+                "state": "Missouri"
+            },
+            "status": "no",
+            "smoking": true,
+            "pets": true,
+            "sameSex": true,
+            "age": {
+                "min": 18,
+                "max": 21
+            },
+            "rent": {
+                "min": 1000,
+                "max": 10000
+            },
+            "noise": "rarely",
+            "guests": "rarely",
+            "sleep": "rarely",
+            "commonSpaces": "rarely",
+            "clean": "rarely",
+            "tags": {
+                "videoGames": true,
+                "movies": false,
+                "tvShows": false,
+                "cooking": false,
+                "drinking": false,
+                "reading": false,
+                "writing": true,
+                "photography": true,
+                "art": false,
+                "theatre": false,
+                "performingMusic": false,
+                "listeningToMusic": false,
+                "college": false,
+                "fullTimeJob": false,
+                "partTimeJob": false,
+                "studying": false,
+                "greekLife": false,
+                "partying": false,
+                "gym": false,
+                "watchingSports": false,
+                "playingSports": false,
+                "shopping": false,
+                "fashion": false,
+                "indoors": false,
+                "outdoors": false,
+                "plants": true,
+                "warmHouse": false,
+                "coolHouse": false,
+                "roadTrips": false,
+                "children": false
+            },
+            "extraBoxes": {
+                "religion": "One of them",
+                "sexualOrientation": "",
+                "politicalAlignment": "Green Party",
+                "transportation": "Car"
+            },
+            "bio": "I rickroll my dad daily"
+        }
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d17"
         },
+        "email": "TheLastDoe@gmail.com",
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "Other Doe-Four",
-        "email": "TheLastDoe@gmail.com",
-        "gender": "Other",
-        "loc": {
-            "city": "Columbia",
-            "state": "Missouri"
-        },
-        "status": "no",
-        "smoking": true,
-        "pets": true,
-        "sameSex": true,
-        "age": {
-            "min": 18,
-            "max": 40
-        },
-        "rent": {
-            "min": 0,
-            "max": 10000
-        },
-        "noise": "often",
-        "guests": "often",
-        "sleep": "often",
-        "commonSpaces": "often",
-        "clean": "often",
-        "tags": {
-            "videoGames": false,
-            "movies": false,
-            "tvShows": false,
-            "cooking": false,
-            "drinking": false,
-            "reading": false,
-            "writing": false,
-            "photography": false,
-            "art": false,
-            "theatre": false,
-            "performingMusic": false,
-            "listeningToMusic": false,
-            "college": false,
-            "fullTimeJob": false,
-            "partTimeJob": false,
-            "studying": false,
-            "greekLife": true,
-            "partying": false,
-            "gym": false,
-            "watchingSports": true,
-            "playingSports": true,
-            "shopping": false,
-            "fashion": true,
-            "indoors": true,
-            "outdoors": false,
-            "plants": false,
-            "warmHouse": false,
-            "coolHouse": false,
-            "roadTrips": false,
-            "children": false
-        },
-        "extraBoxes": {
-            "religion": "Probably",
-            "sexualOrientation": "",
-            "politicalAlignment": "Kanye 2024",
-            "transportation": "Rollerblades"
-        },
-        "bio": "Shrek is my favorite movie ever.",
-        "DoB": "1998-03-13"
+        "dateOfBirth": "1998-03-13",
+        "profile": {
+            "gender": "Other",
+            "loc": {
+                "city": "Columbia",
+                "state": "Missouri"
+            },
+            "status": "no",
+            "smoking": true,
+            "pets": true,
+            "sameSex": true,
+            "age": {
+                "min": 18,
+                "max": 40
+            },
+            "rent": {
+                "min": 0,
+                "max": 10000
+            },
+            "noise": "often",
+            "guests": "often",
+            "sleep": "often",
+            "commonSpaces": "often",
+            "clean": "often",
+            "tags": {
+                "videoGames": false,
+                "movies": false,
+                "tvShows": false,
+                "cooking": false,
+                "drinking": false,
+                "reading": false,
+                "writing": false,
+                "photography": false,
+                "art": false,
+                "theatre": false,
+                "performingMusic": false,
+                "listeningToMusic": false,
+                "college": false,
+                "fullTimeJob": false,
+                "partTimeJob": false,
+                "studying": false,
+                "greekLife": true,
+                "partying": false,
+                "gym": false,
+                "watchingSports": true,
+                "playingSports": true,
+                "shopping": false,
+                "fashion": true,
+                "indoors": true,
+                "outdoors": false,
+                "plants": false,
+                "warmHouse": false,
+                "coolHouse": false,
+                "roadTrips": false,
+                "children": false
+            },
+            "extraBoxes": {
+                "religion": "Probably",
+                "sexualOrientation": "",
+                "politicalAlignment": "Kanye 2024",
+                "transportation": "Rollerblades"
+            },
+            "bio": "Shrek is my favorite movie ever."
+        }
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d18"
         },
+        "email": "v@gmail.com",
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe-Five",
-        "email": "v@gmail.com",
-        "gender": "Male",
-        "loc": {
-            "city": "Columbia",
-            "state": "Missouri"
-        },
-        "status": "yes",
-        "smoking": true,
-        "pets": true,
-        "sameSex": false,
-        "age": {
-            "min": 18,
-            "max": 99
-        },
-        "rent": {
-            "min": 0,
-            "max": 10000
-        },
-        "noise": "rarely",
-        "guests": "often",
-        "sleep": "sometimes",
-        "commonSpaces": "often",
-        "clean": "rarely",
-        "tags": {
-            "videoGames": false,
-            "movies": false,
-            "tvShows": false,
-            "cooking": false,
-            "drinking": false,
-            "reading": false,
-            "writing": false,
-            "photography": false,
-            "art": false,
-            "theatre": false,
-            "performingMusic": false,
-            "listeningToMusic": false,
-            "college": false,
-            "fullTimeJob": false,
-            "partTimeJob": false,
-            "studying": false,
-            "greekLife": false,
-            "partying": false,
-            "gym": false,
-            "watchingSports": false,
-            "playingSports": false,
-            "shopping": false,
-            "fashion": false,
-            "indoors": false,
-            "outdoors": true,
-            "plants": false,
-            "warmHouse": false,
-            "coolHouse": true,
-            "roadTrips": true,
-            "children": true
-        },
-        "extraBoxes": {
-            "religion": "Atheist",
-            "sexualOrientation": "Straight",
-            "politicalAlignment": "Green Party",
-            "transportation": "Uber"
-        },
-        "bio": "Insert generic bio here",
-        "DoB": "2000-01-01"
+        "dateOfBirth": "2000-01-01",
+        "profile": {
+            "gender": "Male",
+            "loc": {
+                "city": "Columbia",
+                "state": "Missouri"
+            },
+            "status": "yes",
+            "smoking": true,
+            "pets": true,
+            "sameSex": false,
+            "age": {
+                "min": 18,
+                "max": 99
+            },
+            "rent": {
+                "min": 0,
+                "max": 10000
+            },
+            "noise": "rarely",
+            "guests": "often",
+            "sleep": "sometimes",
+            "commonSpaces": "often",
+            "clean": "rarely",
+            "tags": {
+                "videoGames": false,
+                "movies": false,
+                "tvShows": false,
+                "cooking": false,
+                "drinking": false,
+                "reading": false,
+                "writing": false,
+                "photography": false,
+                "art": false,
+                "theatre": false,
+                "performingMusic": false,
+                "listeningToMusic": false,
+                "college": false,
+                "fullTimeJob": false,
+                "partTimeJob": false,
+                "studying": false,
+                "greekLife": false,
+                "partying": false,
+                "gym": false,
+                "watchingSports": false,
+                "playingSports": false,
+                "shopping": false,
+                "fashion": false,
+                "indoors": false,
+                "outdoors": true,
+                "plants": false,
+                "warmHouse": false,
+                "coolHouse": true,
+                "roadTrips": true,
+                "children": true
+            },
+            "extraBoxes": {
+                "religion": "Atheist",
+                "sexualOrientation": "Straight",
+                "politicalAlignment": "Green Party",
+                "transportation": "Uber"
+            },
+            "bio": "Insert generic bio here"
+        }
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d19"
         },
+        "email": "vi@gmail.com",
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe-Six",
-        "email": "vi@gmail.com",
-        "gender": "Male",
-        "loc": {
-            "city": "Columbia",
-            "state": "Missouri"
-        },
-        "status": "yes",
-        "smoking": true,
-        "pets": false,
-        "sameSex": true,
-        "age": {
-            "min": 45,
-            "max": 77
-        },
-        "rent": {
-            "min": 0,
-            "max": 10000
-        },
-        "noise": "often",
-        "guests": "often",
-        "sleep": "often",
-        "commonSpaces": "often",
-        "clean": "often",
-        "tags": {
-            "videoGames": false,
-            "movies": false,
-            "tvShows": false,
-            "cooking": false,
-            "drinking": false,
-            "reading": false,
-            "writing": false,
-            "photography": false,
-            "art": false,
-            "theatre": false,
-            "performingMusic": false,
-            "listeningToMusic": false,
-            "college": false,
-            "fullTimeJob": false,
-            "partTimeJob": false,
-            "studying": false,
-            "greekLife": false,
-            "partying": false,
-            "gym": false,
-            "watchingSports": false,
-            "playingSports": false,
-            "shopping": false,
-            "fashion": false,
-            "indoors": false,
-            "outdoors": true,
-            "plants": false,
-            "warmHouse": false,
-            "coolHouse": true,
-            "roadTrips": true,
-            "children": true
-        },
-        "extraBoxes": {
-            "religion": "Probably",
-            "sexualOrientation": "",
-            "politicalAlignment": "Democrat",
-            "transportation": "Rollerblades"
-        },
-        "bio": "Super cool greek lifer! Shout out to Alpha Beta Gamma, and all my brothers!",
-        "DoB": "2002-09-18"
+        "dateOfBirth": "2002-09-18",
+        "profile": {
+            "gender": "Male",
+            "loc": {
+                "city": "Columbia",
+                "state": "Missouri"
+            },
+            "status": "yes",
+            "smoking": true,
+            "pets": false,
+            "sameSex": true,
+            "age": {
+                "min": 45,
+                "max": 77
+            },
+            "rent": {
+                "min": 0,
+                "max": 10000
+            },
+            "noise": "often",
+            "guests": "often",
+            "sleep": "often",
+            "commonSpaces": "often",
+            "clean": "often",
+            "tags": {
+                "videoGames": false,
+                "movies": false,
+                "tvShows": false,
+                "cooking": false,
+                "drinking": false,
+                "reading": false,
+                "writing": false,
+                "photography": false,
+                "art": false,
+                "theatre": false,
+                "performingMusic": false,
+                "listeningToMusic": false,
+                "college": false,
+                "fullTimeJob": false,
+                "partTimeJob": false,
+                "studying": false,
+                "greekLife": false,
+                "partying": false,
+                "gym": false,
+                "watchingSports": false,
+                "playingSports": false,
+                "shopping": false,
+                "fashion": false,
+                "indoors": false,
+                "outdoors": true,
+                "plants": false,
+                "warmHouse": false,
+                "coolHouse": true,
+                "roadTrips": true,
+                "children": true
+            },
+            "extraBoxes": {
+                "religion": "Probably",
+                "sexualOrientation": "",
+                "politicalAlignment": "Democrat",
+                "transportation": "Rollerblades"
+            },
+            "bio": "Super cool greek lifer! Shout out to Alpha Beta Gamma, and all my brothers!"
+        }
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d0a"
         },
+        "email": "vii@gmail.com",
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe-Seven",
-        "email": "vii@gmail.com",
-        "gender": "Male",
-        "loc": {
-            "city": "Columbia",
-            "state": "Missouri"
-        },
-        "status": "no",
-        "smoking": true,
-        "pets": true,
-        "sameSex": true,
-        "age": {
-            "min": 18,
-            "max": 88
-        },
-        "rent": {
-            "min": 1000,
-            "max": 10000
-        },
-        "noise": "rarely",
-        "guests": "rarely",
-        "sleep": "rarely",
-        "commonSpaces": "rarely",
-        "clean": "rarely",
-        "tags": {
-            "videoGames": false,
-            "movies": false,
-            "tvShows": false,
-            "cooking": false,
-            "drinking": false,
-            "reading": false,
-            "writing": false,
-            "photography": false,
-            "art": false,
-            "theatre": false,
-            "performingMusic": false,
-            "listeningToMusic": false,
-            "college": false,
-            "fullTimeJob": true,
-            "partTimeJob": false,
-            "studying": true,
-            "greekLife": false,
-            "partying": true,
-            "gym": true,
-            "watchingSports": false,
-            "playingSports": false,
-            "shopping": false,
-            "fashion": false,
-            "indoors": false,
-            "outdoors": false,
-            "plants": false,
-            "warmHouse": false,
-            "coolHouse": false,
-            "roadTrips": false,
-            "children": false
-        },
-        "extraBoxes": {
-            "religion": "One of them",
-            "sexualOrientation": "Gay",
-            "politicalAlignment": "Republican",
-            "transportation": "Car"
-        },
-        "bio": "I rickroll my dad daily",
-        "DoB": "1999-01-01"
+        "dateOfBirth": "1999-01-01",
+        "profile": {
+            "gender": "Male",
+            "loc": {
+                "city": "Columbia",
+                "state": "Missouri"
+            },
+            "status": "no",
+            "smoking": true,
+            "pets": true,
+            "sameSex": true,
+            "age": {
+                "min": 18,
+                "max": 88
+            },
+            "rent": {
+                "min": 1000,
+                "max": 10000
+            },
+            "noise": "rarely",
+            "guests": "rarely",
+            "sleep": "rarely",
+            "commonSpaces": "rarely",
+            "clean": "rarely",
+            "tags": {
+                "videoGames": false,
+                "movies": false,
+                "tvShows": false,
+                "cooking": false,
+                "drinking": false,
+                "reading": false,
+                "writing": false,
+                "photography": false,
+                "art": false,
+                "theatre": false,
+                "performingMusic": false,
+                "listeningToMusic": false,
+                "college": false,
+                "fullTimeJob": true,
+                "partTimeJob": false,
+                "studying": true,
+                "greekLife": false,
+                "partying": true,
+                "gym": true,
+                "watchingSports": false,
+                "playingSports": false,
+                "shopping": false,
+                "fashion": false,
+                "indoors": false,
+                "outdoors": false,
+                "plants": false,
+                "warmHouse": false,
+                "coolHouse": false,
+                "roadTrips": false,
+                "children": false
+            },
+            "extraBoxes": {
+                "religion": "One of them",
+                "sexualOrientation": "Gay",
+                "politicalAlignment": "Republican",
+                "transportation": "Car"
+            },
+            "bio": "I rickroll my dad daily"
+        }
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d0b"
         },
+        "email": "viii@gmail.com",
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe-Eight",
-        "email": "viii@gmail.com",
-        "gender": "Male",
-        "loc": {
-            "city": "Columbia",
-            "state": "Missouri"
-        },
-        "status": "no",
-        "smoking": true,
-        "pets": true,
-        "sameSex": true,
-        "age": {
-            "min": 18,
-            "max": 40
-        },
-        "rent": {
-            "min": 0,
-            "max": 10000
-        },
-        "noise": "often",
-        "guests": "often",
-        "sleep": "often",
-        "commonSpaces": "often",
-        "clean": "often",
-        "tags": {
-            "videoGames": false,
-            "movies": false,
-            "tvShows": false,
-            "cooking": false,
-            "drinking": false,
-            "reading": false,
-            "writing": false,
-            "photography": false,
-            "art": false,
-            "theatre": true,
-            "performingMusic": true,
-            "listeningToMusic": true,
-            "college": true,
-            "fullTimeJob": false,
-            "partTimeJob": true,
-            "studying": false,
-            "greekLife": false,
-            "partying": false,
-            "gym": false,
-            "watchingSports": false,
-            "playingSports": false,
-            "shopping": false,
-            "fashion": false,
-            "indoors": false,
-            "outdoors": false,
-            "plants": false,
-            "warmHouse": false,
-            "coolHouse": false,
-            "roadTrips": false,
-            "children": false
-        },
-        "extraBoxes": {
-            "religion": "Probably",
-            "sexualOrientation": "",
-            "politicalAlignment": "",
-            "transportation": "Rollerblades"
-        },
-        "bio": "Shrek is my favorite movie ever.",
-        "DoB": "1998-03-13"
+        "dateOfBirth": "1998-03-13",
+        "profile": {
+            "gender": "Male",
+            "loc": {
+                "city": "Columbia",
+                "state": "Missouri"
+            },
+            "status": "no",
+            "smoking": true,
+            "pets": true,
+            "sameSex": true,
+            "age": {
+                "min": 18,
+                "max": 40
+            },
+            "rent": {
+                "min": 0,
+                "max": 10000
+            },
+            "noise": "often",
+            "guests": "often",
+            "sleep": "often",
+            "commonSpaces": "often",
+            "clean": "often",
+            "tags": {
+                "videoGames": false,
+                "movies": false,
+                "tvShows": false,
+                "cooking": false,
+                "drinking": false,
+                "reading": false,
+                "writing": false,
+                "photography": false,
+                "art": false,
+                "theatre": true,
+                "performingMusic": true,
+                "listeningToMusic": true,
+                "college": true,
+                "fullTimeJob": false,
+                "partTimeJob": true,
+                "studying": false,
+                "greekLife": false,
+                "partying": false,
+                "gym": false,
+                "watchingSports": false,
+                "playingSports": false,
+                "shopping": false,
+                "fashion": false,
+                "indoors": false,
+                "outdoors": false,
+                "plants": false,
+                "warmHouse": false,
+                "coolHouse": false,
+                "roadTrips": false,
+                "children": false
+            },
+            "extraBoxes": {
+                "religion": "Probably",
+                "sexualOrientation": "",
+                "politicalAlignment": "",
+                "transportation": "Rollerblades"
+            },
+            "bio": "Shrek is my favorite movie ever."
+        }
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d0c"
         },
+        "email": "ix@gmail.com",
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe-Nine",
-        "email": "ix@gmail.com",
-        "gender": "Male",
-        "loc": {
-            "city": "Columbia",
-            "state": "Missouri"
-        },
-        "status": "no",
-        "smoking": true,
-        "pets": true,
-        "sameSex": true,
-        "age": {
-            "min": 18,
-            "max": 47
-        },
-        "rent": {
-            "min": 0,
-            "max": 900
-        },
-        "noise": "often",
-        "guests": "often",
-        "sleep": "often",
-        "commonSpaces": "often",
-        "clean": "often",
-        "tags": {
-            "videoGames": false,
-            "movies": false,
-            "tvShows": true,
-            "cooking": true,
-            "drinking": false,
-            "reading": true,
-            "writing": false,
-            "photography": false,
-            "art": true,
-            "theatre": false,
-            "performingMusic": false,
-            "listeningToMusic": false,
-            "college": false,
-            "fullTimeJob": false,
-            "partTimeJob": false,
-            "studying": false,
-            "greekLife": false,
-            "partying": false,
-            "gym": false,
-            "watchingSports": false,
-            "playingSports": false,
-            "shopping": false,
-            "fashion": false,
-            "indoors": false,
-            "outdoors": false,
-            "plants": false,
-            "warmHouse": false,
-            "coolHouse": false,
-            "roadTrips": false,
-            "children": false
-        },
-        "extraBoxes": {
-            "religion": "Probably",
-            "sexualOrientation": "Bisexual",
-            "politicalAlignment": "Authoritarian",
-            "transportation": "Rollerblades"
-        },
-        "bio": "Shrek is my favorite movie ever.",
-        "DoB": "1998-03-13"
+        "dateOfBirth": "1998-03-13",
+        "profile": {
+            "gender": "Male",
+            "loc": {
+                "city": "Columbia",
+                "state": "Missouri"
+            },
+            "status": "no",
+            "smoking": true,
+            "pets": true,
+            "sameSex": true,
+            "age": {
+                "min": 18,
+                "max": 47
+            },
+            "rent": {
+                "min": 0,
+                "max": 900
+            },
+            "noise": "often",
+            "guests": "often",
+            "sleep": "often",
+            "commonSpaces": "often",
+            "clean": "often",
+            "tags": {
+                "videoGames": false,
+                "movies": false,
+                "tvShows": true,
+                "cooking": true,
+                "drinking": false,
+                "reading": true,
+                "writing": false,
+                "photography": false,
+                "art": true,
+                "theatre": false,
+                "performingMusic": false,
+                "listeningToMusic": false,
+                "college": false,
+                "fullTimeJob": false,
+                "partTimeJob": false,
+                "studying": false,
+                "greekLife": false,
+                "partying": false,
+                "gym": false,
+                "watchingSports": false,
+                "playingSports": false,
+                "shopping": false,
+                "fashion": false,
+                "indoors": false,
+                "outdoors": false,
+                "plants": false,
+                "warmHouse": false,
+                "coolHouse": false,
+                "roadTrips": false,
+                "children": false
+            },
+            "extraBoxes": {
+                "religion": "Probably",
+                "sexualOrientation": "Bisexual",
+                "politicalAlignment": "Authoritarian",
+                "transportation": "Rollerblades"
+            },
+            "bio": "Shrek is my favorite movie ever."
+        }
     },
     {
         "_id": {
             "$oid": "632dd93508fdd4a48cc94d0d"
         },
+        "email": "x@gmail.com",
         "passwordHash": "$2b$10$IavWeyPtJ0oeKqnKGh.UE.7E8eP4BlOqWEhj8FS.YDT8vK28xpgVO",
         "name": "John Doe-Ten",
-        "email": "x@gmail.com",
-        "gender": "Male",
-        "loc": {
-            "city": "Columbia",
-            "state": "Missouri"
-        },
-        "status": "no",
-        "smoking": true,
-        "pets": true,
-        "sameSex": true,
-        "age": {
-            "min": 18,
-            "max": 25
-        },
-        "rent": {
-            "min": 0,
-            "max": 10000
-        },
-        "noise": "often",
-        "guests": "often",
-        "sleep": "often",
-        "commonSpaces": "often",
-        "clean": "often",
-        "tags": {
-            "videoGames": false,
-            "movies": false,
-            "tvShows": false,
-            "cooking": false,
-            "drinking": false,
-            "reading": false,
-            "writing": false,
-            "photography": false,
-            "art": false,
-            "theatre": true,
-            "performingMusic": true,
-            "listeningToMusic": true,
-            "college": true,
-            "fullTimeJob": false,
-            "partTimeJob": true,
-            "studying": false,
-            "greekLife": false,
-            "partying": false,
-            "gym": false,
-            "watchingSports": false,
-            "playingSports": false,
-            "shopping": false,
-            "fashion": false,
-            "indoors": false,
-            "outdoors": false,
-            "plants": false,
-            "warmHouse": false,
-            "coolHouse": false,
-            "roadTrips": false,
-            "children": false
-        },
-        "extraBoxes": {
-            "religion": "Probably",
-            "sexualOrientation": "Something",
-            "politicalAlignment": "Nah I'm good",
-            "transportation": "Rollerblades"
-        },
-        "bio": "Shrek is my favorite movie ever.",
-        "DoB": "1998-03-13"
+        "dateOfBirth": "1998-03-13",
+        "profile": {
+            "gender": "Male",
+            "loc": {
+                "city": "Columbia",
+                "state": "Missouri"
+            },
+            "status": "no",
+            "smoking": true,
+            "pets": true,
+            "sameSex": true,
+            "age": {
+                "min": 18,
+                "max": 25
+            },
+            "rent": {
+                "min": 0,
+                "max": 10000
+            },
+            "noise": "often",
+            "guests": "often",
+            "sleep": "often",
+            "commonSpaces": "often",
+            "clean": "often",
+            "tags": {
+                "videoGames": false,
+                "movies": false,
+                "tvShows": false,
+                "cooking": false,
+                "drinking": false,
+                "reading": false,
+                "writing": false,
+                "photography": false,
+                "art": false,
+                "theatre": true,
+                "performingMusic": true,
+                "listeningToMusic": true,
+                "college": true,
+                "fullTimeJob": false,
+                "partTimeJob": true,
+                "studying": false,
+                "greekLife": false,
+                "partying": false,
+                "gym": false,
+                "watchingSports": false,
+                "playingSports": false,
+                "shopping": false,
+                "fashion": false,
+                "indoors": false,
+                "outdoors": false,
+                "plants": false,
+                "warmHouse": false,
+                "coolHouse": false,
+                "roadTrips": false,
+                "children": false
+            },
+            "extraBoxes": {
+                "religion": "Probably",
+                "sexualOrientation": "Something",
+                "politicalAlignment": "Nah I'm good",
+                "transportation": "Rollerblades"
+            },
+            "bio": "Shrek is my favorite movie ever."
+        }
     }
 ]
