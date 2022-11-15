@@ -7,7 +7,7 @@
         "mac:mongod-kill": "pkill mongod",
         "mac:mongo-reset": "echo 'db.users.deleteMany({})' | mongosh --quiet bunkiez && mongoimport --jsonArray -d bunkiez -c users users.json",
         "build": "npx tsc",
-        "dev": "nodemon --watch 'src/**/*.ts' --exec 'node --experimental-specifier-resolution=node --loader ts-node/esm' src/index.ts",
+        "dev": "nodemon --watch 'src/**/*.ts' src/index.ts",
         "test": "jest"
     },
     "dependencies": {
