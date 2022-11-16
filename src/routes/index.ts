@@ -38,13 +38,12 @@ appRouter.post(
     guardValidation,
     async (req: Request, res: Response) => {
         const { email, passwordPlaintext, name, dateOfBirth } = req.body;
-        const newUserDoc = new User({
+        const newUser = await User.create({
             email,
             passwordHash: await bcrypt.hash(passwordPlaintext, SALT_ROUNDS),
             name,
             dateOfBirth,
         });
-        const newUser = await newUserDoc.save();
 
         const token = generateToken(newUser.id);
 
