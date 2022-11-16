@@ -6,7 +6,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { User } from '../db';
 import { guardValidation } from '../middlewares';
-import { apiRouter } from './api';
+import { apiRouter, JWT_ALGORITHM } from './api';
 
 // Get path of current file, directory, and the parent directory
 const __filename = fileURLToPath(import.meta.url);
@@ -21,7 +21,7 @@ const passwordValidator = (value: any) =>
     typeof value === 'string' && Buffer.byteLength(value) <= 72;
 
 const generateToken = (userId: string) =>
-    jwt.sign({ userId }, process.env.JWT_SECRET!, { expiresIn: 20 });
+    jwt.sign({ userId }, process.env.JWT_SECRET!, { algorithm: JWT_ALGORITHM, expiresIn: 20 });
 
 export const appRouter = Router();
 

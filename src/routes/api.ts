@@ -1,6 +1,6 @@
-import { Request, Response, Router } from 'express';
+import { Response, Router } from 'express';
+import { expressjwt, Request } from 'express-jwt';
 import { getUsers, User } from '../db';
-import { authorize } from '../middlewares';
 
 type BasicUser = {
     id: string;
@@ -9,13 +9,16 @@ type BasicUser = {
     percentage: number;
 };
 
+export const JWT_ALGORITHM = 'HS256';
+
 export const apiRouter = Router();
 
-apiRouter.get('/users', authorize, async (_req: Request, res: Response) => {
+apiRouter.use(expressjwt({ secret: process.env.JWT_SECRET!, algorithms: [JWT_ALGORITHM] }));
+
+apiRouter.get('/users', async (_req: Request, res: Response) => {
     res.send(await getUsers());
 });
 
-// add "authorize" as an argument before "async" in the future
 apiRouter.get('/matches', async (_req: Request, res: Response) => {
     var user = await User.findById('632dd93508fdd4a48cc94d18'); // replace with current user's ID, just a placeholder
     var allUsers = await getUsers();
