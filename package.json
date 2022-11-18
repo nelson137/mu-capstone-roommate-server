@@ -5,7 +5,7 @@
     "scripts": {
         "mac:mongod-start": "mongod --config \"$(brew --prefix)/etc/mongod.conf\" &",
         "mac:mongod-kill": "pkill mongod",
-        "mac:mongo-reset": "echo 'db.users.deleteMany({})' | mongosh --quiet bunkiez && mongoimport --jsonArray -d bunkiez -c users users.json",
+        "mac:mongo-reset": "echo 'db.UserbaseC.deleteMany({})' | mongosh --quiet bunkiez && mongoimport --jsonArray -d bunkiez -c UserbaseC users.json",
         "build": "npx tsc",
         "dev": "nodemon --watch 'src/**/*.ts' src/index.ts",
         "test": "jest"
