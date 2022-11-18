@@ -1,6 +1,6 @@
 import { Response, Router } from 'express';
 import { expressjwt, Request } from 'express-jwt';
-import { getUsers, User } from '../db';
+import { IUser, User } from '../db';
 
 type BasicUser = {
     id: string;
@@ -16,17 +16,17 @@ export const apiRouter = Router();
 apiRouter.use(expressjwt({ secret: process.env.JWT_SECRET!, algorithms: [JWT_ALGORITHM] }));
 
 apiRouter.get('/users', async (_req: Request, res: Response) => {
-    res.send(await getUsers());
+    res.json(await User.find<IUser>());
 });
 
 apiRouter.get('/matches', async (_req: Request, res: Response) => {
-    var user = await User.findById('632dd93508fdd4a48cc94d18'); // replace with current user's ID, just a placeholder
-    var allUsers = await getUsers();
+    var user = await User.findById<IUser>('632dd93508fdd4a48cc94d18'); // replace with current user's ID, just a placeholder
+    var allUsers = await User.find<IUser>();
     var potentialMatches: BasicUser[] = [];
     allUsers.forEach(getPercentage);
-    function getPercentage(person: typeof user, index: number) {
+    function getPercentage(person: IUser, index: number) {
         var matchPercentage = 0;
-        if (user && person && user.profile && person.profile) {
+        if (user && person && user.profile && person.profile && user.prefs && person.prefs) {
             var userID = user._id.toString();
             var personID = person._id.toString();
             const todaysDate = new Date();
@@ -51,94 +51,95 @@ apiRouter.get('/matches', async (_req: Request, res: Response) => {
                 user.profile.status != person.profile.status &&
                 user.profile.loc.city == person.profile.loc.city &&
                 user.profile.loc.state == person.profile.loc.state &&
-                user.profile.smoking == person.profile.smoking &&
-                user.profile.pets == person.profile.pets &&
-                (user.profile.sameSex == false || user.profile.gender == person.profile.gender) &&
-                (user.profile.rent.min ?? 0) <= person.profile.rent.max &&
-                (user.profile.rent.max ?? 0) >= person.profile.rent.min &&
-                userAge >= person.profile.age.min &&
-                userAge <= person.profile.age.max &&
-                (user.profile.age.min ?? 0) <= personAge &&
-                (user.profile.age.max ?? 0) >= personAge
+                user.prefs.absolutes.smoking == person.prefs.absolutes.smoking &&
+                user.prefs.absolutes.pets == person.prefs.absolutes.pets &&
+                (user.prefs.absolutes.sameSex == false ||
+                    user.profile.gender == person.profile.gender) &&
+                (user.prefs.absolutes.rent.min ?? 0) <= person.prefs.absolutes.rent.max &&
+                (user.prefs.absolutes.rent.max ?? 0) >= person.prefs.absolutes.rent.min &&
+                userAge >= person.prefs.absolutes.age.min &&
+                userAge <= person.prefs.absolutes.age.max &&
+                (user.prefs.absolutes.age.min ?? 0) <= personAge &&
+                (user.prefs.absolutes.age.max ?? 0) >= personAge
             ) {
                 matchPercentage += 50;
                 const userMajorInfluences = [
-                    user.profile.noise,
-                    user.profile.guests,
-                    user.profile.sleep,
-                    user.profile.commonSpaces,
-                    user.profile.clean,
+                    user.prefs.major.noise,
+                    user.prefs.major.guests,
+                    user.prefs.major.sleep,
+                    user.prefs.major.commonSpaces,
+                    user.prefs.major.clean,
                 ];
                 const personMajorInfluences = [
-                    person.profile.noise,
-                    person.profile.guests,
-                    person.profile.sleep,
-                    person.profile.commonSpaces,
-                    person.profile.clean,
+                    person.prefs.major.noise,
+                    person.prefs.major.guests,
+                    person.prefs.major.sleep,
+                    person.prefs.major.commonSpaces,
+                    person.prefs.major.clean,
                 ];
                 const userMinorInfluences = [
-                    user.profile.tags.videoGames,
-                    user.profile.tags.movies,
-                    user.profile.tags.tvShows,
-                    user.profile.tags.cooking,
-                    user.profile.tags.drinking,
-                    user.profile.tags.reading,
-                    user.profile.tags.writing,
-                    user.profile.tags.photography,
-                    user.profile.tags.art,
-                    user.profile.tags.theatre,
-                    user.profile.tags.performingMusic,
-                    user.profile.tags.listeningToMusic,
-                    user.profile.tags.college,
-                    user.profile.tags.fullTimeJob,
-                    user.profile.tags.partTimeJob,
-                    user.profile.tags.studying,
-                    user.profile.tags.greekLife,
-                    user.profile.tags.partying,
-                    user.profile.tags.gym,
-                    user.profile.tags.watchingSports,
-                    user.profile.tags.playingSports,
-                    user.profile.tags.shopping,
-                    user.profile.tags.fashion,
-                    user.profile.tags.indoors,
-                    user.profile.tags.outdoors,
-                    user.profile.tags.plants,
-                    user.profile.tags.warmHouse,
-                    user.profile.tags.coolHouse,
-                    user.profile.tags.roadTrips,
-                    user.profile.tags.children,
+                    user.prefs.tags.videoGames,
+                    user.prefs.tags.movies,
+                    user.prefs.tags.tvShows,
+                    user.prefs.tags.cooking,
+                    user.prefs.tags.drinking,
+                    user.prefs.tags.reading,
+                    user.prefs.tags.writing,
+                    user.prefs.tags.photography,
+                    user.prefs.tags.art,
+                    user.prefs.tags.theatre,
+                    user.prefs.tags.performingMusic,
+                    user.prefs.tags.listeningToMusic,
+                    user.prefs.tags.college,
+                    user.prefs.tags.fullTimeJob,
+                    user.prefs.tags.partTimeJob,
+                    user.prefs.tags.studying,
+                    user.prefs.tags.greekLife,
+                    user.prefs.tags.partying,
+                    user.prefs.tags.gym,
+                    user.prefs.tags.watchingSports,
+                    user.prefs.tags.playingSports,
+                    user.prefs.tags.shopping,
+                    user.prefs.tags.fashion,
+                    user.prefs.tags.indoors,
+                    user.prefs.tags.outdoors,
+                    user.prefs.tags.plants,
+                    user.prefs.tags.warmHouse,
+                    user.prefs.tags.coolHouse,
+                    user.prefs.tags.roadTrips,
+                    user.prefs.tags.children,
                 ];
                 const personMinorInfluences = [
-                    person.profile.tags.videoGames,
-                    person.profile.tags.movies,
-                    person.profile.tags.tvShows,
-                    person.profile.tags.cooking,
-                    person.profile.tags.drinking,
-                    person.profile.tags.reading,
-                    person.profile.tags.writing,
-                    person.profile.tags.photography,
-                    person.profile.tags.art,
-                    person.profile.tags.theatre,
-                    person.profile.tags.performingMusic,
-                    person.profile.tags.listeningToMusic,
-                    person.profile.tags.college,
-                    person.profile.tags.fullTimeJob,
-                    person.profile.tags.partTimeJob,
-                    person.profile.tags.studying,
-                    person.profile.tags.greekLife,
-                    person.profile.tags.partying,
-                    person.profile.tags.gym,
-                    person.profile.tags.watchingSports,
-                    person.profile.tags.playingSports,
-                    person.profile.tags.shopping,
-                    person.profile.tags.fashion,
-                    person.profile.tags.indoors,
-                    person.profile.tags.outdoors,
-                    person.profile.tags.plants,
-                    person.profile.tags.warmHouse,
-                    person.profile.tags.coolHouse,
-                    person.profile.tags.roadTrips,
-                    person.profile.tags.children,
+                    person.prefs.tags.videoGames,
+                    person.prefs.tags.movies,
+                    person.prefs.tags.tvShows,
+                    person.prefs.tags.cooking,
+                    person.prefs.tags.drinking,
+                    person.prefs.tags.reading,
+                    person.prefs.tags.writing,
+                    person.prefs.tags.photography,
+                    person.prefs.tags.art,
+                    person.prefs.tags.theatre,
+                    person.prefs.tags.performingMusic,
+                    person.prefs.tags.listeningToMusic,
+                    person.prefs.tags.college,
+                    person.prefs.tags.fullTimeJob,
+                    person.prefs.tags.partTimeJob,
+                    person.prefs.tags.studying,
+                    person.prefs.tags.greekLife,
+                    person.prefs.tags.partying,
+                    person.prefs.tags.gym,
+                    person.prefs.tags.watchingSports,
+                    person.prefs.tags.playingSports,
+                    person.prefs.tags.shopping,
+                    person.prefs.tags.fashion,
+                    person.prefs.tags.indoors,
+                    person.prefs.tags.outdoors,
+                    person.prefs.tags.plants,
+                    person.prefs.tags.warmHouse,
+                    person.prefs.tags.coolHouse,
+                    person.prefs.tags.roadTrips,
+                    person.prefs.tags.children,
                 ];
                 for (let i = 0; i < userMajorInfluences.length; i++) {
                     if (userMajorInfluences[i] == personMajorInfluences[i]) {

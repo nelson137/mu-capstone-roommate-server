@@ -8,28 +8,38 @@
         "name": "Nathan Toepke",
         "dateOfBirth": "2000-09-12",
         "profile": {
+            "status": "no",
             "gender": "Male",
             "loc": {
                 "city": "Columbia",
                 "state": "Missouri"
             },
-            "status": "no",
-            "smoking": true,
-            "pets": true,
-            "sameSex": false,
-            "age": {
-                "min": 18,
-                "max": 22
+            "religion": "Atheist",
+            "sexualOrientation": "Straight",
+            "politicalAlignment": "",
+            "bio": "Oh my gosh I just love doing X and Y and am a huge fan of Z so we have to go to W to see Z when he performs in CoMo! I'll buy popcorn if you drive!"
+        },
+        "prefs": {
+            "absolutes": {
+                "smoking": true,
+                "pets": true,
+                "sameSex": false,
+                "age": {
+                    "min": 18,
+                    "max": 22
+                },
+                "rent": {
+                    "min": 200,
+                    "max": 10000
+                }
             },
-            "rent": {
-                "min": 200,
-                "max": 10000
+            "major": {
+                "noise": "rarely",
+                "guests": "often",
+                "sleep": "sometimes",
+                "commonSpaces": "often",
+                "clean": "rarely"
             },
-            "noise": "rarely",
-            "guests": "often",
-            "sleep": "sometimes",
-            "commonSpaces": "often",
-            "clean": "rarely",
             "tags": {
                 "videoGames": true,
                 "movies": false,
@@ -61,14 +71,7 @@
                 "coolHouse": false,
                 "roadTrips": false,
                 "children": false
-            },
-            "extraBoxes": {
-                "religion": "Atheist",
-                "sexualOrientation": "Straight",
-                "politicalAlignment": "",
-                "transportation": "Car"
-            },
-            "bio": "Oh my gosh I just love doing X and Y and am a huge fan of Z so we have to go to W to see Z when he performs in CoMo! I'll buy popcorn if you drive!"
+            }
         }
     },
     {
@@ -86,22 +89,32 @@
                 "state": "Missouri"
             },
             "status": "yes",
-            "smoking": true,
-            "pets": false,
-            "sameSex": true,
-            "age": {
-                "min": 18,
-                "max": 77
+            "religion": "Probably",
+            "sexualOrientation": "Straight",
+            "politicalAlignment": "",
+            "bio": "Biggest Cheesehead you have ever met."
+        },
+        "prefs": {
+            "absolutes": {
+                "smoking": true,
+                "pets": false,
+                "sameSex": true,
+                "age": {
+                    "min": 18,
+                    "max": 77
+                },
+                "rent": {
+                    "min": 0,
+                    "max": 550
+                }
             },
-            "rent": {
-                "min": 0,
-                "max": 550
+            "major": {
+                "noise": "often",
+                "guests": "often",
+                "sleep": "often",
+                "commonSpaces": "often",
+                "clean": "often"
             },
-            "noise": "often",
-            "guests": "often",
-            "sleep": "often",
-            "commonSpaces": "often",
-            "clean": "often",
             "tags": {
                 "videoGames": false,
                 "movies": false,
@@ -133,14 +146,7 @@
                 "coolHouse": false,
                 "roadTrips": false,
                 "children": false
-            },
-            "extraBoxes": {
-                "religion": "Probably",
-                "sexualOrientation": "Straight",
-                "politicalAlignment": "",
-                "transportation": "Rollerblades"
-            },
-            "bio": "Biggest Cheesehead you have ever met."
+            }
         }
     },
     {
@@ -158,22 +164,32 @@
                 "state": "Missouri"
             },
             "status": "yes",
-            "smoking": false,
-            "pets": false,
-            "sameSex": false,
-            "age": {
-                "min": 18,
-                "max": 30
+            "religion": "Atheist",
+            "sexualOrientation": "Gay",
+            "politicalAlignment": "Democrat",
+            "bio": "Insert generic bio here"
+        },
+        "prefs": {
+            "absolutes": {
+                "smoking": false,
+                "pets": false,
+                "sameSex": false,
+                "age": {
+                    "min": 18,
+                    "max": 30
+                },
+                "rent": {
+                    "min": 0,
+                    "max": 10000
+                }
             },
-            "rent": {
-                "min": 0,
-                "max": 10000
+            "major": {
+                "noise": "rarely",
+                "guests": "often",
+                "sleep": "sometimes",
+                "commonSpaces": "often",
+                "clean": "rarely"
             },
-            "noise": "rarely",
-            "guests": "often",
-            "sleep": "sometimes",
-            "commonSpaces": "often",
-            "clean": "rarely",
             "tags": {
                 "videoGames": true,
                 "movies": false,
@@ -205,14 +221,7 @@
                 "coolHouse": false,
                 "roadTrips": false,
                 "children": false
-            },
-            "extraBoxes": {
-                "religion": "Atheist",
-                "sexualOrientation": "Gay",
-                "politicalAlignment": "Democrat",
-                "transportation": "Car"
-            },
-            "bio": "Insert generic bio here"
+            }
         }
     },
     {
@@ -230,22 +239,32 @@
                 "state": "Missouri"
             },
             "status": "yes",
-            "smoking": true,
-            "pets": false,
-            "sameSex": true,
-            "age": {
-                "min": 18,
-                "max": 77
+            "religion": "Probably",
+            "sexualOrientation": "Bisexual",
+            "politicalAlignment": "Moderate",
+            "bio": "Super cool greek lifer! Shout out to Alpha Beta Gamma, and all my sisters!"
+        },
+        "prefs": {
+            "absolutes": {
+                "smoking": true,
+                "pets": false,
+                "sameSex": true,
+                "age": {
+                    "min": 18,
+                    "max": 77
+                },
+                "rent": {
+                    "min": 0,
+                    "max": 550
+                }
             },
-            "rent": {
-                "min": 0,
-                "max": 550
+            "major": {
+                "noise": "often",
+                "guests": "often",
+                "sleep": "often",
+                "commonSpaces": "often",
+                "clean": "often"
             },
-            "noise": "often",
-            "guests": "often",
-            "sleep": "often",
-            "commonSpaces": "often",
-            "clean": "often",
             "tags": {
                 "videoGames": false,
                 "movies": false,
@@ -277,14 +296,7 @@
                 "coolHouse": false,
                 "roadTrips": false,
                 "children": false
-            },
-            "extraBoxes": {
-                "religion": "Probably",
-                "sexualOrientation": "Bisexual",
-                "politicalAlignment": "Moderate",
-                "transportation": "Rollerblades"
-            },
-            "bio": "Super cool greek lifer! Shout out to Alpha Beta Gamma, and all my sisters!"
+            }
         }
     },
     {
@@ -302,22 +314,32 @@
                 "state": "Missouri"
             },
             "status": "no",
-            "smoking": true,
-            "pets": true,
-            "sameSex": true,
-            "age": {
-                "min": 18,
-                "max": 21
+            "religion": "One of them",
+            "sexualOrientation": "Biromantic Asexual",
+            "politicalAlignment": "Communist",
+            "bio": "I rickroll my dad daily"
+        },
+        "prefs": {
+            "absolutes": {
+                "smoking": true,
+                "pets": true,
+                "sameSex": true,
+                "age": {
+                    "min": 18,
+                    "max": 21
+                },
+                "rent": {
+                    "min": 1000,
+                    "max": 10000
+                }
             },
-            "rent": {
-                "min": 1000,
-                "max": 10000
+            "major": {
+                "noise": "rarely",
+                "guests": "rarely",
+                "sleep": "rarely",
+                "commonSpaces": "rarely",
+                "clean": "rarely"
             },
-            "noise": "rarely",
-            "guests": "rarely",
-            "sleep": "rarely",
-            "commonSpaces": "rarely",
-            "clean": "rarely",
             "tags": {
                 "videoGames": true,
                 "movies": false,
@@ -349,14 +371,7 @@
                 "coolHouse": false,
                 "roadTrips": false,
                 "children": false
-            },
-            "extraBoxes": {
-                "religion": "One of them",
-                "sexualOrientation": "Biromantic Asexual",
-                "politicalAlignment": "Communist",
-                "transportation": "Car"
-            },
-            "bio": "I rickroll my dad daily"
+            }
         }
     },
     {
@@ -374,22 +389,32 @@
                 "state": "Missouri"
             },
             "status": "no",
-            "smoking": true,
-            "pets": true,
-            "sameSex": true,
-            "age": {
-                "min": 18,
-                "max": 40
+            "religion": "Probably",
+            "sexualOrientation": "Straight",
+            "politicalAlignment": "Republican",
+            "bio": "Shrek is my favorite movie ever."
+        },
+        "prefs": {
+            "absolutes": {
+                "smoking": true,
+                "pets": true,
+                "sameSex": true,
+                "age": {
+                    "min": 18,
+                    "max": 40
+                },
+                "rent": {
+                    "min": 0,
+                    "max": 10000
+                }
             },
-            "rent": {
-                "min": 0,
-                "max": 10000
+            "major": {
+                "noise": "often",
+                "guests": "often",
+                "sleep": "often",
+                "commonSpaces": "often",
+                "clean": "often"
             },
-            "noise": "often",
-            "guests": "often",
-            "sleep": "often",
-            "commonSpaces": "often",
-            "clean": "often",
             "tags": {
                 "videoGames": false,
                 "movies": false,
@@ -421,14 +446,7 @@
                 "coolHouse": false,
                 "roadTrips": false,
                 "children": false
-            },
-            "extraBoxes": {
-                "religion": "Probably",
-                "sexualOrientation": "Straight",
-                "politicalAlignment": "Republican",
-                "transportation": "Rollerblades"
-            },
-            "bio": "Shrek is my favorite movie ever."
+            }
         }
     },
     {
@@ -446,22 +464,32 @@
                 "state": "Missouri"
             },
             "status": "yes",
-            "smoking": false,
-            "pets": false,
-            "sameSex": false,
-            "age": {
-                "min": 18,
-                "max": 30
+            "religion": "Atheist",
+            "sexualOrientation": "Pansexual",
+            "politicalAlignment": "Libertarian",
+            "bio": "Insert generic bio here"
+        },
+        "prefs": {
+            "absolutes": {
+                "smoking": false,
+                "pets": false,
+                "sameSex": false,
+                "age": {
+                    "min": 18,
+                    "max": 30
+                },
+                "rent": {
+                    "min": 0,
+                    "max": 10000
+                }
             },
-            "rent": {
-                "min": 0,
-                "max": 10000
+            "major": {
+                "noise": "rarely",
+                "guests": "often",
+                "sleep": "sometimes",
+                "commonSpaces": "often",
+                "clean": "rarely"
             },
-            "noise": "rarely",
-            "guests": "often",
-            "sleep": "sometimes",
-            "commonSpaces": "often",
-            "clean": "rarely",
             "tags": {
                 "videoGames": true,
                 "movies": false,
@@ -493,14 +521,7 @@
                 "coolHouse": false,
                 "roadTrips": false,
                 "children": false
-            },
-            "extraBoxes": {
-                "religion": "Atheist",
-                "sexualOrientation": "Pansexual",
-                "politicalAlignment": "Libertarian",
-                "transportation": "Car"
-            },
-            "bio": "Insert generic bio here"
+            }
         }
     },
     {
@@ -518,22 +539,32 @@
                 "state": "Missouri"
             },
             "status": "yes",
-            "smoking": true,
-            "pets": false,
-            "sameSex": true,
-            "age": {
-                "min": 18,
-                "max": 77
+            "religion": "Probably",
+            "sexualOrientation": "Bisexual",
+            "politicalAlignment": "Anarchist",
+            "bio": "Super cool greek lifer! Shout out to Alpha Beta Gamma, and all my sisters!"
+        },
+        "prefs": {
+            "absolutes": {
+                "smoking": true,
+                "pets": false,
+                "sameSex": true,
+                "age": {
+                    "min": 18,
+                    "max": 77
+                },
+                "rent": {
+                    "min": 0,
+                    "max": 550
+                }
             },
-            "rent": {
-                "min": 0,
-                "max": 550
+            "major": {
+                "noise": "often",
+                "guests": "often",
+                "sleep": "often",
+                "commonSpaces": "often",
+                "clean": "often"
             },
-            "noise": "often",
-            "guests": "often",
-            "sleep": "often",
-            "commonSpaces": "often",
-            "clean": "often",
             "tags": {
                 "videoGames": false,
                 "movies": false,
@@ -565,14 +596,7 @@
                 "coolHouse": false,
                 "roadTrips": false,
                 "children": false
-            },
-            "extraBoxes": {
-                "religion": "Probably",
-                "sexualOrientation": "Bisexual",
-                "politicalAlignment": "Anarchist",
-                "transportation": "Rollerblades"
-            },
-            "bio": "Super cool greek lifer! Shout out to Alpha Beta Gamma, and all my sisters!"
+            }
         }
     },
     {
@@ -590,22 +614,32 @@
                 "state": "Missouri"
             },
             "status": "no",
-            "smoking": true,
-            "pets": true,
-            "sameSex": true,
-            "age": {
-                "min": 18,
-                "max": 21
+            "religion": "One of them",
+            "sexualOrientation": "Straight",
+            "politicalAlignment": "Fascist",
+            "bio": "I rickroll my dad daily"
+        },
+        "prefs": {
+            "absolutes": {
+                "smoking": true,
+                "pets": true,
+                "sameSex": true,
+                "age": {
+                    "min": 18,
+                    "max": 21
+                },
+                "rent": {
+                    "min": 1000,
+                    "max": 10000
+                }
             },
-            "rent": {
-                "min": 1000,
-                "max": 10000
+            "major": {
+                "noise": "rarely",
+                "guests": "rarely",
+                "sleep": "rarely",
+                "commonSpaces": "rarely",
+                "clean": "rarely"
             },
-            "noise": "rarely",
-            "guests": "rarely",
-            "sleep": "rarely",
-            "commonSpaces": "rarely",
-            "clean": "rarely",
             "tags": {
                 "videoGames": true,
                 "movies": false,
@@ -637,14 +671,7 @@
                 "coolHouse": false,
                 "roadTrips": false,
                 "children": false
-            },
-            "extraBoxes": {
-                "religion": "One of them",
-                "sexualOrientation": "Straight",
-                "politicalAlignment": "Fascist",
-                "transportation": "Car"
-            },
-            "bio": "I rickroll my dad daily"
+            }
         }
     },
     {
@@ -662,22 +689,32 @@
                 "state": "Missouri"
             },
             "status": "no",
-            "smoking": true,
-            "pets": true,
-            "sameSex": true,
-            "age": {
-                "min": 18,
-                "max": 40
+            "religion": "Probably",
+            "sexualOrientation": "",
+            "politicalAlignment": "",
+            "bio": "Shrek is my favorite movie ever."
+        },
+        "prefs": {
+            "absolutes": {
+                "smoking": true,
+                "pets": true,
+                "sameSex": true,
+                "age": {
+                    "min": 18,
+                    "max": 40
+                },
+                "rent": {
+                    "min": 0,
+                    "max": 10000
+                }
             },
-            "rent": {
-                "min": 0,
-                "max": 10000
+            "major": {
+                "noise": "often",
+                "guests": "often",
+                "sleep": "often",
+                "commonSpaces": "often",
+                "clean": "often"
             },
-            "noise": "often",
-            "guests": "often",
-            "sleep": "often",
-            "commonSpaces": "often",
-            "clean": "often",
             "tags": {
                 "videoGames": false,
                 "movies": false,
@@ -709,14 +746,7 @@
                 "coolHouse": false,
                 "roadTrips": false,
                 "children": false
-            },
-            "extraBoxes": {
-                "religion": "Probably",
-                "sexualOrientation": "",
-                "politicalAlignment": "",
-                "transportation": "Rollerblades"
-            },
-            "bio": "Shrek is my favorite movie ever."
+            }
         }
     },
     {
@@ -734,22 +764,32 @@
                 "state": "Missouri"
             },
             "status": "yes",
-            "smoking": false,
-            "pets": false,
-            "sameSex": false,
-            "age": {
-                "min": 18,
-                "max": 30
+            "religion": "Atheist",
+            "sexualOrientation": "",
+            "politicalAlignment": "",
+            "bio": "Insert generic bio here"
+        },
+        "prefs": {
+            "absolutes": {
+                "smoking": false,
+                "pets": false,
+                "sameSex": false,
+                "age": {
+                    "min": 18,
+                    "max": 30
+                },
+                "rent": {
+                    "min": 10,
+                    "max": 10000
+                }
             },
-            "rent": {
-                "min": 10,
-                "max": 10000
+            "major": {
+                "noise": "rarely",
+                "guests": "often",
+                "sleep": "sometimes",
+                "commonSpaces": "often",
+                "clean": "rarely"
             },
-            "noise": "rarely",
-            "guests": "often",
-            "sleep": "sometimes",
-            "commonSpaces": "often",
-            "clean": "rarely",
             "tags": {
                 "videoGames": true,
                 "movies": false,
@@ -781,14 +821,7 @@
                 "coolHouse": false,
                 "roadTrips": false,
                 "children": false
-            },
-            "extraBoxes": {
-                "religion": "Atheist",
-                "sexualOrientation": "",
-                "politicalAlignment": "",
-                "transportation": "Car"
-            },
-            "bio": "Insert generic bio here"
+            }
         }
     },
     {
@@ -806,22 +839,32 @@
                 "state": "Missouri"
             },
             "status": "yes",
-            "smoking": true,
-            "pets": false,
-            "sameSex": true,
-            "age": {
-                "min": 18,
-                "max": 77
+            "religion": "Probably",
+            "sexualOrientation": "",
+            "politicalAlignment": "Democrat",
+            "bio": "Super cool greek lifer! Shout out to Alpha Beta Gamma, and all my sisters!"
+        },
+        "prefs": {
+            "absolutes": {
+                "smoking": true,
+                "pets": false,
+                "sameSex": true,
+                "age": {
+                    "min": 18,
+                    "max": 77
+                },
+                "rent": {
+                    "min": 0,
+                    "max": 550
+                }
             },
-            "rent": {
-                "min": 0,
-                "max": 550
+            "major": {
+                "noise": "often",
+                "guests": "often",
+                "sleep": "often",
+                "commonSpaces": "often",
+                "clean": "often"
             },
-            "noise": "often",
-            "guests": "often",
-            "sleep": "often",
-            "commonSpaces": "often",
-            "clean": "often",
             "tags": {
                 "videoGames": false,
                 "movies": false,
@@ -853,14 +896,7 @@
                 "coolHouse": false,
                 "roadTrips": false,
                 "children": false
-            },
-            "extraBoxes": {
-                "religion": "Probably",
-                "sexualOrientation": "",
-                "politicalAlignment": "Democrat",
-                "transportation": "Rollerblades"
-            },
-            "bio": "Super cool greek lifer! Shout out to Alpha Beta Gamma, and all my sisters!"
+            }
         }
     },
     {
@@ -878,22 +914,32 @@
                 "state": "Missouri"
             },
             "status": "no",
-            "smoking": true,
-            "pets": true,
-            "sameSex": true,
-            "age": {
-                "min": 18,
-                "max": 21
+            "religion": "One of them",
+            "sexualOrientation": "",
+            "politicalAlignment": "Green Party",
+            "bio": "I rickroll my dad daily"
+        },
+        "prefs": {
+            "absolutes": {
+                "smoking": true,
+                "pets": true,
+                "sameSex": true,
+                "age": {
+                    "min": 18,
+                    "max": 21
+                },
+                "rent": {
+                    "min": 1000,
+                    "max": 10000
+                }
             },
-            "rent": {
-                "min": 1000,
-                "max": 10000
+            "major": {
+                "noise": "rarely",
+                "guests": "rarely",
+                "sleep": "rarely",
+                "commonSpaces": "rarely",
+                "clean": "rarely"
             },
-            "noise": "rarely",
-            "guests": "rarely",
-            "sleep": "rarely",
-            "commonSpaces": "rarely",
-            "clean": "rarely",
             "tags": {
                 "videoGames": true,
                 "movies": false,
@@ -925,14 +971,7 @@
                 "coolHouse": false,
                 "roadTrips": false,
                 "children": false
-            },
-            "extraBoxes": {
-                "religion": "One of them",
-                "sexualOrientation": "",
-                "politicalAlignment": "Green Party",
-                "transportation": "Car"
-            },
-            "bio": "I rickroll my dad daily"
+            }
         }
     },
     {
@@ -950,22 +989,32 @@
                 "state": "Missouri"
             },
             "status": "no",
-            "smoking": true,
-            "pets": true,
-            "sameSex": true,
-            "age": {
-                "min": 18,
-                "max": 40
+            "religion": "Probably",
+            "sexualOrientation": "",
+            "politicalAlignment": "Kanye 2024",
+            "bio": "Shrek is my favorite movie ever."
+        },
+        "prefs": {
+            "absolutes": {
+                "smoking": true,
+                "pets": true,
+                "sameSex": true,
+                "age": {
+                    "min": 18,
+                    "max": 40
+                },
+                "rent": {
+                    "min": 0,
+                    "max": 10000
+                }
             },
-            "rent": {
-                "min": 0,
-                "max": 10000
+            "major": {
+                "noise": "often",
+                "guests": "often",
+                "sleep": "often",
+                "commonSpaces": "often",
+                "clean": "often"
             },
-            "noise": "often",
-            "guests": "often",
-            "sleep": "often",
-            "commonSpaces": "often",
-            "clean": "often",
             "tags": {
                 "videoGames": false,
                 "movies": false,
@@ -997,14 +1046,7 @@
                 "coolHouse": false,
                 "roadTrips": false,
                 "children": false
-            },
-            "extraBoxes": {
-                "religion": "Probably",
-                "sexualOrientation": "",
-                "politicalAlignment": "Kanye 2024",
-                "transportation": "Rollerblades"
-            },
-            "bio": "Shrek is my favorite movie ever."
+            }
         }
     },
     {
@@ -1022,22 +1064,32 @@
                 "state": "Missouri"
             },
             "status": "yes",
-            "smoking": true,
-            "pets": true,
-            "sameSex": false,
-            "age": {
-                "min": 18,
-                "max": 99
+            "religion": "Atheist",
+            "sexualOrientation": "Straight",
+            "politicalAlignment": "Green Party",
+            "bio": "Insert generic bio here"
+        },
+        "prefs": {
+            "absolutes": {
+                "smoking": true,
+                "pets": true,
+                "sameSex": false,
+                "age": {
+                    "min": 18,
+                    "max": 99
+                },
+                "rent": {
+                    "min": 0,
+                    "max": 10000
+                }
             },
-            "rent": {
-                "min": 0,
-                "max": 10000
+            "major": {
+                "noise": "rarely",
+                "guests": "often",
+                "sleep": "sometimes",
+                "commonSpaces": "often",
+                "clean": "rarely"
             },
-            "noise": "rarely",
-            "guests": "often",
-            "sleep": "sometimes",
-            "commonSpaces": "often",
-            "clean": "rarely",
             "tags": {
                 "videoGames": false,
                 "movies": false,
@@ -1069,14 +1121,7 @@
                 "coolHouse": true,
                 "roadTrips": true,
                 "children": true
-            },
-            "extraBoxes": {
-                "religion": "Atheist",
-                "sexualOrientation": "Straight",
-                "politicalAlignment": "Green Party",
-                "transportation": "Uber"
-            },
-            "bio": "Insert generic bio here"
+            }
         }
     },
     {
@@ -1094,22 +1139,32 @@
                 "state": "Missouri"
             },
             "status": "yes",
-            "smoking": true,
-            "pets": false,
-            "sameSex": true,
-            "age": {
-                "min": 45,
-                "max": 77
+            "religion": "Probably",
+            "sexualOrientation": "",
+            "politicalAlignment": "Democrat",
+            "bio": "Super cool greek lifer! Shout out to Alpha Beta Gamma, and all my brothers!"
+        },
+        "prefs": {
+            "absolutes": {
+                "smoking": true,
+                "pets": false,
+                "sameSex": true,
+                "age": {
+                    "min": 45,
+                    "max": 77
+                },
+                "rent": {
+                    "min": 0,
+                    "max": 10000
+                }
             },
-            "rent": {
-                "min": 0,
-                "max": 10000
+            "major": {
+                "noise": "often",
+                "guests": "often",
+                "sleep": "often",
+                "commonSpaces": "often",
+                "clean": "often"
             },
-            "noise": "often",
-            "guests": "often",
-            "sleep": "often",
-            "commonSpaces": "often",
-            "clean": "often",
             "tags": {
                 "videoGames": false,
                 "movies": false,
@@ -1141,14 +1196,7 @@
                 "coolHouse": true,
                 "roadTrips": true,
                 "children": true
-            },
-            "extraBoxes": {
-                "religion": "Probably",
-                "sexualOrientation": "",
-                "politicalAlignment": "Democrat",
-                "transportation": "Rollerblades"
-            },
-            "bio": "Super cool greek lifer! Shout out to Alpha Beta Gamma, and all my brothers!"
+            }
         }
     },
     {
@@ -1166,22 +1214,32 @@
                 "state": "Missouri"
             },
             "status": "no",
-            "smoking": true,
-            "pets": true,
-            "sameSex": true,
-            "age": {
-                "min": 18,
-                "max": 88
+            "religion": "One of them",
+            "sexualOrientation": "Gay",
+            "politicalAlignment": "Republican",
+            "bio": "I rickroll my dad daily"
+        },
+        "prefs": {
+            "absolutes": {
+                "smoking": true,
+                "pets": true,
+                "sameSex": true,
+                "age": {
+                    "min": 18,
+                    "max": 88
+                },
+                "rent": {
+                    "min": 1000,
+                    "max": 10000
+                }
             },
-            "rent": {
-                "min": 1000,
-                "max": 10000
+            "major": {
+                "noise": "rarely",
+                "guests": "rarely",
+                "sleep": "rarely",
+                "commonSpaces": "rarely",
+                "clean": "rarely"
             },
-            "noise": "rarely",
-            "guests": "rarely",
-            "sleep": "rarely",
-            "commonSpaces": "rarely",
-            "clean": "rarely",
             "tags": {
                 "videoGames": false,
                 "movies": false,
@@ -1213,14 +1271,7 @@
                 "coolHouse": false,
                 "roadTrips": false,
                 "children": false
-            },
-            "extraBoxes": {
-                "religion": "One of them",
-                "sexualOrientation": "Gay",
-                "politicalAlignment": "Republican",
-                "transportation": "Car"
-            },
-            "bio": "I rickroll my dad daily"
+            }
         }
     },
     {
@@ -1238,22 +1289,32 @@
                 "state": "Missouri"
             },
             "status": "no",
-            "smoking": true,
-            "pets": true,
-            "sameSex": true,
-            "age": {
-                "min": 18,
-                "max": 40
+            "religion": "Probably",
+            "sexualOrientation": "",
+            "politicalAlignment": "",
+            "bio": "Shrek is my favorite movie ever."
+        },
+        "prefs": {
+            "absolutes": {
+                "smoking": true,
+                "pets": true,
+                "sameSex": true,
+                "age": {
+                    "min": 18,
+                    "max": 40
+                },
+                "rent": {
+                    "min": 0,
+                    "max": 10000
+                }
             },
-            "rent": {
-                "min": 0,
-                "max": 10000
+            "major": {
+                "noise": "often",
+                "guests": "often",
+                "sleep": "often",
+                "commonSpaces": "often",
+                "clean": "often"
             },
-            "noise": "often",
-            "guests": "often",
-            "sleep": "often",
-            "commonSpaces": "often",
-            "clean": "often",
             "tags": {
                 "videoGames": false,
                 "movies": false,
@@ -1285,14 +1346,7 @@
                 "coolHouse": false,
                 "roadTrips": false,
                 "children": false
-            },
-            "extraBoxes": {
-                "religion": "Probably",
-                "sexualOrientation": "",
-                "politicalAlignment": "",
-                "transportation": "Rollerblades"
-            },
-            "bio": "Shrek is my favorite movie ever."
+            }
         }
     },
     {
@@ -1310,22 +1364,32 @@
                 "state": "Missouri"
             },
             "status": "no",
-            "smoking": true,
-            "pets": true,
-            "sameSex": true,
-            "age": {
-                "min": 18,
-                "max": 47
+            "religion": "Probably",
+            "sexualOrientation": "Bisexual",
+            "politicalAlignment": "Authoritarian",
+            "bio": "Shrek is my favorite movie ever."
+        },
+        "prefs": {
+            "absolutes": {
+                "smoking": true,
+                "pets": true,
+                "sameSex": true,
+                "age": {
+                    "min": 18,
+                    "max": 47
+                },
+                "rent": {
+                    "min": 0,
+                    "max": 900
+                }
             },
-            "rent": {
-                "min": 0,
-                "max": 900
+            "major": {
+                "noise": "often",
+                "guests": "often",
+                "sleep": "often",
+                "commonSpaces": "often",
+                "clean": "often"
             },
-            "noise": "often",
-            "guests": "often",
-            "sleep": "often",
-            "commonSpaces": "often",
-            "clean": "often",
             "tags": {
                 "videoGames": false,
                 "movies": false,
@@ -1357,14 +1421,7 @@
                 "coolHouse": false,
                 "roadTrips": false,
                 "children": false
-            },
-            "extraBoxes": {
-                "religion": "Probably",
-                "sexualOrientation": "Bisexual",
-                "politicalAlignment": "Authoritarian",
-                "transportation": "Rollerblades"
-            },
-            "bio": "Shrek is my favorite movie ever."
+            }
         }
     },
     {
@@ -1382,22 +1439,32 @@
                 "state": "Missouri"
             },
             "status": "no",
-            "smoking": true,
-            "pets": true,
-            "sameSex": true,
-            "age": {
-                "min": 18,
-                "max": 25
+            "religion": "Probably",
+            "sexualOrientation": "Something",
+            "politicalAlignment": "Nah I'm good",
+            "bio": "Shrek is my favorite movie ever."
+        },
+        "prefs": {
+            "absolutes": {
+                "age": {
+                    "min": 18,
+                    "max": 25
+                },
+                "rent": {
+                    "min": 0,
+                    "max": 10000
+                },
+                "sameSex": true,
+                "smoking": true,
+                "pets": true
             },
-            "rent": {
-                "min": 0,
-                "max": 10000
+            "major": {
+                "noise": "often",
+                "guests": "often",
+                "sleep": "often",
+                "commonSpaces": "often",
+                "clean": "often"
             },
-            "noise": "often",
-            "guests": "often",
-            "sleep": "often",
-            "commonSpaces": "often",
-            "clean": "often",
             "tags": {
                 "videoGames": false,
                 "movies": false,
@@ -1429,14 +1496,7 @@
                 "coolHouse": false,
                 "roadTrips": false,
                 "children": false
-            },
-            "extraBoxes": {
-                "religion": "Probably",
-                "sexualOrientation": "Something",
-                "politicalAlignment": "Nah I'm good",
-                "transportation": "Rollerblades"
-            },
-            "bio": "Shrek is my favorite movie ever."
+            }
         }
     }
 ]
