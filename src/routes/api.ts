@@ -15,6 +15,12 @@ export const apiRouter = Router();
 
 apiRouter.use(expressjwt({ secret: process.env.JWT_SECRET!, algorithms: [JWT_ALGORITHM] }));
 
+apiRouter.patch('/updateUser', async (req: Request, res: Response) => {
+    // TODO: handle errors, invalid fields are just ignored
+    await User.findByIdAndUpdate<IUser>(req.auth!.userId!, req.body);
+    return res.status(200).end();
+});
+
 apiRouter.get('/users', async (_req: Request, res: Response) => {
     res.json(await User.find<IUser>());
 });
