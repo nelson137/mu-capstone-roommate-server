@@ -6,9 +6,9 @@
         "mac:mongod-start": "mongod --config \"$(brew --prefix)/etc/mongod.conf\" &",
         "mac:mongod-kill": "pkill mongod",
         "mac:mongo-reset": "echo 'db.UserbaseC.deleteMany({})' | mongosh --quiet bunkiez && mongoimport --jsonArray -d bunkiez -c UserbaseC users.json",
-        "build": "npx tsc",
+        "build": "tsc",
         "dev": "nodemon --watch 'src/**/*.ts' src/index.ts",
-        "start": "npm install && npx ts-node ./dist/index.js",
+        "start": "npm install && node --es-module-specifier-resolution=node --experimental-modules ./dist/index.js",
         "test": "jest"
     },
     "dependencies": {
