@@ -60,9 +60,9 @@ appRouter.post(
     async (req: Request, res: Response) => {
         const errLogin = () => res.status(401).json({ errors: [{ msg: ERR_LOGIN_INCORRECT }] });
 
-        const { email, passwordPlaintext } = req.body;
+        const { email: contactEmail, passwordPlaintext } = req.body;
 
-        const user = await User.findOne({ email }).select('passwordHash').exec();
+        const user = await User.findOne({ contactEmail }).select('passwordHash').exec();
         if (!user) return errLogin();
 
         const passwordMatches = await bcrypt.compare(passwordPlaintext, user.passwordHash!);
