@@ -8,6 +8,7 @@
         "mac:mongo-reset": "echo 'db.UserbaseC.deleteMany({})' | mongosh --quiet bunkiez && mongoimport --jsonArray -d bunkiez -c UserbaseC users.json",
         "build": "npx tsc",
         "dev": "nodemon --watch 'src/**/*.ts' src/index.ts",
+        "start": "npm install && npx ts-node ./dist/index.js",
         "test": "jest"
     },
     "dependencies": {
