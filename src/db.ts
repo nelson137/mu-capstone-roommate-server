@@ -178,7 +178,7 @@ const UserSchema = new Schema(
             },
         },
     },
-    { collection: 'UserbaseC' },
+    { collection: 'UserbaseB' },
 );
 export const User = model('User', UserSchema);
 
