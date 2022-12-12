@@ -185,19 +185,29 @@ const UserSchema = new Schema(
 export const User = model('User', UserSchema);
 
 export interface IUserMatch extends Document {
-    matches: [{
+    userId: string;
+    matches: {
         otherID: string;
         decision: string;
-    }];
+    }[];
 }
 
 const UserMatchSchema = new Schema(
     {
-        matches: [{
-            otherID: String,
-            decision: String,
-        }],
+        userId: {
+            required: true,
+            type: String,
+        },
+        matches: {
+            required: true,
+            type: [
+                {
+                    otherID: String,
+                    decision: String,
+                },
+            ],
+        },
     },
-    { collection: 'SavedMatches'},
+    { collection: 'SavedMatches' },
 );
 export const UserMatch = model('UserMatch', UserMatchSchema);
