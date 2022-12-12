@@ -14,8 +14,7 @@ export const JWT_ALGORITHM = 'HS256';
 
 export const apiRouter = Router();
 
-//UNCOMMENT OUT LINE ONCE DONE TESTING SHIT
-//apiRouter.use(expressjwt({ secret: process.env.JWT_SECRET!, algorithms: [JWT_ALGORITHM] }));
+apiRouter.use(expressjwt({ secret: process.env.JWT_SECRET!, algorithms: [JWT_ALGORITHM] }));
 
 apiRouter.patch('/updateUser', async (req: Request, res: Response) => {
     // TODO: handle errors, invalid fields are just ignored
