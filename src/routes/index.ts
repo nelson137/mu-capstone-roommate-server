@@ -21,7 +21,7 @@ const passwordValidator = (value: any) =>
     typeof value === 'string' && Buffer.byteLength(value) <= 72;
 
 const generateToken = (userId: string) =>
-    jwt.sign({ userId }, process.env.JWT_SECRET!, { algorithm: JWT_ALGORITHM, expiresIn: 20 });
+    jwt.sign({ userId }, process.env.JWT_SECRET!, { algorithm: JWT_ALGORITHM, expiresIn: '1h' });
 
 export const appRouter = Router();
 
