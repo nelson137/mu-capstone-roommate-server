@@ -7,6 +7,8 @@ import { connect, Document, model, Schema } from 'mongoose';
 
 // TODO: Would the [connect-mongo package](https://www.npmjs.com/package/connect-mongo) be useful?
 
+export const setupDatabase = () => connect(process.env.DATABASE_URL!);
+
 export interface IUser extends Document {
     email: string;
     passwordHash: string;
@@ -182,4 +184,20 @@ const UserSchema = new Schema(
 );
 export const User = model('User', UserSchema);
 
-export const setupDatabase = () => connect(process.env.DATABASE_URL!);
+export interface IUserMatch extends Document {
+    matches: [{
+        otherID: string;
+        decision: string;
+    }];
+}
+
+const UserMatchSchema = new Schema(
+    {
+        matches: [{
+            otherID: String,
+            decision: String,
+        }],
+    },
+    { collection: 'SavedMatches'},
+);
+export const UserMatch = model('UserMatch', UserMatchSchema);

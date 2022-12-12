@@ -1,13 +1,19 @@
 import { Response, Router } from 'express';
 import { expressjwt, Request } from 'express-jwt';
 import { body } from 'express-validator';
-import { IUser, User } from '../db';
+import { Model } from 'mongoose';
+import { IUser, User, IUserMatch, UserMatch } from '../db';
 
 type BasicUser = {
     id: string;
     name: string;
     age: number;
     percentage: number;
+};
+
+type MatchedUser = {
+    otherID: string;
+    decision: string;
 };
 
 export const JWT_ALGORITHM = 'HS256';
@@ -28,23 +34,38 @@ apiRouter.get('/users', async (_req: Request, res: Response) => {
 
 apiRouter.get('/matches', async (_req: Request, res: Response) => {
     var activeUsersID = "";
-    if(_req.params && _req.params._id && typeof _req.params._id == "string")
+    /*if(_req.params && _req.params._id && typeof _req.params._id == "string")
     {
         activeUsersID = _req.params._id;
     }
     else
-    {
+    {*/
         // ERROR: DID NOT RECEIVE A VALID ACTIVE USER'S ID
-    }
+    //}
     try {
         var user = await User.findById<IUser>(activeUsersID);
-        console.log(user);
+        //var user = await User.findById<IUser>('632dd93508fdd4a48cc94d18'); // REMOVE TEST LINE
+        /*var matchedUsers = await UserMatch.findById<IUserMatch>('632dd93508fdd4a48cc94d04'); // TEST USERID THAT EXISTS
+        console.log(matchedUsers?.matches);
+        if(!matchedUsers)
+        {
+            const newUserMatch = await UserMatch.create({
+                _id: '632dd93508fdd4a48cc94d05', // CHANGE TO ACTIVEUSERSID
+                matches: {
+                    0: {
+                        otherID: "EXAMPLE", // CHECK TO SEE IF THIS WORKS?
+                        decision: "nothing"
+                    }
+                }
+            });
+            matchedUsers = await UserMatch.findById<IUserMatch>('632dd93508fdd4a48cc94d05'); // CHANGE TO ACTIVEUSERID
+        }*/
         var allUsers = await User.find<IUser>();
         var potentialMatches: BasicUser[] = [];
         allUsers.forEach(getPercentage);
         function getPercentage(person: IUser, index: number) {
             var matchPercentage = 0;
-            if (user && person && user.profile && person.profile && user.prefs && person.prefs) {
+            if (user && person && user.profile && person.profile && user.prefs && person.prefs /*&& matchedUsers*/) {
                 var userID = user._id.toString();
                 var personID = person._id.toString();
                 const todaysDate = new Date();
@@ -179,8 +200,27 @@ apiRouter.get('/matches', async (_req: Request, res: Response) => {
                         name: person.name!,
                         age: personAge,
                         percentage: matchPercentage,
-                    };
-                    potentialMatches.push(matchToAdd);
+                    }; // AFTER THIS LINE, CHECK IF USER IS IN MATCHED ARRAY, AND IF NOT, ADD THEM
+                    /*matchedUsers.matches.find(
+                        { "otherID": personID }, // NO OVERLOAD MATCHES THIS CALL
+                        function(err: any, result: any) {
+                            if (err) {
+                                const matchedUserToAdd: MatchedUser = {
+                                    otherID: personID,
+                                    decision: "nothing",
+                                };
+                                Model.update(
+                                    { _id: '632dd93508fdd4a48cc94d04' }, // UPDATE TO ACTIVEUSERID
+                                    { $push: { matches: matchedUserToAdd } },
+                                    done // CANNOT FIND NAME DONE
+                                );
+                                // ADD PUSH LINE
+                            } else {
+                                // CHECK IF DECISION != 'NOTHING', BUT IF IT DOES, PUSH
+                            }
+                        }
+                    );*/
+                    potentialMatches.push(matchToAdd); // ENSURE DECISION HAS NOT BEEN MADE
                 }
             }
         }
@@ -199,4 +239,24 @@ apiRouter.get('/matches', async (_req: Request, res: Response) => {
         potentialMatches = [];
     }
     res.send(potentialMatches);
+});
+
+apiRouter.get('/conversations', async (_req: Request, res: Response) => {
+    var activeUsersID = "";
+    if(_req.params && _req.params._id && typeof _req.params._id == "string")
+    {
+        activeUsersID = _req.params._id;
+    }
+    else
+    {
+        // ERROR: DID NOT RECEIVE A VALID ACTIVE USER'S ID
+    }
+    try {
+        var user = await UserMatch.findById<IUserMatch>(activeUsersID);
+        // GET LIST OF USER IDS OF THOSE WHO HAVE DECISION = "MATCHED"
+    }
+    catch {
+
+    }
+    res.send();
 });
