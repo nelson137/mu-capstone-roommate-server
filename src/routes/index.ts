@@ -59,13 +59,10 @@ appRouter.post(
     guardValidation,
     async (req: Request, res: Response) => {
         const errLogin = () => res.status(401).json({ errors: [{ msg: ERR_LOGIN_INCORRECT }] });
-        console.log(`[/auth] database URL: ${process.env.DATABASE_URL}`);
 
         const { email, passwordPlaintext } = req.body;
-        console.log(`[/auth] request: email='${email}', password='${passwordPlaintext}'`);
 
         const user = await User.findOne({ email }).select('passwordHash').exec();
-        console.log(`[/auth] database user: ${JSON.stringify(user)}`);
         if (!user) return errLogin();
 
         const passwordMatches = await bcrypt.compare(passwordPlaintext, user.passwordHash!);
