@@ -213,7 +213,10 @@ apiRouter.get('/matches/:userId', async (req: Request, res: Response) => {
     res.send(potentialMatches);
 });
 
-/*apiRouter.get('/decision/:userId'), async (req:Request, res: Response) => {
+/*apiRouter.patch('/decision/:userId'), body(), async (req:Request, res: Response) => {
+    console.log(`[/decision] userId=${req.params.userId}`);
+    const userId = req.params.userId;
+    try {
     var matchedUsers = await UserMatch.find<IUserMatch>({userId: userIdAsString}); 
         if(matchedUsers.length == 0)
         {
@@ -228,10 +231,11 @@ apiRouter.get('/matches/:userId', async (req: Request, res: Response) => {
             });
             matchedUsers = await UserMatch.find<IUserMatch>({userId: userIdAsString});
         }
+    return res.status(200).end();
 }
 
-apiRouter.get('/conversations', async (req: Request, res: Response) => { 
-    console.log(`[/matches] userId=${req.params.userId}`);
+apiRouter.get('/conversations/:userId', async (req: Request, res: Response) => { 
+    console.log(`[/conversations] userId=${req.params.userId}`);
     const userId = req.params.userId;
 
     try {
