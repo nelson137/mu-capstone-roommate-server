@@ -14,6 +14,11 @@ type MatchedUser = {
     decision: string;
 };
 
+type PotentialMatches = {
+    user: IUser;
+    percentage: number;
+}
+
 export const JWT_ALGORITHM = 'HS256';
 
 export const apiRouter = Router();
@@ -33,27 +38,10 @@ apiRouter.get('/users', async (_req: Request, res: Response) => {
 apiRouter.get('/matches/:userId', async (req: Request, res: Response) => {
     console.log(`[/matches] userId=${req.params.userId}`);
     const userId = req.params.userId;
-
     try {
         var user = await User.findById<IUser>(userId);
-        //var user = await User.findById<IUser>('632dd93508fdd4a48cc94d18'); // REMOVE TEST LINE
-        /*var matchedUsers = await UserMatch.findById<IUserMatch>('632dd93508fdd4a48cc94d04'); // TEST USERID THAT EXISTS
-        console.log(matchedUsers?.matches);
-        if(!matchedUsers)
-        {
-            const newUserMatch = await UserMatch.create({
-                userId: '632dd93508fdd4a48cc94d05', // CHANGE TO ACTIVEUSERSID
-                matches: {
-                    0: {
-                        otherID: "EXAMPLE", // CHECK TO SEE IF THIS WORKS?
-                        decision: "nothing"
-                    }
-                }
-            });
-            matchedUsers = await UserMatch.findById<IUserMatch>('632dd93508fdd4a48cc94d05'); // CHANGE TO ACTIVEUSERID
-        }*/
         var allUsers = await User.find<IUser>();
-        var potentialMatches: BasicUser[] = [];
+        var potentialMatches: PotentialMatches[] = [];
         allUsers.forEach(getPercentage);
         function getPercentage(person: IUser, index: number) {
             var matchPercentage = 0;
@@ -63,7 +51,7 @@ apiRouter.get('/matches/:userId', async (req: Request, res: Response) => {
                 user.profile &&
                 person.profile &&
                 user.prefs &&
-                person.prefs /*&& matchedUsers*/
+                person.prefs
             ) {
                 var userID = user._id.toString();
                 var personID = person._id.toString();
@@ -194,32 +182,11 @@ apiRouter.get('/matches/:userId', async (req: Request, res: Response) => {
                             matchPercentage += 2;
                         }
                     }
-                    const matchToAdd: BasicUser = {
-                        id: personID,
-                        name: person.name!,
-                        age: personAge,
+                    const matchToAdd: PotentialMatches = {
+                        user: person,
                         percentage: matchPercentage,
-                    }; // AFTER THIS LINE, CHECK IF USER IS IN MATCHED ARRAY, AND IF NOT, ADD THEM
-                    /*matchedUsers.matches.find(
-                        { "otherID": personID }, // NO OVERLOAD MATCHES THIS CALL
-                        function(err: any, result: any) {
-                            if (err) {
-                                const matchedUserToAdd: MatchedUser = {
-                                    otherID: personID,
-                                    decision: "nothing",
-                                };
-                                Model.update(
-                                    { _id: '632dd93508fdd4a48cc94d04' }, // UPDATE TO ACTIVEUSERID
-                                    { $push: { matches: matchedUserToAdd } },
-                                    done // CANNOT FIND NAME DONE
-                                );
-                                // ADD PUSH LINE
-                            } else {
-                                // CHECK IF DECISION != 'NOTHING', BUT IF IT DOES, PUSH
-                            }
-                        }
-                    );*/
-                    potentialMatches.push(matchToAdd); // ENSURE DECISION HAS NOT BEEN MADE
+                    }; 
+                    potentialMatches.push(matchToAdd); 
                 }
             }
         }
@@ -232,20 +199,35 @@ apiRouter.get('/matches/:userId', async (req: Request, res: Response) => {
                 }
             }
         }
-    } catch {
-        //return 500 if fails
-        potentialMatches = [];
+    } catch(err) {
+        return res.status(500).json({errors: [{msg: err}]});
     }
     res.send(potentialMatches);
 });
 
-apiRouter.get('/conversations', async (req: Request, res: Response) => {
+/*apiRouter.get('/decision/:userId'), async (req:Request, res: Response) => {
+    var matchedUsers = await UserMatch.find<IUserMatch>({userId: userIdAsString}); 
+        if(matchedUsers.length == 0)
+        {
+            const newUserMatch = await UserMatch.create({ 
+                userId: userIdAsString, 
+                matches: [
+                    {
+                        otherID: "EXAMPLE", 
+                        decision: "nothing"
+                    }
+                ]
+            });
+            matchedUsers = await UserMatch.find<IUserMatch>({userId: userIdAsString});
+        }
+}
+
+apiRouter.get('/conversations', async (req: Request, res: Response) => { 
     console.log(`[/matches] userId=${req.params.userId}`);
     const userId = req.params.userId;
 
     try {
         var user = await UserMatch.findById<IUserMatch>(userId);
-        // GET LIST OF USER IDS OF THOSE WHO HAVE DECISION = "MATCHED"
     } catch {}
     res.send();
-});
+});*/
