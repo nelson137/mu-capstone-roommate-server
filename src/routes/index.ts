@@ -20,8 +20,8 @@ const ERR_LOGIN_INCORRECT = 'Username or password incorrect';
 const passwordValidator = (value: any) =>
     typeof value === 'string' && Buffer.byteLength(value) <= 72;
 
-const generateToken = (userId: string) =>
-    jwt.sign({ userId }, process.env.JWT_SECRET!, { algorithm: JWT_ALGORITHM, expiresIn: '1h' });
+const generateToken = (user: any) =>
+    jwt.sign({ user }, process.env.JWT_SECRET!, { algorithm: JWT_ALGORITHM, expiresIn: '1h' });
 
 export const appRouter = Router();
 
@@ -45,7 +45,9 @@ appRouter.post(
             dateOfBirth,
         });
 
-        const token = generateToken(newUser.id);
+        const payloadUser = JSON.parse(JSON.stringify(newUser));
+        delete payloadUser['passwordHash'];
+        const token = generateToken(payloadUser);
 
         console.log('[/register] created user', newUser.id);
         res.status(201).json({ token });
@@ -62,13 +64,15 @@ appRouter.post(
 
         const { email, passwordPlaintext } = req.body;
 
-        const user = await User.findOne({ email }).select('passwordHash').exec();
+        const user = await User.findOne({ email });
         if (!user) return errLogin();
 
         const passwordMatches = await bcrypt.compare(passwordPlaintext, user.passwordHash!);
         if (!passwordMatches) return errLogin();
 
-        const token = generateToken(user.id as string);
+        const payloadUser = JSON.parse(JSON.stringify(user));
+        delete payloadUser['passwordHash'];
+        const token = generateToken(payloadUser);
 
         console.log('[/auth] authorize user', user.id);
         return res.status(200).json({ token });
