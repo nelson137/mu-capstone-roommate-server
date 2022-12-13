@@ -25,6 +25,7 @@ export interface IUser extends Document {
         religion: string;
         sexualOrientation: string;
         politicalAlignment: string;
+        transportation: string;
     };
     prefs: null | {
         absolutes: {
@@ -105,6 +106,7 @@ const UserSchema = new Schema(
                 religion: { type: String, required: false },
                 sexualOrientation: { type: String, required: false },
                 politicalAlignment: { type: String, required: false },
+                transportation: {type: String, required: false },
             },
         },
         prefs: {
