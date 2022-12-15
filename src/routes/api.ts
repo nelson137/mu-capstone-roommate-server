@@ -51,7 +51,7 @@ apiRouter.get('/matches/:userId', async (req: Request, res: Response) => {
         var allUsers = await User.find<IUser>();
         var potentialMatches: PotentialMatches[] = [];
         allUsers.forEach(getPercentage);
-        function getPercentage(person: IUser, index: number) {
+        async function getPercentage(person: IUser, index: number) {
             var matchPercentage = 0;
             if (
                 user &&
@@ -194,7 +194,24 @@ apiRouter.get('/matches/:userId', async (req: Request, res: Response) => {
                         user: person,
                         percentage: matchPercentage,
                     }; 
-                    potentialMatches.push(matchToAdd); 
+                    var currentUser = await UserMatch.find<IUserMatch>({userId: userID});
+                    if(!currentUser || currentUser.length == 0) {
+                        potentialMatches.push(matchToAdd); 
+                    }
+                    else {
+                        var decisionNotMade = true;
+                        var listOfPotentialMatchedUsers = currentUser[0].matches;
+                        for(var i = 0; i < listOfPotentialMatchedUsers.length; i++)
+                        {
+                            if(listOfPotentialMatchedUsers[i].otherID == personID) {
+                                decisionNotMade = false;
+                            }
+                        }
+                        if(decisionNotMade)
+                        {
+                            potentialMatches.push(matchToAdd); 
+                        }
+                    }
                 }
             }
         }
