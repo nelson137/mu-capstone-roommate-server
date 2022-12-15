@@ -217,29 +217,59 @@ apiRouter.get('/matches/:userId', async (req: Request, res: Response) => {
     console.log(`[/decision] userId=${req.params.userId}`);
     const userId = req.params.userId;
     try {
-    var matchedUsers = await UserMatch.find<IUserMatch>({userId: userIdAsString}); 
-        if(matchedUsers.length == 0)
+        var matchedUsers = await UserMatch.find<IUserMatch>({userId: userId.toString()}); 
+        if(!matchedUsers || matchedUsers.length == 0)
         {
             const newUserMatch = await UserMatch.create({ 
-                userId: userIdAsString, 
+                userId: userId.toString(), 
                 matches: [
                     {
                         otherID: "EXAMPLE", 
-                        decision: "nothing"
+                        decision: "no"
                     }
                 ]
             });
-            matchedUsers = await UserMatch.find<IUserMatch>({userId: userIdAsString});
+            matchedUsers = await UserMatch.find<IUserMatch>({userId: userId.toString()});
         }
+
+    } catch(err) {
+        return res.status(500).json({errors: [{msg: err}]});
+    }
     return res.status(200).end();
-}
+}*/
 
 apiRouter.get('/conversations/:userId', async (req: Request, res: Response) => { 
     console.log(`[/conversations] userId=${req.params.userId}`);
     const userId = req.params.userId;
-
     try {
-        var user = await UserMatch.findById<IUserMatch>(userId);
-    } catch {}
-    res.send();
-});*/
+        var user = await UserMatch.find<IUserMatch>({userId: userId});
+        if(!user || user.length == 0)
+        {
+            const newUserMatch = await UserMatch.create({ 
+                userId: userId.toString(), 
+                matches: [
+                    {
+                        otherID: "EXAMPLE", 
+                        decision: "no"
+                    }
+                ]
+            });
+            user = await UserMatch.find<IUserMatch>({userId: userId.toString()});
+        }
+        var potentialMatchedUsers = user[0].matches;
+        var definitiveMatches: IUser[] = [];
+        for(var i = 0; i < potentialMatchedUsers.length; i++)
+        {
+            if(potentialMatchedUsers[i].decision == 'match') {
+                var userMatchToAdd = await User.findById<IUser>(potentialMatchedUsers[i].otherID);
+                if(userMatchToAdd)
+                {
+                    definitiveMatches.push(userMatchToAdd);
+                }
+            }
+        }
+    } catch(err) {
+        return res.status(500).json({errors: [{msg: err}]});
+    }
+    res.send(definitiveMatches);
+});
