@@ -51,7 +51,7 @@ apiRouter.get('/matches/:userId', async (req: Request, res: Response) => {
         var allUsers = await User.find<IUser>();
         var potentialMatches: PotentialMatches[] = [];
         allUsers.forEach(getPercentage);
-        async function getPercentage(person: IUser, index: number) {
+        function getPercentage(person: IUser, index: number) {
             var matchPercentage = 0;
             if (
                 user &&
@@ -194,24 +194,7 @@ apiRouter.get('/matches/:userId', async (req: Request, res: Response) => {
                         user: person,
                         percentage: matchPercentage,
                     }; 
-                    var currentUser = await UserMatch.find<IUserMatch>({userId: userID});
-                    if(!currentUser || currentUser.length == 0) {
-                        potentialMatches.push(matchToAdd); 
-                    }
-                    else {
-                        var decisionNotMade = true;
-                        var listOfPotentialMatchedUsers = currentUser[0].matches;
-                        for(var i = 0; i < listOfPotentialMatchedUsers.length; i++)
-                        {
-                            if(listOfPotentialMatchedUsers[i].otherID == personID) {
-                                decisionNotMade = false;
-                            }
-                        }
-                        if(decisionNotMade)
-                        {
-                            potentialMatches.push(matchToAdd); 
-                        }
-                    }
+                    potentialMatches.push(matchToAdd);
                 }
             }
         }
@@ -230,8 +213,8 @@ apiRouter.get('/matches/:userId', async (req: Request, res: Response) => {
     res.send(potentialMatches);
 });
 
-/*apiRouter.patch('/decision/:userId'), body(), async (req:Request, res: Response) => {
-    console.log(`[/decision] userId=${req.params.userId}`);
+apiRouter.patch('/decision/:userId', body(), async (req:Request, res: Response) => {
+    console.log(`[/decision] userId=${req.params.userId}, otherUserId=${req.body.otherUserId}`);
     const userId = req.params.userId;
     try {
         var matchedUsers = await UserMatch.find<IUserMatch>({userId: userId.toString()}); 
@@ -248,12 +231,44 @@ apiRouter.get('/matches/:userId', async (req: Request, res: Response) => {
             });
             matchedUsers = await UserMatch.find<IUserMatch>({userId: userId.toString()});
         }
-
+        var potentialMatchedUsers = matchedUsers[0].matches;
+        var otherUsersID = req.body.otherUserId;
+        var yourDecision = req.body.userDecision;
+        if(yourDecision == 'yes')
+        {
+            var otherUserMatches = await UserMatch.find<IUserMatch>({userId: otherUsersID}); //here
+            if(otherUserMatches && otherUserMatches.length > 0) //here
+            {
+                var potentialMatchesForOtherUser = otherUserMatches[0].matches;
+                for(var i = 0; i < potentialMatchesForOtherUser.length; i++)
+                {
+                    if((potentialMatchesForOtherUser[i].otherID == userId.toString()) && (potentialMatchesForOtherUser[i].decision == 'yes')) {
+                        potentialMatchesForOtherUser[i].decision = 'match';
+                        yourDecision = 'match';
+                    }
+                }
+                await UserMatch.findOneAndUpdate<IUserMatch>({userId: otherUsersID}, {matches: potentialMatchesForOtherUser}, {new: true});
+            }
+        }
+        var userNotPresent = true;
+        for(var j = 0; j < potentialMatchedUsers.length; j++) 
+        {
+            if(potentialMatchedUsers[j].otherID == otherUsersID) 
+            {
+                userNotPresent = false;
+            }
+        }
+        if(userNotPresent)
+        {
+            var newPotentialMatchToAdd: MatchedUser = {otherID: otherUsersID, decision: yourDecision};
+            potentialMatchedUsers.push(newPotentialMatchToAdd);
+            await UserMatch.findOneAndUpdate<IUserMatch>({userId: userId.toString()}, {matches: potentialMatchedUsers}, {new: true});
+        }
     } catch(err) {
         return res.status(500).json({errors: [{msg: err}]});
     }
     return res.status(200).end();
-}*/
+});
 
 apiRouter.get('/conversations/:userId', async (req: Request, res: Response) => { 
     console.log(`[/conversations] userId=${req.params.userId}`);
