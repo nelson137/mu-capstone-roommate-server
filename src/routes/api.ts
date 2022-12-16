@@ -87,7 +87,7 @@ apiRouter.get('/matches/:userId', async (req: Request, res: Response) => {
                     user.profile.loc.state == person.profile.loc.state &&
                     user.prefs.absolutes.smoking == person.prefs.absolutes.smoking &&
                     user.prefs.absolutes.pets == person.prefs.absolutes.pets &&
-                    (user.prefs.absolutes.sameSex == false ||
+                    (user.prefs.absolutes.sameSex ||
                         user.profile.gender == person.profile.gender) &&
                     (user.prefs.absolutes.rent.min ?? 0) <= person.prefs.absolutes.rent.max &&
                     (user.prefs.absolutes.rent.max ?? 0) >= person.prefs.absolutes.rent.min &&
