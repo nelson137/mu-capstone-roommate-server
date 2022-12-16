@@ -210,6 +210,25 @@ apiRouter.get('/matches/:userId', async (req: Request, res: Response) => {
     } catch(err) {
         return res.status(500).json({errors: [{msg: err}]});
     }
+    var matchedUsers = await UserMatch.find<IUserMatch>({userId: userId});
+    if(matchedUsers && matchedUsers.length > 0)
+    {
+        var decidedUponUsers = matchedUsers[0].matches;
+        for(var i = 0; i < decidedUponUsers.length; i++)
+        {
+            var otherUsersIdToCompare = decidedUponUsers[i].otherID;
+            for(var j = 0; j < potentialMatches.length; j++)
+            {
+                if(otherUsersIdToCompare == potentialMatches[j].user._id)
+                {
+                    let tempMatchUser = potentialMatches[j];
+                    potentialMatches[j] = potentialMatches[potentialMatches.length - 1];
+                    potentialMatches[potentialMatches.length - 1] = tempMatchUser;
+                    potentialMatches.pop();
+                }
+            }
+        }
+    }
     res.send(potentialMatches);
 });
 
